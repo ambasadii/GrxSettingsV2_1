@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fab.ObservableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:include="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/observableview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?colorAccent" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="5.0dip" android:text="Welcome to Ambasadii ROM" />
+
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="(For Samsung Galaxy Phones)" />
+
+                <ImageView android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/demo_grouxho" />
+
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="\n\n Website Links" />
+
+                <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="https://sites.google.com/view/ambasadiidev">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/demo_github_logo" />
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Ambasadii Dev Site" android:layout_marginStart="15.0dip" />
+                </com.grx.settings.views.LinearLayoutWithLink>
+
+                <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="https://forum.xda-developers.com/f/samsung-galaxy-s10-s10-s10-5g-e-cross-device-deve.9161">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/demo_xda" />
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="S10/S10+ Cross Device Development" android:layout_marginStart="15.0dip" />
+                </com.grx.settings.views.LinearLayoutWithLink>
+
+
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Telegram" />
+
+                <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="https://t.me/ambasadiirom">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/demo_telegram" />
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Join Ambasadii News Channel" android:layout_marginStart="15.0dip" />
+                </com.grx.settings.views.LinearLayoutWithLink>
+
+                <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="https://t.me/ambasadiidev">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/demo_telegram" />
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Join Ambasadii Rom Group" android:layout_marginStart="15.0dip" />
+                </com.grx.settings.views.LinearLayoutWithLink>
+
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Donation" />
+
+                <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="http://paypal.me/ambasadii">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/demo_paypal" />
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="My PayPal Link" android:layout_marginStart="15.0dip" />
+                </com.grx.settings.views.LinearLayoutWithLink>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"></LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</com.fab.ObservableScrollView>

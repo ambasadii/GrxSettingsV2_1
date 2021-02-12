@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen android:title="Notification Panel Icons" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Notification Panel Icons Position">
+            <GrxPerItemSingleSelection android:title="Change Notification Panel Icons Position" android:key="panviews" android:summary="@string/sb_positions_help" android:defaultValue="carrierlabel_np;1|networkspeedview;2|traffic_qs;2|statusicons;2|grxcirbatpanel;2|qs_minit;2|batterycontainer;2|" grx:allowSortOut="true" grx:optionsArray="@array/qs_sb_views_positions_options" grx:spinnerOptionsArray="@array/sb_postions_options" grx:spinnerValuesArray="@array/sb_positions_values" grx:valuesArray="@array/qs_sb_views_positions_values" />
+        </GrxPreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Quicklaunch Panel" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Quicklaunch Panel Options">
+            <GrxSwitchPreference android:title="Quicklaunch visibility" android:key="quick_launch_visible" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+            <GrxSingleSelection android:title="Number of visible apps" android:key="quick_launch_vis_buttons" android:dependency="quick_launch_visible" android:defaultValue="5" grx:optionsArray="@array/quick_launch_visible_buttons_entries" grx:valuesArray="@array/quick_launch_visible_buttons_values" />
+            <GrxSwitchPreference android:title="Show text" android:key="quick_launch_text_visible" android:dependency="quick_launch_visible" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
+            <GrxSwitchPreference android:title="Show divider" android:key="quick_launch_show_devider" android:dependency="quick_launch_visible" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+            <GrxSwitchPreference android:title="Show add button" android:key="quick_launch_show_add" android:dependency="quick_launch_visible" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
+            <GrxColorPicker android:title="Text color" android:key="quick_launch_text_color" android:summary="Change text color" android:dependency="quick_launch_visible" android:defaultValue="0xFFFFFFFF" grx:showAlphaSlider="true" grx:showAutoButton="true" />
+            <GrxColorPicker android:title="Background color" android:key="quick_launch_background_color" android:summary="Change background color" android:dependency="quick_launch_visible" android:defaultValue="0x00777777" grx:showAlphaSlider="true" grx:showAutoButton="true" />
+        </GrxPreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Ram Swap Info" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Ram Swap Info Options">
+            <GrxSwitchPreference android:title="Ram swap visibility" android:key="noti_recents_memory" android:defaultValue="0" android:summaryOn="Show" android:summaryOff="Hide" />
+            <GrxSeekBar android:title="Ram info refresh" android:key="noti_recents_memory_info_refresh" android:summary="" android:dependency="noti_recents_memory" android:defaultValue="2500" grx:maxValue="15000" grx:minValue="200" grx:units=" ms" />
+            <GrxSwitchPreference android:title="Stroke" android:key="noti_recents_memory_stroke_enabled" android:dependency="noti_recents_memory" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <GrxSeekBar android:title="Stroke thickness" android:key="noti_recents_memory_stroke_thickness" android:summary="" android:dependency="noti_recents_memory_stroke_enabled" android:defaultValue="1" grx:maxValue="25" grx:minValue="1" />
+            <GrxSeekBar android:title="Stroke width" android:key="noti_recents_memory_stroke_width" android:summary="" android:dependency="noti_recents_memory_stroke_enabled" android:defaultValue="0" grx:maxValue="50" grx:minValue="0" />
+            <GrxSeekBar android:title="Stroke gap" android:key="noti_recents_memory_stroke_gap" android:summary="" android:dependency="noti_recents_memory_stroke_enabled" android:defaultValue="1" grx:maxValue="50" grx:minValue="1" />
+            <GrxSeekBar android:title="Stroke corners" android:key="noti_recents_memory_stroke_corner_radius" android:summary="" android:dependency="noti_recents_memory" android:defaultValue="60" grx:maxValue="60" grx:minValue="0" />
+            <GrxColorPicker android:title="Ram info text color" android:key="noti_recents_memory_info_textcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" grx:colorPickerStyle="flower" />
+            <GrxColorPicker android:title="Ram info used color" android:key="noti_recents_memory_info_usedcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" grx:colorPickerStyle="flower" />
+            <GrxColorPicker android:title="Ram info free color" android:key="noti_recents_memory_info_freecolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" grx:colorPickerStyle="flower" />
+            <GrxColorPicker android:title="Background color" android:key="noti_recents_memory_info_bgcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFFFAFAFA" grx:colorPickerStyle="flower" />
+            <GrxColorPicker android:title="Stroke color" android:key="noti_recents_memory_stroke_color" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFFFAFAFA" grx:colorPickerStyle="flower" />
+        </GrxPreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="QS Toggles" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="QS Tile Number">
+            <GrxSeekBar android:title="QS Tile Number Portrait mode" android:key="dlx_rows_portrait" android:defaultValue="7" grx:commonBcExtra="arg" grx:interval="1" grx:maxValue="8" grx:minValue="5" grx:systemType="system" grx:units=" Toggles" />
+            <GrxSeekBar android:title="QS Tile Number Landscape mode" android:key="dlx_rows_landscape" android:defaultValue="16" grx:commonBcExtra="arg" grx:interval="1" grx:maxValue="16" grx:minValue="5" grx:systemType="system" grx:units=" Toggles" />
+        </GrxPreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

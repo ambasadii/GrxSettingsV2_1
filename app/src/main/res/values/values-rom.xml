@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Info fragment tabs -->
+
+
+    <string-array name="rom_tabs_names"> <!-- do not change this array name !!!! -->
+        <item>Rom Info</item>
+        <item>Changelog</item>
+        <item>Credits</item>
+    </string-array>
+
+    <string-array name="rom_tabs_layouts"> <!-- do not change this array name !!!! -->
+        <item>demo_info_about_tab</item>
+        <item>demo_info_changelog_tab</item>
+        <item>demo_info_credits_tab</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Text android:icon="@drawable/demo_icon_activity" android:id="@+id/ambasadii_statusbar" android:title="Statusbar" app:showIconSpace="false" />
+    <Text android:icon="@drawable/demo_icon_nested" android:id="@+id/ambasadii_notification" android:title="Notification Panel" app:showIconSpace="false" />
+    <Text android:icon="@drawable/demo_icon_lists" android:id="@+id/ambasadii_lockscreen" android:title="Lockscreen" app:showIconSpace="false" />
+    <Text android:icon="@drawable/demo_icon_color" android:id="@+id/ambasadii_coloring" android:title="Coloring" app:showIconSpace="false" />
+    <Text android:icon="@drawable/demo_icon_multiaccess" android:id="@+id/ambasadii_others" android:title="Others" app:showIconSpace="false" />
+</menu>
