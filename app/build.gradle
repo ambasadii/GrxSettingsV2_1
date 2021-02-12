@@ -6,6 +6,26 @@ apply plugin: 'com.android.application'
 
 
 android {
+    signingConfigs {
+        release  {
+            storeFile file('C:\\project_studio\\keys_amb.jks')
+            keyAlias = 'key0'
+            storePassword '123456'
+            keyPassword '123456'
+        }
+        debug {
+            storeFile file('C:\\project_studio\\keys_amb.jks')
+            keyAlias = 'key0'
+            storePassword '123456'
+            keyPassword '123456'
+        }
+    }
+
+    android.applicationVariants.all { final variant ->
+        variant.outputs.all {
+            outputFileName = "Ambasadii.apk"
+        }
+    }
     compileSdkVersion 28
 	//buildToolsVersion "22.0.1" // no need now, uncomment in older android studio vers.
     //buildToolsVersion '28.0.3'  // no need now, uncomment in older android studio vers depending on the build tools you need.

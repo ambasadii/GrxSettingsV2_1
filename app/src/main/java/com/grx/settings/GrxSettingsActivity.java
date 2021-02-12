@@ -211,6 +211,8 @@ public class GrxSettingsActivity extends AppCompatActivity implements
 
     public int mSelectedTool = -1;
 
+    private boolean mPendingRestartAfterSync = false;
+
     /*************************************************************************************************/
     /********************* ROOT AND SCRIPT OPERATIONS ************************************************/
     /*************************************************************************************************/
@@ -1270,6 +1272,16 @@ public class GrxSettingsActivity extends AppCompatActivity implements
 
         setCurrentMenuAndScreen(Common.INI_MODE_FORCED);
 
+        if (mPendingRestartAfterSync) {
+            Runnable runnable = new Runnable() {
+                @Override
+                public void run() {
+                    restartApp();
+                }
+            };
+            mHandler.postDelayed(runnable,700);
+        }
+
     }
 
 
@@ -1279,7 +1291,12 @@ public class GrxSettingsActivity extends AppCompatActivity implements
             android.app.FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
 
             GrxPreferenceScreen prefsScreen = GrxPreferenceScreen.newInstance(ResXML.get(mNumSyncScreens),"","",0);
-            fragmentTransaction.replace(R.id.gid_content,prefsScreen, Common.TAG_PREFSSCREEN_FRAGMENT_SYNC).commit();
+
+            int result = fragmentTransaction.replace(R.id.gid_content,prefsScreen, Common.TAG_PREFSSCREEN_FRAGMENT_SYNC).commit();
+
+            if (result==0){
+
+            }
         }else finishPreferencesSynchronization();
     }
 
@@ -1655,7 +1672,8 @@ public class GrxSettingsActivity extends AppCompatActivity implements
                     Common.sp.edit().putString(Common.S_APPOPT_USER_SELECTED_THEME_NAME,mThemeS);
                     Common.sp.edit().putBoolean(Common.S_CTRL_SYNC_NEEDED,true).commit();
                     dialog.dismiss();
-                    synchronizePreferences();
+                    mPendingRestartAfterSync=true;
+                     synchronizePreferences();
                 }else showToast(mRestoreResultText);
             }
             return null;
@@ -1722,7 +1740,9 @@ public class GrxSettingsActivity extends AppCompatActivity implements
                 break;
             case Common.INT_ID_APPDLG_RESET_ALL_PREFERENCES:
                         Common.sp.edit().clear().commit();
-                        restartApp();
+                        mPendingRestartAfterSync = true;
+                        synchronizePreferences(); ///bbbb
+
                         break;
 
             case Common.INT_ID_APPDLG_TOOLS:
