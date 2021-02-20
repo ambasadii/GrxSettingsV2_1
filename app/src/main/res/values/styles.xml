@@ -61,7 +61,7 @@
         <item name="complementary_color3">#ff7800</item>
         <item name="complementary_color4">#795548</item>
         <item name="complementary_color5">#3F51B5</item>
-
+        <item name="main_bg_color">@drawable/transp_light</item>
     </style>
 
     <style name="SublimeTheme" parent="ThemeOverlay.AppCompat.Light">
@@ -332,6 +332,7 @@
         <item name="complementary_color4">#009688</item>
         <item name="complementary_color5">#2196F3</item>
         <item name="navbarcolor">#ffb93121</item>
+        <item name="main_bg_color">@drawable/ambasadii_bg</item>
     </style>
 
     <style name="SublimeTheme_black_red" parent="@style/SublimeTheme_dark">
@@ -358,6 +359,7 @@
         <item name="recentscreenstextcolor">#ffffff</item>
         <item name="contrast_text_color">#fffdfdfd</item>
         <item name="navbarcolor">#ff31B1E0</item>
+        <item name="main_bg_color">@drawable/ambasadii_bg2</item>
     </style>
 
     <!--        Black White                    -->
@@ -390,7 +392,7 @@
         <item name="complementary_color3">#80CBC4</item>
         <item name="complementary_color4">#81C784 </item>
         <item name="complementary_color5">#00BCD4</item>
-
+        <item name="main_bg_color">@drawable/transp</item>
     </style>
 
 
@@ -437,7 +439,7 @@
         <item name="complementary_color3">#7fbfb9</item>
         <item name="complementary_color4">#33b5e5</item>
         <item name="complementary_color5">#ff9047</item>
-
+        <item name="main_bg_color">@drawable/transp</item>
     </style>
 
     <style name="SublimeTheme_black_white" parent="@style/SublimeTheme_dark">

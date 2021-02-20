@@ -272,6 +272,17 @@
             </GrxPreferenceCategory>
         </PreferenceScreen>
     </PreferenceScreen>
+    <PreferenceScreen android:title="Icon Chooser" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Icon Chooser Options">
+            <GrxSingleSelection android:title="Wifi Icon" android:key="wifi_icon_style" android:defaultValue="0" grx:confirmKillpackage="true" grx:iconsArray="@array/wifi_drawables"  grx:optionsArray="@array/wifi_entries" grx:systemType="system" grx:valuesArray="@array/wifi_values" />
+            <GrxSingleSelection android:title="Wifi Arrows" android:key="wifi_arrow" android:defaultValue="0" grx:optionsArray="@array/wifiarrow_entries" grx:systemType="system" grx:valuesArray="@array/wifiarrow_values" />
+            <GrxSingleSelection android:title="Signal Icon" android:key="signal_icon_style" android:defaultValue="0" grx:iconsArray="@array/signal_drawables"  grx:optionsArray="@array/signal_entries" grx:systemType="system" grx:valuesArray="@array/signal_values" />
+            <GrxSingleSelection android:title="Alarm Icon" android:key="alarm_icon_style" android:defaultValue="0" grx:iconsArray="@array/alarm_drawables"  grx:optionsArray="@array/alarm_entries" grx:systemType="system" grx:valuesArray="@array/alarm_values" />
+            <GrxSingleSelection android:title="Location Icon" android:key="location_icon_style" android:defaultValue="0" grx:iconsArray="@array/location_drawables"  grx:optionsArray="@array/location_entries" grx:valuesArray="@array/location_values" />
+            <GrxSingleSelection android:title="Bluetooth Icon" android:key="bluetooth_icon_style" android:defaultValue="0" grx:iconsArray="@array/bluetooth_drawables"  grx:optionsArray="@array/bluetooth_entries" grx:valuesArray="@array/bluetooth_values" />
+            <GrxButtonPreference grx:button_Style="big" grx:button_Text="Click to apply all changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
+        </GrxPreferenceCategory>
+    </PreferenceScreen>
     <PreferenceScreen android:title="Weather Temperature" xmlns:grx="http://schemas.android.com/apk/res-auto">
         <GrxPreferenceCategory android:title="Weather Temperature Options" />
         <GrxSwitchPreference android:title="Temperature icon visibility" android:key="statusbar_weather_temperature_visibility" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />

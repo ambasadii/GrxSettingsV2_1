@@ -369,25 +369,19 @@
 
 
     <string-array name="grxa_theme_list">
-        <item>@string/grxs_theme_white_bluegrey</item>
+
         <item>@string/grxs_theme_black_white</item>
-        <item>@string/grxs_theme_light_tile</item>
         <item>@string/grxs_theme_light_red</item>
         <item>@string/grxs_theme_default_dark</item>
-        <item>@string/grxs_theme_black_and_white</item>
-        <item>@string/grxs_theme_black_ics</item>
         <item>@string/grxs_theme_black_red</item>
 
     </string-array>
 
     <string-array name="grxa_theme_values">
-        <item>Theme.White.BlueGrey</item>
+
         <item>Theme.Black.Light</item>
-        <item>Theme.Green.Light</item>
         <item>Theme.Red.Light</item>
         <item>Theme.Dark.Blue</item>
-        <item>Theme.Black.White</item>
-        <item>Theme.Black.Ics</item>
         <item>Theme.Black.Red</item>
 
     </string-array>

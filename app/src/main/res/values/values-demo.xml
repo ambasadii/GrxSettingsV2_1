@@ -1670,6 +1670,219 @@
         <item>rm -r /sdcard/backups/wifibackup</item>
     </string-array>
 
+    <array name="wifi_drawables">
+        <item>@drawable/default_choose</item>
+        <item>@drawable/wifistyle2</item>
+        <item>@drawable/wifistyle3</item>
+        <item>@drawable/wifistyle4</item>
+        <item>@drawable/wifistyle5</item>
+        <item>@drawable/wifistyle6</item>
+        <item>@drawable/wifistyle7</item>
+        <item>@drawable/wifistyle8</item>
+        <item>@drawable/wifistyle9</item>
+        <item>@drawable/wifistyle10</item>
+        <item>@drawable/wifistyle11</item>
+        <item>@drawable/wifistyle12</item>
+        <item>@drawable/wifistyle13</item>
+        <item>@drawable/wifistyle14</item>
+        <item>@drawable/wifistyle15</item>
+        <item>@drawable/wifistyle16</item>
+        <item>@drawable/wifistyle17</item>
+    </array>
+    <string-array name="wifi_entries">
+        <item>WiFi Icon (stock)</item>
+        <item>WiFi Icon 1</item>
+        <item>WiFi Icon 2</item>
+        <item>WiFi Icon 3</item>
+        <item>WiFi Icon 4</item>
+        <item>WiFi Icon 5</item>
+        <item>WiFi Icon 6</item>
+        <item>WiFi Icon 7</item>
+        <item>WiFi Icon 8</item>
+        <item>WiFi Icon 9</item>
+        <item>WiFi Icon 10</item>
+        <item>WiFi Icon 11</item>
+        <item>WiFi Icon 12</item>
+        <item>WiFi Icon 13</item>
+        <item>WiFi Icon 14</item>
+        <item>WiFi Icon 15</item>
+        <item>WiFi Icon 16</item>
+    </string-array>
+    <string-array name="wifi_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+    <string-array name="wifiarrow_entries">
+        <item>Show</item>
+        <item>Hide</item>
+    </string-array>
+    <string-array name="wifiarrow_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <array name="signal_drawables">
+        <item>@drawable/default_choose</item>
+        <item>@drawable/signalstyle1</item>
+        <item>@drawable/signalstyle2</item>
+        <item>@drawable/signalstyle3</item>
+        <item>@drawable/signalstyle4</item>
+        <item>@drawable/signalstyle5</item>
+        <item>@drawable/signalstyle6</item>
+        <item>@drawable/signalstyle7</item>
+        <item>@drawable/signalstyle8</item>
+        <item>@drawable/signalstyle9</item>
+        <item>@drawable/signalstyle10</item>
+        <item>@drawable/signalstyle11</item>
+        <item>@drawable/signalstyle12</item>
+        <item>@drawable/signalstyle13</item>
+        <item>@drawable/signalstyle14</item>
+    </array>
+    <string-array name="signal_entries">
+        <item>Signal Icon (stock)</item>
+        <item>Signal Icon 1</item>
+        <item>Signal Icon 2</item>
+        <item>Signal Icon 3</item>
+        <item>Signal Icon 4</item>
+        <item>Signal Icon 5</item>
+        <item>Signal Icon 6</item>
+        <item>Signal Icon 7</item>
+        <item>Signal Icon 8</item>
+        <item>Signal Icon 9</item>
+        <item>Signal Icon 10</item>
+        <item>Signal Icon 11</item>
+        <item>Signal Icon 12</item>
+        <item>Signal Icon 13</item>
+        <item>Signal Icon 14</item>
+    </string-array>
+    <string-array name="signal_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <string-array name="alarm_entries">
+        <item>Alarm Icon (stock)</item>
+        <item>Alarm Icon 1</item>
+        <item>Alarm Icon 2</item>
+        <item>Alarm Icon 3</item>
+        <item>Alarm Icon 4</item>
+        <item>Alarm Icon 5</item>
+        <item>Alarm Icon 6</item>
+        <item>Alarm Icon 7</item>
+    </string-array>
+    <string-array name="alarm_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <array name="alarm_drawables">
+        <item>@drawable/default_choose</item>
+        <item>@drawable/alarmstyle1</item>
+        <item>@drawable/alarmstyle2</item>
+        <item>@drawable/alarmstyle3</item>
+        <item>@drawable/alarmstyle4</item>
+        <item>@drawable/alarmstyle5</item>
+        <item>@drawable/alarmstyle6</item>
+        <item>@drawable/alarmstyle7</item>
+    </array>
+    <string-array name="location_entries">
+        <item>Location Icon (stock)</item>
+        <item>Location Icon 1</item>
+        <item>Location Icon 2</item>
+        <item>Location Icon 3</item>
+        <item>Location Icon 4</item>
+        <item>Location Icon 5</item>
+        <item>Location Icon 6</item>
+        <item>Location Icon 7</item>
+        <item>Location Icon 8</item>
+        <item>Location Icon 9</item>
+        <item>Location Icon 10</item>
+    </string-array>
+    <string-array name="location_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <array name="location_drawables">
+        <item>@drawable/default_choose</item>
+        <item>@drawable/location1</item>
+        <item>@drawable/location2</item>
+        <item>@drawable/location3</item>
+        <item>@drawable/location4</item>
+        <item>@drawable/location5</item>
+        <item>@drawable/location6</item>
+        <item>@drawable/location7</item>
+        <item>@drawable/location8</item>
+        <item>@drawable/location9</item>
+        <item>@drawable/location10</item>
+    </array>
+    <array name="bluetooth_drawables">
+        <item>@drawable/default_choose</item>
+        <item>@drawable/bluetooth_2</item>
+        <item>@drawable/bluetooth_3</item>
+        <item>@drawable/bluetooth_4</item>
+        <item>@drawable/bluetooth_5</item>
+        <item>@drawable/bluetooth_6</item>
+        <item>@drawable/bluetooth_7</item>
+    </array>
+    <string-array name="bluetooth_entries">
+        <item>Bluetooth Icon (stock)</item>
+        <item>Bluetooth Icon 1</item>
+        <item>Bluetooth Icon 2</item>
+        <item>Bluetooth Icon 3</item>
+        <item>Bluetooth Icon 4</item>
+        <item>Bluetooth Icon 5</item>
+        <item>Bluetooth Icon 6</item>
+    </string-array>
+    <string-array name="bluetooth_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
     <string name="grx_circular_battery">Circular Battery options</string>
     <string name="bold_text">Use bold text</string>
     <string name="battery_size">Battery Size</string>
