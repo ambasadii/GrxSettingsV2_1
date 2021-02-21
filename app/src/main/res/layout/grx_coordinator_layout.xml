@@ -9,7 +9,10 @@
                 android:background="?main_bg_color"
                 tools:context="com.grx.settings.GrxSettingsActivity">
 
-
+    <FrameLayout
+        android:background="?main_bg_drawable"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
 
                             <android.support.design.widget.AppBarLayout
                                 android:layout_width="match_parent"

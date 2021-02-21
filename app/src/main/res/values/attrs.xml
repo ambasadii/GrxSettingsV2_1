@@ -496,4 +496,5 @@
 		<attr name="svn_separatorColor" format="color|reference"/>
 		<attr name="svn_separatorHeight" format="dimension|reference"/>
 
+		<attr name="main_bg_drawable" format="string|reference" />
 </resources>

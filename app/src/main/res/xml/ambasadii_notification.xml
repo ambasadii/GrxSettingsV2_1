@@ -26,11 +26,11 @@
             <GrxSeekBar android:title="Stroke width" android:key="noti_recents_memory_stroke_width" android:summary="" android:dependency="noti_recents_memory_stroke_enabled" android:defaultValue="0" grx:maxValue="50" grx:minValue="0" />
             <GrxSeekBar android:title="Stroke gap" android:key="noti_recents_memory_stroke_gap" android:summary="" android:dependency="noti_recents_memory_stroke_enabled" android:defaultValue="1" grx:maxValue="50" grx:minValue="1" />
             <GrxSeekBar android:title="Stroke corners" android:key="noti_recents_memory_stroke_corner_radius" android:summary="" android:dependency="noti_recents_memory" android:defaultValue="60" grx:maxValue="60" grx:minValue="0" />
-            <GrxColorPicker android:title="Ram info text color" android:key="noti_recents_memory_info_textcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" grx:colorPickerStyle="flower" />
-            <GrxColorPicker android:title="Ram info used color" android:key="noti_recents_memory_info_usedcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" grx:colorPickerStyle="flower" />
-            <GrxColorPicker android:title="Ram info free color" android:key="noti_recents_memory_info_freecolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" grx:colorPickerStyle="flower" />
-            <GrxColorPicker android:title="Background color" android:key="noti_recents_memory_info_bgcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFFFAFAFA" grx:colorPickerStyle="flower" />
-            <GrxColorPicker android:title="Stroke color" android:key="noti_recents_memory_stroke_color" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFFFAFAFA" grx:colorPickerStyle="flower" />
+            <GrxColorPicker android:title="Ram info text color" android:key="noti_recents_memory_info_textcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" />
+            <GrxColorPicker android:title="Ram info used color" android:key="noti_recents_memory_info_usedcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" />
+            <GrxColorPicker android:title="Ram info free color" android:key="noti_recents_memory_info_freecolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFF000000" />
+            <GrxColorPicker android:title="Background color" android:key="noti_recents_memory_info_bgcolor" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFFFAFAFA" />
+            <GrxColorPicker android:title="Stroke color" android:key="noti_recents_memory_stroke_color" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFFFAFAFA" />
         </GrxPreferenceCategory>
     </PreferenceScreen>
     <PreferenceScreen android:title="QS Toggles" xmlns:grx="http://schemas.android.com/apk/res-auto">
