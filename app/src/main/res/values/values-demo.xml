@@ -1499,177 +1499,6 @@
         <item>dlx_analog_7</item>
         <item>dlx_analog_8</item>
     </string-array>
-
-
-    <string name="gs_bp_property">grx.demo.prop</string>
-    <string-array name="demo_build_prop_options">
-        <item>grx.demo.prop HELLO</item>
-        <item>grx.demo.prop REMOVE_PREFERENCE</item>
-        <item>grx.demo.prop REMOVE_SCREEN</item>
-        <item>grx.demo.prop REMOVE_GROUP</item>
-        <item>grx.demo.prop REMOVE_GROUP,HELLO</item>
-        <item>grx.demo.prop REMOVE_SCREEN,REMOVE_PREFERENCE</item>
-</string-array>
-
-    <string-array name="demo_screen_timeout_options">
-        <item>15 seconds</item>
-        <item>30 seconds</item>
-        <item>1 minute</item>
-        <item>2 minutes</item>
-        <item>5 minutes</item>
-        <item>10 minutes</item>
-
-    </string-array>
-    <string-array name="demo_screen_timeout_values">
-        <item>15000</item>
-        <item>30000</item>
-        <item>60000</item>
-        <item>120000</item>
-        <item>300000</item>
-        <item>600000</item>
-    </string-array>
-
-    <string-array name="demo_lists_entries">
-        <item>Alarm</item>
-        <item>Airplane</item>
-        <item>Battery</item>
-        <item>Brightness</item>
-        <item>Clock</item>
-        <item>Alarm 1</item>
-        <item>Airplane 1</item>
-        <item>Battery 1</item>
-        <item>Clock 1</item>
-        <item>Alarm 2</item>
-        <item>Airplane 2</item>
-        <item>Battery 2</item>
-        <item>Brightness 2</item>
-    </string-array>
-    <array name="demo_lists_icons">
-        <item>@drawable/demo_icon_1</item>
-        <item>@drawable/demo_icon_2</item>
-        <item>@drawable/demo_icon_3</item>
-        <item>@drawable/demo_icon_4</item>
-        <item>@drawable/demo_icon_5</item>
-        <item>@drawable/demo_icon_1</item>
-        <item>@drawable/demo_icon_2</item>
-        <item>@drawable/demo_icon_3</item>
-        <item>@drawable/demo_icon_4</item>
-        <item>@drawable/demo_icon_1</item>
-        <item>@drawable/demo_icon_2</item>
-        <item>@drawable/demo_icon_3</item>
-        <item>@drawable/demo_icon_4</item>
-    </array>
-    <string-array name="demo_lists_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-        <item>4</item>
-        <item>5</item>
-        <item>6</item>
-        <item>7</item>
-        <item>8</item>
-        <item>9</item>
-        <item>10</item>
-        <item>11</item>
-        <item>12</item>
-    </string-array>
-
-    <string-array name="test_sb_views_options">
-        <item>Notification Icons</item>
-        <item>knox text(never seen)</item>
-        <item>Net Speed View</item>
-        <item>System Icons</item>
-        <item>Signal Cluster View</item>
-        <item>Battery Text</item>
-        <item>Battery Icon</item>
-        <item>Clock</item>
-    </string-array>
-
-    <string-array name="test_sb_views_values">
-        <item>notifications</item>
-        <item>knox</item>
-        <item>netspeedview</item>
-        <item>statusicons</item>
-        <item>signalclusterview</item>
-        <item>batterytext</item>
-        <item>batterymeterview</item>
-        <item>clock</item>
-    </string-array>
-
-    <string-array name="demo_spinner_options">
-        <item>Left</item>
-        <item>Center</item>
-        <item>Right</item>
-   </string-array>
-    <string-array name="demo_spinner_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-   </string-array>
-
-    <integer-array name="demo_lists_colors">
-        <item>0xffffffff</item>
-        <item>0xff252525</item>
-        <item>0xff33b5e5</item>
-        <item>0xff335599</item>
-        <item>0xffeeeeee</item>
-        <item>0xffff00ff</item>
-        <item>0xff00ffff</item>
-        <item>0xff00ff00</item>
-        <item>0xff0000ff</item>
-        <item>0xff658941</item>
-        <item>0xff985233</item>
-        <item>0xff876941</item>
-        <item>0xffe6d3a5</item>
-    </integer-array>
-
-    <string-array name="demo_changelog">
-        <item>"v2.0
-
- some bugs fixed"</item>
-        <item>"v1.0
-
- initial release for Ambasadii ROM"</item>
-
-    </string-array>
-
-    <string-array name="demo_useroptions">
-        <item>Show Rom info screen.</item>
-        <item>Show App help screen.</item>
-        <item>Theme selection, if this feature is allowed by the develooper</item>
-        <item>Navigation panel header background (image), if this featured is allowed by the develooper</item>
-        <item>Divider height in listviews</item>
-        <item>Thre color pickers styles. Color preferences will use this selection, unless the dev specifies one style on a preference. In led pulse preferences the square style is always used.</item>
-        <item>Show - hide floating action button</item>
-        <item>Floating Action Button position (left, center, right)</item>
-        <item>Floating Recents Screen window, allowing the user to select if it dismissed when pressing back or touching outside of it. The user can place the area anywhere and also to change the transparency</item>
-        <item>Navigation Panel position (right or left) with option to show expand - collapse buttons (for screen groups) or to show groups always expanded</item>
-        <item>Exit Confirmation option</item>
-        <item>Remember last screen</item>
-        <item>Double clicking on most of the preferences allows the user to reset its value to the default value. In color pickers a long click on the selected color allows the user to copy to the clipboard its value</item>
-    </string-array>
-    <string-array name="samsung_widgets">
-        <item>com.sec.android.daemonapp/com.sec.android.daemonapp.appwidget.WeatherAppWidget2x1</item>
-        <item>com.sec.android.daemonapp/com.sec.android.daemonapp.appwidget.WeatherAppWidget</item>
-    </string-array>
-
-    <string-array name="backup_wifi_key">
-        <item>mount -o rw,remount /data</item>
-        <item>mkdir -p /sdcard/backups/wifibackup</item>
-        <item>cp -rf /data/misc/wifi/wpa_supplicant.conf /sdcard/backups/wifibackup</item>
-    </string-array>
-
-    <string-array name="restore_wifi_key">
-        <item>mount -o rw,remount /data</item>
-        <item>cp -rf /sdcard/backups/wifibackup/wpa_supplicant.conf /data/misc/wifi/</item>
-    </string-array>
-
-    <string-array name="delete_wifi_backup">
-        <item>mount -o rw,remount /data</item>
-        <item>rm -r /sdcard/backups/wifibackup</item>
-    </string-array>
-
     <array name="wifi_drawables">
         <item>@drawable/default_choose</item>
         <item>@drawable/wifistyle2</item>
@@ -1857,12 +1686,12 @@
     </array>
     <array name="bluetooth_drawables">
         <item>@drawable/default_choose</item>
+        <item>@drawable/bluetooth_1</item>
         <item>@drawable/bluetooth_2</item>
         <item>@drawable/bluetooth_3</item>
         <item>@drawable/bluetooth_4</item>
         <item>@drawable/bluetooth_5</item>
         <item>@drawable/bluetooth_6</item>
-        <item>@drawable/bluetooth_7</item>
     </array>
     <string-array name="bluetooth_entries">
         <item>Bluetooth Icon (stock)</item>
@@ -1881,6 +1710,175 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
+    </string-array>
+
+    <string name="gs_bp_property">grx.demo.prop</string>
+    <string-array name="demo_build_prop_options">
+        <item>grx.demo.prop HELLO</item>
+        <item>grx.demo.prop REMOVE_PREFERENCE</item>
+        <item>grx.demo.prop REMOVE_SCREEN</item>
+        <item>grx.demo.prop REMOVE_GROUP</item>
+        <item>grx.demo.prop REMOVE_GROUP,HELLO</item>
+        <item>grx.demo.prop REMOVE_SCREEN,REMOVE_PREFERENCE</item>
+</string-array>
+
+    <string-array name="demo_screen_timeout_options">
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+
+    </string-array>
+    <string-array name="demo_screen_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+    </string-array>
+
+    <string-array name="demo_lists_entries">
+        <item>Alarm</item>
+        <item>Airplane</item>
+        <item>Battery</item>
+        <item>Brightness</item>
+        <item>Clock</item>
+        <item>Alarm 1</item>
+        <item>Airplane 1</item>
+        <item>Battery 1</item>
+        <item>Clock 1</item>
+        <item>Alarm 2</item>
+        <item>Airplane 2</item>
+        <item>Battery 2</item>
+        <item>Brightness 2</item>
+    </string-array>
+    <array name="demo_lists_icons">
+        <item>@drawable/demo_icon_1</item>
+        <item>@drawable/demo_icon_2</item>
+        <item>@drawable/demo_icon_3</item>
+        <item>@drawable/demo_icon_4</item>
+        <item>@drawable/demo_icon_5</item>
+        <item>@drawable/demo_icon_1</item>
+        <item>@drawable/demo_icon_2</item>
+        <item>@drawable/demo_icon_3</item>
+        <item>@drawable/demo_icon_4</item>
+        <item>@drawable/demo_icon_1</item>
+        <item>@drawable/demo_icon_2</item>
+        <item>@drawable/demo_icon_3</item>
+        <item>@drawable/demo_icon_4</item>
+    </array>
+    <string-array name="demo_lists_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="test_sb_views_options">
+        <item>Notification Icons</item>
+        <item>knox text(never seen)</item>
+        <item>Net Speed View</item>
+        <item>System Icons</item>
+        <item>Signal Cluster View</item>
+        <item>Battery Text</item>
+        <item>Battery Icon</item>
+        <item>Clock</item>
+    </string-array>
+
+    <string-array name="test_sb_views_values">
+        <item>notifications</item>
+        <item>knox</item>
+        <item>netspeedview</item>
+        <item>statusicons</item>
+        <item>signalclusterview</item>
+        <item>batterytext</item>
+        <item>batterymeterview</item>
+        <item>clock</item>
+    </string-array>
+
+    <string-array name="demo_spinner_options">
+        <item>Left</item>
+        <item>Center</item>
+        <item>Right</item>
+   </string-array>
+    <string-array name="demo_spinner_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+   </string-array>
+
+    <integer-array name="demo_lists_colors">
+        <item>0xffffffff</item>
+        <item>0xff252525</item>
+        <item>0xff33b5e5</item>
+        <item>0xff335599</item>
+        <item>0xffeeeeee</item>
+        <item>0xffff00ff</item>
+        <item>0xff00ffff</item>
+        <item>0xff00ff00</item>
+        <item>0xff0000ff</item>
+        <item>0xff658941</item>
+        <item>0xff985233</item>
+        <item>0xff876941</item>
+        <item>0xffe6d3a5</item>
+    </integer-array>
+
+    <string-array name="demo_changelog">
+        <item>"v2.0
+
+ some bugs fixed"</item>
+        <item>"v1.0
+
+ initial release for Ambasadii ROM"</item>
+
+    </string-array>
+
+    <string-array name="demo_useroptions">
+        <item>Show Rom info screen.</item>
+        <item>Show App help screen.</item>
+        <item>Theme selection, if this feature is allowed by the develooper</item>
+        <item>Navigation panel header background (image), if this featured is allowed by the develooper</item>
+        <item>Divider height in listviews</item>
+        <item>Thre color pickers styles. Color preferences will use this selection, unless the dev specifies one style on a preference. In led pulse preferences the square style is always used.</item>
+        <item>Show - hide floating action button</item>
+        <item>Floating Action Button position (left, center, right)</item>
+        <item>Floating Recents Screen window, allowing the user to select if it dismissed when pressing back or touching outside of it. The user can place the area anywhere and also to change the transparency</item>
+        <item>Navigation Panel position (right or left) with option to show expand - collapse buttons (for screen groups) or to show groups always expanded</item>
+        <item>Exit Confirmation option</item>
+        <item>Remember last screen</item>
+        <item>Double clicking on most of the preferences allows the user to reset its value to the default value. In color pickers a long click on the selected color allows the user to copy to the clipboard its value</item>
+    </string-array>
+    <string-array name="samsung_widgets">
+        <item>com.sec.android.daemonapp/com.sec.android.daemonapp.appwidget.WeatherAppWidget2x1</item>
+        <item>com.sec.android.daemonapp/com.sec.android.daemonapp.appwidget.WeatherAppWidget</item>
+    </string-array>
+
+    <string-array name="backup_wifi_key">
+        <item>mount -o rw,remount /data</item>
+        <item>mkdir -p /sdcard/backups/wifibackup</item>
+        <item>cp -rf /data/misc/wifi/wpa_supplicant.conf /sdcard/backups/wifibackup</item>
+    </string-array>
+
+    <string-array name="restore_wifi_key">
+        <item>mount -o rw,remount /data</item>
+        <item>cp -rf /sdcard/backups/wifibackup/wpa_supplicant.conf /data/misc/wifi/</item>
+    </string-array>
+
+    <string-array name="delete_wifi_backup">
+        <item>mount -o rw,remount /data</item>
+        <item>rm -r /sdcard/backups/wifibackup</item>
     </string-array>
 
     <string name="grx_circular_battery">Circular Battery options</string>
