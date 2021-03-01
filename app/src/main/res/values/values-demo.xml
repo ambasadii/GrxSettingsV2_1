@@ -1500,7 +1500,7 @@
         <item>dlx_analog_8</item>
     </string-array>
     <array name="wifi_drawables">
-        <item>@drawable/default_choose</item>
+        <item>@drawable/wifistyle</item>
         <item>@drawable/wifistyle2</item>
         <item>@drawable/wifistyle3</item>
         <item>@drawable/wifistyle4</item>
@@ -1565,7 +1565,7 @@
         <item>1</item>
     </string-array>
     <array name="signal_drawables">
-        <item>@drawable/default_choose</item>
+        <item>@drawable/signalstyle</item>
         <item>@drawable/signalstyle1</item>
         <item>@drawable/signalstyle2</item>
         <item>@drawable/signalstyle3</item>
@@ -1636,7 +1636,7 @@
         <item>7</item>
     </string-array>
     <array name="alarm_drawables">
-        <item>@drawable/default_choose</item>
+        <item>@drawable/alarmstyle</item>
         <item>@drawable/alarmstyle1</item>
         <item>@drawable/alarmstyle2</item>
         <item>@drawable/alarmstyle3</item>
@@ -1672,7 +1672,7 @@
         <item>10</item>
     </string-array>
     <array name="location_drawables">
-        <item>@drawable/default_choose</item>
+        <item>@drawable/location</item>
         <item>@drawable/location1</item>
         <item>@drawable/location2</item>
         <item>@drawable/location3</item>
@@ -1685,7 +1685,7 @@
         <item>@drawable/location10</item>
     </array>
     <array name="bluetooth_drawables">
-        <item>@drawable/default_choose</item>
+        <item>@drawable/bluetooth</item>
         <item>@drawable/bluetooth_1</item>
         <item>@drawable/bluetooth_2</item>
         <item>@drawable/bluetooth_3</item>
