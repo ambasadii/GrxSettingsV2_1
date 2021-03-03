@@ -1556,6 +1556,10 @@
         <item>15</item>
         <item>16</item>
     </string-array>
+    <array name="wifiarrow_drawables">
+        <item>@drawable/arrow1</item>
+        <item>@drawable/arrow2</item>
+    </array>
     <string-array name="wifiarrow_entries">
         <item>Show</item>
         <item>Hide</item>
@@ -1684,14 +1688,23 @@
         <item>@drawable/location9</item>
         <item>@drawable/location10</item>
     </array>
-    <array name="bluetooth_drawables">
-        <item>@drawable/bluetooth</item>
-        <item>@drawable/bluetooth_1</item>
-        <item>@drawable/bluetooth_2</item>
-        <item>@drawable/bluetooth_3</item>
-        <item>@drawable/bluetooth_4</item>
-        <item>@drawable/bluetooth_5</item>
-        <item>@drawable/bluetooth_6</item>
+    <array name="bluetooth_drawables_off">
+        <item>@drawable/bluetooth_off</item>
+        <item>@drawable/bluetooth_1_off</item>
+        <item>@drawable/bluetooth_2_off</item>
+        <item>@drawable/bluetooth_3_off</item>
+        <item>@drawable/bluetooth_4_off</item>
+        <item>@drawable/bluetooth_5_off</item>
+        <item>@drawable/bluetooth_6_off</item>
+    </array>
+    <array name="bluetooth_drawables_on">
+        <item>@drawable/bluetooth_on</item>
+        <item>@drawable/bluetooth_1_on</item>
+        <item>@drawable/bluetooth_2_on</item>
+        <item>@drawable/bluetooth_3_on</item>
+        <item>@drawable/bluetooth_4_on</item>
+        <item>@drawable/bluetooth_5_on</item>
+        <item>@drawable/bluetooth_6_on</item>
     </array>
     <string-array name="bluetooth_entries">
         <item>Bluetooth Icon (stock)</item>
