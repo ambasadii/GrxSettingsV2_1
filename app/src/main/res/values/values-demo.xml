@@ -45,6 +45,7 @@
         <item>@string/cast</item>
         <item>@string/wifi_p2p</item>
         <item>@string/wifi_calling</item>
+        <item>@string/wifi_calling2</item>
         <item>@string/location</item>
         <item>@string/volume</item>
         <item>@string/power_saving</item>
@@ -85,6 +86,7 @@
         <item>cast</item>
         <item>wifi_p2p</item>
         <item>ims_volte</item>
+        <item>ims_volte2</item>
         <item>location</item>
         <item>volume</item>
         <item>power_saver</item>
@@ -1724,6 +1726,132 @@
         <item>5</item>
         <item>6</item>
     </string-array>
+    <string-array name="powersave_entries">
+        <item>Power Save Icon (stock)</item>
+        <item>Power Save Icon 1</item>
+        <item>Power Save Icon 2</item>
+        <item>Power Save Icon 3</item>
+        <item>Power Save Icon 4</item>
+        <item>Power Save Icon 5</item>
+        <item>Power Save Icon 6</item>
+    </string-array>
+    <string-array name="powersave_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <array name="powersave_drawables">
+        <item>@drawable/stat_sys_power_saver</item>
+        <item>@drawable/lic_power_saver_1</item>
+        <item>@drawable/lic_power_saver_2</item>
+        <item>@drawable/lic_power_saver_3</item>
+        <item>@drawable/lic_power_saver_4</item>
+        <item>@drawable/lic_power_saver_5</item>
+        <item>@drawable/lic_power_saver_6</item>
+    </array>
+    <string-array name="vpn_entries">
+        <item>Vpn Icon (stock)</item>
+        <item>Vpn Icon 1</item>
+        <item>Vpn Icon 2</item>
+        <item>Vpn Icon 6</item>
+    </string-array>
+    <string-array name="vpn_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>6</item>
+    </string-array>
+    <array name="vpn_drawables">
+        <item>@drawable/stat_sys_vpn_ic</item>
+        <item>@drawable/stat_sys_vpn_ic_1</item>
+        <item>@drawable/stat_sys_vpn_ic_2</item>
+        <item>@drawable/stat_sys_vpn_ic_6</item>
+    </array>
+    <string-array name="nfc_entries">
+        <item>Nfc Icon (stock)</item>
+        <item>Nfc Icon 1</item>
+        <item>Nfc Icon 2</item>
+    </string-array>
+    <string-array name="nfc_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <array name="nfc_drawables">
+        <item>@drawable/stat_sys_nfc_0</item>
+        <item>@drawable/stat_sys_nfc_1</item>
+        <item>@drawable/stat_sys_nfc_2</item>
+    </array>
+    <string-array name="hotspot_entries">
+        <item>HotSpot Icon (stock)</item>
+        <item>HotSpot Icon 1</item>
+        <item>HotSpot Icon 2</item>
+    </string-array>
+    <string-array name="hotspot_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <array name="hotspot_drawables">
+        <item>@drawable/stat_sys_hotspot</item>
+        <item>@drawable/stat_sys_hotspot_1</item>
+        <item>@drawable/stat_sys_hotspot_2</item>
+    </array>
+    <string-array name="datasaver_entries">
+        <item>Data Saver Icon (stock)</item>
+        <item>Data Saver Icon  1</item>
+        <item>Data Saver Icon  2</item>
+        <item>Data Saver Icon  3</item>
+    </string-array>
+    <string-array name="datasaver_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <array name="datasaver_drawables">
+        <item>@drawable/stat_sys_data_saver</item>
+        <item>@drawable/stat_sys_data_saver_1</item>
+        <item>@drawable/stat_sys_data_saver_2</item>
+        <item>@drawable/stat_sys_data_saver_3</item>
+    </array>
+    <string-array name="ringer_vibrate_entries">
+        <item>Ringer Vibrate Icon (stock)</item>
+        <item>Ringer Vibrate Icon 1</item>
+        <item>Ringer Vibrate Icon 2</item>
+    </string-array>
+    <string-array name="ringer_vibrate_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <array name="ringer_vibrate_drawables">
+        <item>@drawable/stat_sys_ringer_vibrate</item>
+        <item>@drawable/stat_sys_ringer_vibrate_1</item>
+        <item>@drawable/stat_sys_ringer_vibrate_2</item>
+    </array>
+    <string-array name="ringer_mute_entries">
+        <item>Ringer Mute Icon (stock)</item>
+        <item>Ringer Mute Icon 1</item>
+        <item>Ringer Mute Icon 2</item>
+        <item>Ringer Mute Icon 3</item>
+    </string-array>
+    <string-array name="ringer_mute_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <array name="ringer_mute_drawables">
+        <item>@drawable/stat_sys_ringer_silent</item>
+        <item>@drawable/stat_sys_ringer_silent_1</item>
+        <item>@drawable/stat_sys_ringer_silent_2</item>
+        <item>@drawable/stat_sys_ringer_silent_3</item>
+    </array>
 
     <string name="gs_bp_property">grx.demo.prop</string>
     <string-array name="demo_build_prop_options">

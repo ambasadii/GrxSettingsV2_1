@@ -192,6 +192,7 @@
     <string name="cast">Screen Cast</string>
     <string name="wifi_p2p">Wifi P2P (..mirroring)</string>
     <string name="wifi_calling">Wifi Calling/Volte</string>
+    <string name="wifi_calling2">Wifi Calling/Volte 2</string>
     <string name="location">Location (GPS)</string>
     <string name="volume">Volume</string>
     <string name="power_saving">Power Saver</string>
