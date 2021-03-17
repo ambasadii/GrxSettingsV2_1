@@ -9,7 +9,6 @@
     <!-- Application strings, arrays, etc. -->
 
     <string name="gs_rom_info_option">Rom Info</string>
-
     <string name="grxs_recents_screens_title">Recent Screens</string>
     <string name="grxs_buildprop_simulator">Simulate Build Prop</string>
     <string name="grxs_navigation_drawer_open">Open navigation drawer</string>
@@ -468,6 +467,118 @@
         <item>7000</item>
         <item>10000</item>
         <item>15000</item>
+    </string-array>
+
+    <string-array name="pref_font_options">
+        <item>Default</item>
+        <item>Abductionsmall</item>
+        <item>ABEAKRG</item>
+        <item>AddisAbaba</item>
+        <item>AGentleTouch</item>
+        <item>AirmoleStripe</item>
+        <item>Aller</item>
+        <item>AndroidClock</item>
+        <item>Arial</item>
+        <item>Arial_RB</item>
+        <item>AristonExRegular</item>
+        <item>ArrayBold</item>
+        <item>Astandardbold</item>
+        <item>Attic</item>
+        <item>Barmeno105</item>
+        <item>Bauhaus</item>
+        <item>Beau_Sans_Pro_Book</item>
+        <item>beautifuleverytime</item>
+        <item>Belligerentbold</item>
+        <item>BlackChancery</item>
+        <item>Bluehigh</item>
+        <item>Bluehighbold</item>
+        <item>BubbleLetters</item>
+        <item>Cantaneobold</item>
+        <item>Caprica</item>
+        <item>Cartoon</item>
+        <item>caviardreams_bold</item>
+        <item>Celtic</item>
+        <item>comicsansms</item>
+        <item>Cooljazz</item>
+        <item>Darkromanticism</item>
+        <item>Dustismobold</item>
+        <item>FeastOfFlesh</item>
+        <item>Felipe</item>
+        <item>GalantNormal</item>
+        <item>Gezoe</item>
+        <item>GillSansMTItalic</item>
+        <item>HelveticaNeueCE55Roman</item>
+        <item>Jaramondbold</item>
+        <item>Laneposhbold</item>
+        <item>Lauren</item>
+        <item>Melonio</item>
+        <item>Metal</item>
+        <item>MotleyCrue</item>
+        <item>NokiaPure</item>
+        <item>Petermorgan</item>
+        <item>Piratebold</item>
+        <item>Questbold</item>
+        <item>Roboto</item>
+        <item>Roboto-Bold</item>
+        <item>Rosemary</item>
+        <item>Sansationbold</item>
+        <item>Segoe</item>
+    </string-array>
+
+    <string-array name="pref_font_values">
+        <item></item>
+        <item>Abductionsmall.ttf</item>
+        <item>ABEAKRG.ttf</item>
+        <item>AddisAbaba.ttf</item>
+        <item>AGentleTouch.ttf</item>
+        <item>AirmoleStripe.ttf</item>
+        <item>Aller.ttf</item>
+        <item>AndroidClock.ttf</item>
+        <item>Arial.ttf</item>
+        <item>Arial_RB.ttf</item>
+        <item>AristonExRegular.ttf</item>
+        <item>ArrayBold.ttf</item>
+        <item>Astandardbold.ttf</item>
+        <item>Attic.ttf</item>
+        <item>Barmeno105.ttf</item>
+        <item>Bauhaus.ttf</item>
+        <item>Beau_Sans_Pro_Book.ttf</item>
+        <item>beautifuleverytime.ttf</item>
+        <item>Belligerentbold.ttf</item>
+        <item>BlackChancery.ttf</item>
+        <item>Bluehigh.ttf</item>
+        <item>Bluehighbold.ttf</item>
+        <item>BubbleLetters.ttf</item>
+        <item>Cantaneobold.ttf</item>
+        <item>Caprica.ttf</item>
+        <item>Cartoon.ttf</item>
+        <item>caviardreams_bold.ttf</item>
+        <item>Celtic.ttf</item>
+        <item>comicsansms.ttf</item>
+        <item>Cooljazz.ttf</item>
+        <item>Darkromanticism.ttf</item>
+        <item>Dustismobold.ttf</item>
+        <item>FeastOfFlesh.ttf</item>
+        <item>Felipe.ttf</item>
+        <item>GalantNormal.ttf</item>
+        <item>Gezoe.ttf</item>
+        <item>GillSansMTItalic.ttf</item>
+        <item>HelveticaNeueCE55Roman.ttf</item>
+        <item>Jaramondbold.ttf</item>
+        <item>Laneposhbold.ttf</item>
+        <item>Lauren.ttf</item>
+        <item>Melonio.ttf</item>
+        <item>Metal.ttf</item>
+        <item>MotleyCrue.ttf</item>
+        <item>NokiaPure.ttf</item>
+        <item>Petermorgan.ttf</item>
+        <item>Piratebold.ttf</item>
+        <item>Questbold.ttf</item>
+        <item>Roboto.ttf</item>
+        <item>Roboto-Bold.ttf</item>
+        <item>Rosemary.ttf</item>
+        <item>Sansationbold.ttf</item>
+        <item>Segoe.ttf</item>
     </string-array>
 
     <string-array name="grxa_app_help">

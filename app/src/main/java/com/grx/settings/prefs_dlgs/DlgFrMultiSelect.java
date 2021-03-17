@@ -17,9 +17,14 @@ import android.app.Dialog;
 import android.app.DialogFragment;
 
 import android.content.DialogInterface;
+import android.content.res.AssetManager;
 import android.content.res.TypedArray;
+import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,6 +49,13 @@ import java.util.regex.Pattern;
 
 
 public class DlgFrMultiSelect extends DialogFragment  {  //single (ListPreference) and multiselectList preferences ..
+
+    /** fonts selection support variables **/
+    int optionsArray, valuesArray;
+    boolean isFontPreference = false;
+    AssetManager assetManager;
+
+    /*******/
 
     private TextView vSelectedTxt;
     private ListView vList;
@@ -147,6 +159,19 @@ public class DlgFrMultiSelect extends DialogFragment  {  //single (ListPreferenc
         mIconsTintColor = getArguments().getInt("icons_tintcolor");
         mSeparator=getArguments().getString("separator");
         mMaxNumOfAccesses = getArguments().getInt("max_items");
+
+        /** fonts preference support **/
+
+
+        optionsArray = getActivity().getResources().getIdentifier("pref_font_options","array",getActivity().getPackageName());
+        valuesArray =  getActivity().getResources().getIdentifier("pref_font_values","array",getActivity().getPackageName());
+        if(optionsArray==mIdOptionsArr && mIdValuesArr == valuesArray){
+            isFontPreference = true;
+            mIdIconsArray =0;
+            assetManager= getActivity().getAssets();
+        }
+
+        /***/
 
         if (state != null) {
             mValue =  state.getString("curr_val");
@@ -403,7 +428,7 @@ public class DlgFrMultiSelect extends DialogFragment  {  //single (ListPreferenc
 
 
 
-    private BaseAdapter mAdapter = new BaseAdapter() {
+    public BaseAdapter mAdapter = new BaseAdapter() {
         @Override
         public int getCount() {
             return mItemList.size();
@@ -445,6 +470,23 @@ public class DlgFrMultiSelect extends DialogFragment  {  //single (ListPreferenc
                 cvh.vCheckBox.setClickable(false);
             }
             cvh.vLabel.setText(grxInfoItem.getLabel());
+
+            /*** fonts support **/
+
+            if(isFontPreference) {
+                String text = grxInfoItem.getLabel();
+                if(text==null) text = "";
+                if(!TextUtils.isEmpty(grxInfoItem.getValue()) ) {
+                    SpannableString newspannable = new SpannableString(text);
+                    String font = "fonts/" +  grxInfoItem.getValue();
+                    Typeface typeface =Typeface.createFromAsset(assetManager,font);
+                    cvh.vLabel.setTypeface(typeface);
+                }
+
+            }
+
+            /******/
+
             if(mIdIconsArray==0) cvh.vIcon.setVisibility(View.GONE);
             else {
                 if(mIconsTintColor!=0) cvh.vIcon.setColorFilter(mIconsTintColor);

@@ -26,6 +26,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.grx.settings.prefssupport.OnClickRuleHelper;
 import com.grx.settings.utils.Common;
@@ -423,7 +424,11 @@ public class GrxBasePreference extends Preference implements
         //   if(mStringValue ==null) mStringValue ="";
         if(!myPrefAttrsInfo.isValidKey()) return;
         persistString(mStringValue);
-        saveStringValueInSettings(mStringValue);
+        try{
+            saveStringValueInSettings(mStringValue);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         //check onclick rule
         String clickrule = myPrefAttrsInfo.getMyOnClickRule();
         if(clickrule!=null) {
@@ -444,7 +449,12 @@ public class GrxBasePreference extends Preference implements
                 String real = Settings.System.getString(getContext().getContentResolver(), this.getKey());
                 if (real == null) real = "N/A";
                 if (!real.equals(value)) {
-                    Settings.System.putString(getContext().getContentResolver(), this.getKey(), value);
+                    try {
+                        Settings.System.putString(getContext().getContentResolver(), this.getKey(), value);
+                    }catch (Exception e){
+                        Toast.makeText(getContext(),e.toString(),Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             }
         }else {
