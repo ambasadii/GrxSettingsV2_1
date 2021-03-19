@@ -346,6 +346,7 @@
     <string name="notifimageselect">Select an Image</string>
     <string name="notifimageopacity">Image Opacity</string>
     <string name="analogclock">Analog Clock</string>
+    <string name="bluetooth_connected">Bluetooth Connected</string>
 
     <string-array name="grxa_threedots_tools">
         <item>@string/grxs_recovery</item>

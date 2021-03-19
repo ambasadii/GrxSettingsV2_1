@@ -41,6 +41,7 @@
         <item>@string/airplane</item>
         <item>@string/nfc</item>
         <item>@string/bluetooth</item>
+        <item>@string/bluetooth_connected</item>
         <item>@string/alarm</item>
         <item>@string/cast</item>
         <item>@string/wifi_p2p</item>
@@ -82,6 +83,7 @@
         <item>airplane</item>
         <item>nfc</item>
         <item>bluetooth</item>
+        <item>bluetooth_connected</item>
         <item>alarm_clock</item>
         <item>cast</item>
         <item>wifi_p2p</item>
