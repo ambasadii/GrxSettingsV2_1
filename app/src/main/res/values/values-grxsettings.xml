@@ -347,6 +347,8 @@
     <string name="notifimageopacity">Image Opacity</string>
     <string name="analogclock">Analog Clock</string>
     <string name="bluetooth_connected">Bluetooth Connected</string>
+    <string name="panelblur">Panel Blur</string>
+    <string name="panelopacity">Panel Opacity</string>
 
     <string-array name="grxa_threedots_tools">
         <item>@string/grxs_recovery</item>

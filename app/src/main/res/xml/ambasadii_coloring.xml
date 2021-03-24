@@ -39,6 +39,21 @@
         <GrxColorPicker android:title="@string/powermenu_bg_secondary" android:key="dialer_second_gradient_color" android:dependency="dialer_custom_bg_type" android:defaultValue="0xFFFCFCFC" grx:confirmKillpackage="false" grx:killpackage="com.samsung.android.dialer" grx:showAlphaSlider="true" grx:showAutoButton="true" />
         <GrxSingleSelection android:title="@string/powermenu_bg_gradiant" android:key="dialer_gradient_orientation" android:dependency="dialer_custom_bg_type" android:defaultValue="0" grx:confirmKillpackage="false" grx:killpackage="com.samsung.android.dialer" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
     </PreferenceScreen>
+    <PreferenceScreen android:title="Notification Panel Bg Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Notification Panel Options">
+            <GrxSeekBar android:title="Panel Blur" android:key="panelblurpref"  grx:minValue="0"  grx:maxValue="150" android:defaultValue="75" />
+            <GrxSeekBar android:title="Panel Opacity" android:key="panelopacitypref" grx:minValue="0" grx:maxValue="100" android:defaultValue="80" />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Notification Panel Bg Color">
+            <GrxSwitchPreference android:title="Main Switch" android:key="enable_gear_custom_bg_notification_pd" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <GrxSingleSelection android:title="Bg Type" android:key="gear_custom_bg_type_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0" grx:optionsArray="@array/color_custom_bg_type_entries" grx:valuesArray="@array/color_custom_bg_type_values" />
+            <GrxSeekBar android:title="Image Opacity" android:key="gear_bg_opacity_pd" android:dependency="enable_gear_custom_bg_notification_pd" grx:minValue="0" grx:maxValue="255" android:defaultValue="255" />
+            <GrxPickImage android:title="Select an Image" android:dependency="enable_gear_custom_bg_notification_pd" android:key="gear_bg_image_uri_notification_pd" />
+            <GrxColorPicker android:title="Primary color" android:key="gear_bg_primary_color_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
+            <GrxColorPicker android:title="Secondary color" android:key="gear_second_gradient_color_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
+            <GrxSingleSelection android:title="Gradiant Orientation" android:key="gear_bg_gradient_orientation_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
+        </GrxPreferenceCategory>
+    </PreferenceScreen>
     <PreferenceScreen android:title="Statusbar Bg Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
         <GrxPreferenceCategory android:title="Statusbar Bg Color">
             <GrxSwitchPreference android:title="Main Switch" android:key="sb_enable_gear_custom_bg_notification_pd" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
@@ -53,8 +68,8 @@
             <GrxSingleSelection android:title="Gradient Orientation" android:key="sb_bg_gradient_orientation_notification_pd" android:dependency="sb_gear_custom_bg_type_notification_pd" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
         </GrxPreferenceCategory>
     </PreferenceScreen>
-    <PreferenceScreen android:title="Navigation Bar Background" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory android:title="NavBar Background Color" />
+    <PreferenceScreen android:title="Navigation Bar Bg Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="NavBar Bg Color" />
         <GrxSwitchPreference android:title="Main Switch" android:key="enable_nav_custom_bg_notification" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
         <GrxPreferenceCategory android:title="General Background Preferences" android:dependency="enable_nav_custom_bg_notification">
             <GrxSingleSelection android:title="Background Type" android:key="nav_custom_bg_type_notification" android:defaultValue="0" grx:optionsArray="@array/color_custom_bg_type_entries" grx:valuesArray="@array/color_custom_bg_type_values" />
@@ -70,8 +85,8 @@
             <GrxSingleSelection android:title="Gradient Orientation" android:key="nav_bg_gradient_orientation_notification" android:dependency="nav_custom_bg_type_notification" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
         </GrxPreferenceCategory>
     </PreferenceScreen>
-    <PreferenceScreen android:title="Power Menu Background" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory android:title="Power Menu Background Color" />
+    <PreferenceScreen android:title="Power Menu Bg Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Power Menu Bg Color" />
         <GrxSwitchPreference android:title="Main Switch" android:key="enable_power_menu_custom_bg" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
         <GrxPreferenceCategory android:title="General Background Preferences" android:dependency="enable_power_menu_custom_bg">
             <GrxSingleSelection android:title="Background Type" android:key="power_menu_custom_bg_type" android:defaultValue="0" grx:optionsArray="@array/color_custom_bg_type_entries" grx:valuesArray="@array/color_custom_bg_type_values" />
