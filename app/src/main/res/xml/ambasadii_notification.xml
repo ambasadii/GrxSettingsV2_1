@@ -33,7 +33,10 @@
             <GrxColorPicker android:title="Stroke color" android:key="noti_recents_memory_stroke_color" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFFFAFAFA" />
         </GrxPreferenceCategory>
     </PreferenceScreen>
-    <PreferenceScreen android:title="QS Toggles" xmlns:grx="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen android:title="Quick Panel" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Quick Panel Options">
+            <GrxSwitchPreference android:title="Enable Custom Grid Menu" android:key="quickstar_qs_tile_layout_custom_matrix" android:defaultValue="false" grx:systemType="global" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        </GrxPreferenceCategory>
         <GrxPreferenceCategory android:title="QS Tile Number">
             <GrxSeekBar android:title="QS Tile Number Portrait mode" android:key="dlx_rows_portrait" android:defaultValue="7" grx:commonBcExtra="arg" grx:interval="1" grx:maxValue="8" grx:minValue="5" grx:systemType="system" grx:units=" Toggles" />
             <GrxSeekBar android:title="QS Tile Number Landscape mode" android:key="dlx_rows_landscape" android:defaultValue="16" grx:commonBcExtra="arg" grx:interval="1" grx:maxValue="16" grx:minValue="5" grx:systemType="system" grx:units=" Toggles" />
