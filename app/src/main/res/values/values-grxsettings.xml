@@ -234,6 +234,12 @@
     <string name="systemicons">System Icons</string>
     <string name="date">Date</string>
     <string name="clockmod">Custom Clock</string>
+    <string name="weather_icon">Weather Icon (Statusbar)</string>
+    <string name="weather_loc">Weather Location (Statusbar)</string>
+    <string name="weather_temp">Weather Temp (Statusbar)</string>
+    <string name="weather_icon_np">Weather Icon (Notif. panel)</string>
+    <string name="weather_loc_np">Weather Location (Notif. panel)</string>
+    <string name="weather_temp_np">Weather Temp (Notif. panel)</string>
     <string name="dual_sb_noti_position">Notifications Position</string>
     <string name="dual_sb_padding">Padding Start/End</string>
     <string name="dual_sb_toph">Top Containers Height</string>
@@ -349,6 +355,31 @@
     <string name="bluetooth_connected">Bluetooth Connected</string>
     <string name="panelblur">Panel Blur</string>
     <string name="panelopacity">Panel Opacity</string>
+    <string name="cd_homeclock_cat">Home Screen Clock Optons</string>
+    <string name="cd_hs_clock_font">Font for Clock in home screen</string>
+    <string name="cd_hs_clock_style">Font Style for Clock in home screen</string>
+    <string name="time_format_title">Select 12 or 24 hrs time format</string>
+    <string name="show_ampm_hs">Show Am / Pm</string>
+    <string name="size_clock_hs">Clock size ( default 15 )</string>
+    <string name="cap_ampm_hs">Force uppercase AM-PM </string>
+    <string name="cap_ampm_hs_sum">..or leave it as they are for your locale</string>
+    <string name="dots_ampm_hs">Remove dots from AM-PM if they exist </string>
+    <string name="cd_panclock_cat">Panel Header Clock Optons</string>
+    <string name="cd_pan_clock_font">Font for Clock in panel header</string>
+    <string name="cd_pan_clock_style">Font Style for Clock in panel header</string>
+    <string name="size_clock_pan">Clock size ( default 15 )</string>
+    <string name="panhead_date_cat">Panel Header Date Options</string>
+    <string name="panhead_date_font">Font for Date in panel header</string>
+    <string name="panhead_date_style">Font Style for Date in panel header</string>
+    <string name="panhead_date_size">Date size ( default 17 )</string>
+    <string name="exp_clock_cat">Expanded Panel Clock Optons</string>
+    <string name="exp_clock_font">Font for Clock in Expanded Panel</string>
+    <string name="exp_clock_style">Font Style for Clock in Expanded Panel</string>
+    <string name="size_clock_exp">Clock size ( default 39 )</string>
+    <string name="exp_date_cat">Expanded Panel Date Options</string>
+    <string name="exp_date_font">Font for Date in expanded panel</string>
+    <string name="exp_date_style">Font Style for Date in expanded panel</string>
+    <string name="exp_date_size">Date size ( default 22 )</string>
 
     <string-array name="grxa_threedots_tools">
         <item>@string/grxs_recovery</item>
@@ -476,6 +507,266 @@
         <item>Default</item>
         <item>Abductionsmall</item>
         <item>ABEAKRG</item>
+        <item>Aclonica</item>
+        <item>adab</item>
+        <item>AddisAbaba</item>
+        <item>Adobe</item>
+        <item>AdPro</item>
+        <item>AGentleTouch</item>
+        <item>AirmoleStripe</item>
+        <item>Aller</item>
+        <item>amar</item>
+        <item>Android</item>
+        <item>AndroidClock</item>
+        <item>April</item>
+        <item>Arabic_Adobe</item>
+        <item>Arabic_Arial</item>
+        <item>Arabic_Markerfelt</item>
+        <item>Arabic_Roqaa</item>
+        <item>Arial</item>
+        <item>Arial_RB</item>
+        <item>AristonExRegular</item>
+        <item>ArrayBold</item>
+        <item>Astandardbold</item>
+        <item>Attic</item>
+        <item>Barmeno105</item>
+        <item>Bauhaus</item>
+        <item>Beau_Sans_Pro_Book</item>
+        <item>beautifuleverytime</item>
+        <item>Belligerentbold</item>
+        <item>BlackChancery</item>
+        <item>Bluehigh</item>
+        <item>Bluehighbold</item>
+        <item>Bolonewt</item>
+        <item>Boxpot</item>
+        <item>BubbleLetters</item>
+        <item>Cantaneobold</item>
+        <item>Caprica</item>
+        <item>CarroisGothicSC-Regular</item>
+        <item>Cartoon</item>
+        <item>caviardreams_bold</item>
+        <item>CavoliniRegular</item>
+        <item>Celtic</item>
+        <item>CherryCreamSoda</item>
+        <item>chun</item>
+        <item>ClubType</item>
+        <item>comicsansms</item>
+        <item>Cooljazz</item>
+        <item>CRYSIS</item>
+        <item>Darkromanticism</item>
+        <item>Deboldbold</item>
+        <item>DroidSans</item>
+        <item>DroidSans-Bold</item>
+        <item>drsa</item>
+        <item>Dustismobold</item>
+        <item>Electronica</item>
+        <item>Envelopebold</item>
+        <item>EuropeU</item>
+        <item>FeastOfFlesh</item>
+        <item>Felipe</item>
+        <item>fira</item>
+        <item>GalantNormal</item>
+        <item>GeosansBold</item>
+        <item>Gezoe</item>
+        <item>GillSansMTItalic</item>
+        <item>grea</item>
+        <item>HappyMonkey</item>
+        <item>harrington</item>
+        <item>harrypotter</item>
+        <item>Heartfont</item>
+        <item>HelveticaNeue</item>
+        <item>HelveticaNeueCE55Roman</item>
+        <item>himalaya</item>
+        <item>HTCHand</item>
+        <item>Jaramondbold</item>
+        <item>Jolly</item>
+        <item>jose</item>
+        <item>Josefinslab</item>
+        <item>Josefinslabbold</item>
+        <item>KGTenThousandReasons</item>
+        <item>Laconic</item>
+        <item>Laconicbold</item>
+        <item>Laneposhbold</item>
+        <item>lato</item>
+        <item>Lauren</item>
+        <item>Leanderbold</item>
+        <item>Lemonade</item>
+        <item>Lollipop</item>
+        <item>Melonio</item>
+        <item>Metal</item>
+        <item>Milonga</item>
+        <item>Monoton</item>
+        <item>MotleyCrue</item>
+        <item>Museo500</item>
+        <item>NokiaPure</item>
+        <item>Nosifer</item>
+        <item>NotoSans-Regular</item>
+        <item>osans</item>
+        <item>ostr</item>
+        <item>paci</item>
+        <item>Petermorgan</item>
+        <item>Piratebold</item>
+        <item>play</item>
+        <item>Questbold</item>
+        <item>quic</item>
+        <item>robc</item>
+        <item>robo</item>
+        <item>Roboto</item>
+        <item>Roboto-Bold</item>
+        <item>Rosemary</item>
+        <item>Sansationbold</item>
+        <item>seas</item>
+        <item>Segoe</item>
+        <item>ShortStack</item>
+        <item>snappyservice</item>
+        <item>sofi</item>
+        <item>SonySketch</item>
+        <item>sonysketchef</item>
+        <item>Ubuntu</item>
+        <item>Ubuntu-C</item>
+        <item>Ubuntu-R</item>
+        <item>UbuntuTitlingBold</item>
+        <item>Vanquish</item>
+        <item>Vanquishbold</item>
+        <item>Vector</item>
+        <item>Veranda</item>
+        <item>WaltDisney</item>
+    </string-array>
+
+    <string-array name="pref_font_values">
+        <item></item>
+        <item>Abductionsmall.ttf</item>
+        <item>ABEAKRG.ttf</item>
+        <item>Aclonica.ttf</item>
+        <item>adab.ttf</item>
+        <item>AddisAbaba.ttf</item>
+        <item>Adobe.ttf</item>
+        <item>AdPro.ttf</item>
+        <item>AGentleTouch.ttf</item>
+        <item>AirmoleStripe.ttf</item>
+        <item>Aller.ttf</item>
+        <item>amar.ttf</item>
+        <item>Android.ttf</item>
+        <item>AndroidClock.ttf</item>
+        <item>April.ttf</item>
+        <item>Arabic_Adobe.ttf</item>
+        <item>Arabic_Arial.ttf</item>
+        <item>Arabic_Markerfelt.ttf</item>
+        <item>Arabic_Roqaa.ttf</item>
+        <item>Arial.ttf</item>
+        <item>Arial_RB.ttf</item>
+        <item>AristonExRegular.ttf</item>
+        <item>ArrayBold.ttf</item>
+        <item>Astandardbold.ttf</item>
+        <item>Attic.ttf</item>
+        <item>Barmeno105.ttf</item>
+        <item>Bauhaus.ttf</item>
+        <item>Beau_Sans_Pro_Book.ttf</item>
+        <item>beautifuleverytime.ttf</item>
+        <item>Belligerentbold.ttf</item>
+        <item>BlackChancery.ttf</item>
+        <item>Bluehigh.ttf</item>
+        <item>Bluehighbold.ttf</item>
+        <item>Bolonewt.ttf</item>
+        <item>Boxpot.ttf</item>
+        <item>BubbleLetters.ttf</item>
+        <item>Cantaneobold.ttf</item>
+        <item>Caprica.ttf</item>
+        <item>CarroisGothicSC-Regular.ttf</item>
+        <item>Cartoon.ttf</item>
+        <item>caviardreams_bold.ttf</item>
+        <item>CavoliniRegular.ttf</item>
+        <item>Celtic.ttf</item>
+        <item>CherryCreamSoda.ttf</item>
+        <item>chun.ttf</item>
+        <item>ClubType.ttf</item>
+        <item>comicsansms.ttf</item>
+        <item>Cooljazz.ttf</item>
+        <item>CRYSIS.ttf</item>
+        <item>Darkromanticism.ttf</item>
+        <item>Deboldbold.ttf</item>
+        <item>DroidSans.ttf</item>
+        <item>DroidSans-Bold.ttf</item>
+        <item>drsa.ttf</item>
+        <item>Dustismobold.ttf</item>
+        <item>Electronica.ttf</item>
+        <item>Envelopebold.ttf</item>
+        <item>EuropeU.ttf</item>
+        <item>FeastOfFlesh.ttf</item>
+        <item>Felipe.ttf</item>
+        <item>fira.otf</item>
+        <item>GalantNormal.ttf</item>
+        <item>GeosansBold.ttf</item>
+        <item>Gezoe.ttf</item>
+        <item>GillSansMTItalic.ttf</item>
+        <item>grea.otf</item>
+        <item>HappyMonkey.ttf</item>
+        <item>harrington.ttf</item>
+        <item>harrypotter.ttf</item>
+        <item>Heartfont.ttf</item>
+        <item>HelveticaNeue.ttf</item>
+        <item>HelveticaNeueCE55Roman.ttf</item>
+        <item>himalaya.ttf</item>
+        <item>HTCHand.ttf</item>
+        <item>Jaramondbold.ttf</item>
+        <item>Jolly.ttf</item>
+        <item>jose.ttf</item>
+        <item>Josefinslab.ttf</item>
+        <item>Josefinslabbold.ttf</item>
+        <item>KGTenThousandReasons.ttf</item>
+        <item>Laconic.ttf</item>
+        <item>Laconicbold.ttf</item>
+        <item>Laneposhbold.ttf</item>
+        <item>lato.ttf</item>
+        <item>Lauren.ttf</item>
+        <item>Leanderbold.ttf</item>
+        <item>Lemonade.ttf</item>
+        <item>Lollipop.ttf</item>
+        <item>Melonio.ttf</item>
+        <item>Metal.ttf</item>
+        <item>Milonga.ttf</item>
+        <item>Monoton.ttf</item>
+        <item>MotleyCrue.ttf</item>
+        <item>Museo500.ttf</item>
+        <item>NokiaPure.ttf</item>
+        <item>Nosifer.ttf</item>
+        <item>NotoSans-Regular.ttf</item>
+        <item>osans.ttf</item>
+        <item>ostr.ttf</item>
+        <item>paci.ttf</item>
+        <item>Petermorgan.ttf</item>
+        <item>Piratebold.ttf</item>
+        <item>play.otf</item>
+        <item>Questbold.ttf</item>
+        <item>quic.otf</item>
+        <item>robc.ttf</item>
+        <item>robo.ttf</item>
+        <item>Roboto.ttf</item>
+        <item>Roboto-Bold.ttf</item>
+        <item>Rosemary.ttf</item>
+        <item>Sansationbold.ttf</item>
+        <item>seas.ttf</item>
+        <item>Segoe.ttf</item>
+        <item>ShortStack.ttf</item>
+        <item>snappyservice.ttf</item>
+        <item>sofi.otf</item>
+        <item>SonySketch.ttf</item>
+        <item>sonysketchef.ttf</item>
+        <item>Ubuntu.ttf</item>
+        <item>Ubuntu-C.ttf</item>
+        <item>Ubuntu-R.ttf</item>
+        <item>UbuntuTitlingBold.ttf</item>
+        <item>Vanquish.ttf</item>
+        <item>Vanquishbold.ttf</item>
+        <item>Vector.ttf</item>
+        <item>Veranda.ttf</item>
+        <item>WaltDisney.ttf</item>
+    </string-array>
+
+    <string-array name="old_font_entries">
+        <item>Default</item>
+        <item>Abductionsmall</item>
+        <item>ABEAKRG</item>
         <item>AddisAbaba</item>
         <item>AGentleTouch</item>
         <item>AirmoleStripe</item>
@@ -527,9 +818,87 @@
         <item>Sansationbold</item>
         <item>Segoe</item>
     </string-array>
+    <string-array name="old_font_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+    </string-array>
 
-    <string-array name="pref_font_values">
-        <item></item>
+    <string name="weatheroptions">Weather Options</string>
+    <string name="tempoptions">Temperature Options</string>
+    <string name="temperaturevisibility">Temp Visibility</string>
+    <string name="itemmesurevisibility">Mesurement Items</string>
+    <string name="tempstyle">Temp Style</string>
+    <string name="fontstyle">Font Style</string>
+    <string name="tempsize">Temp Size</string>
+    <string name="tempverticalshift">Vertical Shift</string>
+    <string name="tempbottomoffset">Bottom Offset</string>
+    <string name="templeftoffset">Left Offset</string>
+    <string name="temprightoffset">Right Offset</string>
+    <string name="coloringlightbg">Color Light BGs</string>
+    <string name="coloringdarkbg">Color Dark BGs</string>
+    <string name="weathericonoptions">Icon Options</string>
+    <string name="weathericonvisibility">Weather Icon Visibility</string>
+    <string name="iconstyle">Weather Icon Style</string>
+    <string name="iconsize">Weather Icon Size</string>
+    <string name="allowcolorchange">Allow Color Change</string>
+    <string name="weatherlocationoptions">Location Options</string>
+    <string name="locationvisibility">Weather Location Visibility</string>
+    <string name="locationsize">Location Size</string>
+    <string name="locationstyle">Location Style</string>
+
+    <string-array name="weather_fonts_values">
+        <item>DEFAULT</item>
         <item>Abductionsmall.ttf</item>
         <item>ABEAKRG.ttf</item>
         <item>AddisAbaba.ttf</item>
@@ -543,6 +912,7 @@
         <item>ArrayBold.ttf</item>
         <item>Astandardbold.ttf</item>
         <item>Attic.ttf</item>
+        <item>Babylon5Station.otf</item>
         <item>Barmeno105.ttf</item>
         <item>Bauhaus.ttf</item>
         <item>Beau_Sans_Pro_Book.ttf</item>
@@ -557,9 +927,13 @@
         <item>Cartoon.ttf</item>
         <item>caviardreams_bold.ttf</item>
         <item>Celtic.ttf</item>
+        <item>Clockopia.ttf</item>
         <item>comicsansms.ttf</item>
         <item>Cooljazz.ttf</item>
+        <item>CoreMellow.otf</item>
         <item>Darkromanticism.ttf</item>
+        <item>Digital.ttf</item>
+        <item>DS_Cristal.ttf</item>
         <item>Dustismobold.ttf</item>
         <item>FeastOfFlesh.ttf</item>
         <item>Felipe.ttf</item>
@@ -579,10 +953,79 @@
         <item>Questbold.ttf</item>
         <item>Roboto.ttf</item>
         <item>Roboto-Bold.ttf</item>
+        <item>Roboto-Regular.ttf</item>
         <item>Rosemary.ttf</item>
+        <item>SAMSUNG_CLOCK_NUMERALS.TTF</item>
+        <item>SamsungKhmerUI-Regular.ttf</item>
         <item>Sansationbold.ttf</item>
         <item>Segoe.ttf</item>
+        <item>Sony_Sketch_EF.ttf</item>
     </string-array>
+    <string-array name="weather_fonts_entries">
+        <item>DEFAULT</item>
+        <item>Abductionsmall.ttf</item>
+        <item>ABEAKRG.ttf</item>
+        <item>AddisAbaba.ttf</item>
+        <item>AGentleTouch.ttf</item>
+        <item>AirmoleStripe.ttf</item>
+        <item>Aller.ttf</item>
+        <item>AndroidClock.ttf</item>
+        <item>Arial.ttf</item>
+        <item>Arial_RB.ttf</item>
+        <item>AristonExRegular.ttf</item>
+        <item>ArrayBold.ttf</item>
+        <item>Astandardbold.ttf</item>
+        <item>Attic.ttf</item>
+        <item>Babylon5Station.otf</item>
+        <item>Barmeno105.ttf</item>
+        <item>Bauhaus.ttf</item>
+        <item>Beau_Sans_Pro_Book.ttf</item>
+        <item>beautifuleverytime.ttf</item>
+        <item>Belligerentbold.ttf</item>
+        <item>BlackChancery.ttf</item>
+        <item>Bluehigh.ttf</item>
+        <item>Bluehighbold.ttf</item>
+        <item>BubbleLetters.ttf</item>
+        <item>Cantaneobold.ttf</item>
+        <item>Caprica.ttf</item>
+        <item>Cartoon.ttf</item>
+        <item>caviardreams_bold.ttf</item>
+        <item>Celtic.ttf</item>
+        <item>Clockopia.ttf</item>
+        <item>comicsansms.ttf</item>
+        <item>Cooljazz.ttf</item>
+        <item>CoreMellow.otf</item>
+        <item>Darkromanticism.ttf</item>
+        <item>Digital.ttf</item>
+        <item>DS_Cristal.ttf</item>
+        <item>Dustismobold.ttf</item>
+        <item>FeastOfFlesh.ttf</item>
+        <item>Felipe.ttf</item>
+        <item>GalantNormal.ttf</item>
+        <item>Gezoe.ttf</item>
+        <item>GillSansMTItalic.ttf</item>
+        <item>HelveticaNeueCE55Roman.ttf</item>
+        <item>Jaramondbold.ttf</item>
+        <item>Laneposhbold.ttf</item>
+        <item>Lauren.ttf</item>
+        <item>Melonio.ttf</item>
+        <item>Metal.ttf</item>
+        <item>MotleyCrue.ttf</item>
+        <item>NokiaPure.ttf</item>
+        <item>Petermorgan.ttf</item>
+        <item>Piratebold.ttf</item>
+        <item>Questbold.ttf</item>
+        <item>Roboto.ttf</item>
+        <item>Roboto-Bold.ttf</item>
+        <item>Roboto-Regular.ttf</item>
+        <item>Rosemary.ttf</item>
+        <item>SAMSUNG_CLOCK_NUMERALS.TTF</item>
+        <item>SamsungKhmerUI-Regular.ttf</item>
+        <item>Sansationbold.ttf</item>
+        <item>Segoe.ttf</item>
+        <item>Sony_Sketch_EF.ttf</item>
+    </string-array>
+
 
     <string-array name="grxa_app_help">
         <item>Most of the preferences can be reset to their default values by double clicking.</item>

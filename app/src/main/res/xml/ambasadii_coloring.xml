@@ -13,6 +13,39 @@
         <GrxPerItemColor android:title="Colors for Lockscreen Light Bgs" android:key="lslbcols" android:dependency="lscolors_enabled" grx:arrowColor="?complementary_color3" grx:defaultColor="0x99000000" grx:groupedValueKey="sblscolors" grx:groupedValueMyAlias="lslb" grx:optionsArray="@array/ls_colors_entries" grx:separator="\#" grx:valuesArray="@array/ls_colors_values" />
         <GrxButtonPreference android:title="Apply changes" android:key="bt1" android:summary="Press this button to apply the new options" grx:button_Style="small" grx:button_Text="Update Mod" grx:groupedValueKey="sblscolors" />
     </PreferenceScreen>
+    <PreferenceScreen android:title="Clock and Date Text Options" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="@string/time_format_title"  />
+        <GrxSingleSelection android:title="@string/time_format_title" android:key="time_12_24" grx:systemType="system" grx:arrowColor="?colorAccent" grx:optionsArray="@array/time_format_options"  grx:valuesArray="@array/time_format_values" />
+        <GrxPreferenceCategory android:title="@string/cd_homeclock_cat"  />
+        <GrxFontPreference android:title="@string/cd_hs_clock_font" android:key="hcfont" android:summary="Selected font: " grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="tfch" grx:groupedValueSystemType="system" android:defaultValue="" grx:arrowColor="?complementary_color2"/>
+        <GrxSingleSelection android:title="@string/cd_hs_clock_style" android:key="hcsty" android:defaultValue="0" grx:optionsArray="@array/font_style_options"  grx:valuesArray="@array/font_style_values" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="stch" />
+        <GrxSeekBar android:title="@string/size_clock_hs"  android:key="sizeclock_hs" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="schs" android:defaultValue="15" grx:minValue="0" grx:maxValue="25" grx:units=" dip" grx:showPopup="true" grx:interval="1"/>
+        <GrxSwitchPreference android:title="@string/show_ampm_hs"  android:key="showampm_hs" android:defaultValue="false" grx:depRule="ENABLE#time_12_24#STRING#12" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="sahs" />
+        <GrxCheckBoxPreference android:title="@string/cap_ampm_hs"  android:key="forcecapampm_hs" android:summary="@string/cap_ampm_hs_sum" android:defaultValue="false" android:dependency="showampm_hs" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="fchs" />
+        <GrxCheckBoxPreference android:title="@string/dots_ampm_hs"  android:key="remdotsampm_hs" android:defaultValue="false" android:dependency="showampm_hs" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="rdhs" />
+        <GrxPreferenceCategory android:title="@string/cd_panclock_cat"  />
+        <GrxFontPreference android:title="@string/cd_pan_clock_font" android:key="pancfont" android:summary="Selected font: " grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="tfcp" android:defaultValue="" grx:arrowColor="?complementary_color2"/>
+        <GrxSingleSelection android:title="@string/cd_pan_clock_style" android:key="pancsty" android:defaultValue="0" grx:optionsArray="@array/font_style_options"  grx:valuesArray="@array/font_style_values" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="stcp" />
+        <GrxSeekBar android:title="@string/size_clock_pan"  android:key="sizeclock_pa" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="scpa" android:defaultValue="15" grx:minValue="0" grx:maxValue="25" grx:units=" dip" grx:showPopup="true" grx:interval="1"/>
+        <GrxSwitchPreference android:title="@string/show_ampm_hs"  android:key="showampm_pa" android:defaultValue="false" grx:depRule="ENABLE#time_12_24#STRING#12" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="sapa" />
+        <GrxCheckBoxPreference android:title="@string/cap_ampm_hs"  android:key="forcecapampm_pa" android:summary="@string/cap_ampm_hs_sum" android:defaultValue="false" android:dependency="showampm_pa" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="fcpa" />
+        <GrxCheckBoxPreference android:title="@string/dots_ampm_hs"  android:key="remdotsampm_pa" android:defaultValue="false" android:dependency="showampm_pa" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="rdpa" />
+        <GrxPreferenceCategory android:title="@string/panhead_date_cat"  />
+        <GrxFontPreference android:title="@string/panhead_date_font" android:key="pandatfont" android:summary="Selected font: " grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="tfpd" android:defaultValue="" grx:arrowColor="?complementary_color2"/>
+        <GrxSingleSelection android:title="@string/panhead_date_style" android:key="pandatsty" android:defaultValue="0" grx:optionsArray="@array/font_style_options"  grx:valuesArray="@array/font_style_values" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="stpd" />
+        <GrxSeekBar android:title="@string/panhead_date_size"  android:key="pandatsiz" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="sdpa" android:defaultValue="17" grx:minValue="0" grx:maxValue="25" grx:units=" dip" grx:showPopup="true" grx:interval="1"/>
+        <GrxPreferenceCategory android:title="@string/exp_clock_cat"  />
+        <GrxFontPreference android:title="@string/exp_clock_font" android:key="expcfont" android:summary="Selected font: " grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="tfexc" android:defaultValue="" grx:arrowColor="?complementary_color2"/>
+        <GrxSingleSelection android:title="@string/exp_clock_style" android:key="expcsty" android:defaultValue="0" grx:optionsArray="@array/font_style_options"  grx:valuesArray="@array/font_style_values" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="stexc" />
+        <GrxSeekBar android:title="@string/size_clock_exp"  android:key="sizeclock_exp" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="scexp" android:defaultValue="39" grx:minValue="0" grx:maxValue="52" grx:units=" dip" grx:showPopup="true" grx:interval="1"/>
+        <GrxSwitchPreference android:title="@string/show_ampm_hs"  android:key="showampm_exp" android:defaultValue="false" grx:depRule="ENABLE#time_12_24#STRING#12" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="saexp" />
+        <GrxCheckBoxPreference android:title="@string/cap_ampm_hs"  android:key="forcecapampm_exp" android:summary="@string/cap_ampm_hs_sum" android:defaultValue="false" android:dependency="showampm_exp" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="upexp" />
+        <GrxCheckBoxPreference android:title="@string/dots_ampm_hs"  android:key="remdotsampm_exp" android:defaultValue="false" android:dependency="showampm_exp" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="rdexp" />
+        <GrxPreferenceCategory android:title="@string/exp_date_cat"  />
+        <GrxFontPreference android:title="@string/exp_date_font" android:key="expdatfont" android:summary="Selected font: " grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="tfexd" android:defaultValue="" grx:arrowColor="?complementary_color2"/>
+        <GrxSingleSelection android:title="@string/exp_date_style" android:key="expdatsty" android:defaultValue="0" grx:optionsArray="@array/font_style_options"  grx:valuesArray="@array/font_style_values" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="stexd" />
+        <GrxSeekBar android:title="@string/exp_date_size"  android:key="expdatsiz" grx:groupedValueKey="grxclockdate" grx:groupedValueMyAlias="sdext" android:defaultValue="22" grx:minValue="0" grx:maxValue="38" grx:units=" dip" grx:showPopup="true" grx:interval="1"/>
+    </PreferenceScreen>
     <PreferenceScreen android:title="Statusbar Bg Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
         <GrxPreferenceCategory android:title="Statusbar Bg Color">
             <GrxSwitchPreference android:title="Main Switch" android:key="sb_enable_gear_custom_bg_notification_pd" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
@@ -29,8 +62,8 @@
     </PreferenceScreen>
     <PreferenceScreen android:title="Notification Panel Bg Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
         <GrxPreferenceCategory android:title="Notification Panel Options">
-            <GrxSeekBar android:title="Panel Blur" android:key="panelblurpref"  grx:minValue="0"  grx:maxValue="150" android:defaultValue="75" />
-            <GrxSeekBar android:title="Panel Opacity" android:key="panelopacitypref" grx:minValue="0" grx:maxValue="100" android:defaultValue="80" />
+            <GrxSeekBar android:title="Panel Blur (default 75)" android:key="panelblurpref"  grx:minValue="0"  grx:maxValue="150" android:defaultValue="75" />
+            <GrxSeekBar android:title="Panel Opacity (default 80)" android:key="panelopacitypref" grx:minValue="0" grx:maxValue="100" android:defaultValue="80" />
         </GrxPreferenceCategory>
         <GrxPreferenceCategory android:title="Notification Panel Bg Color">
             <GrxSwitchPreference android:title="Main Switch" android:key="enable_gear_custom_bg_notification_pd" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
@@ -40,23 +73,6 @@
             <GrxColorPicker android:title="Primary color" android:key="gear_bg_primary_color_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
             <GrxColorPicker android:title="Secondary color" android:key="gear_second_gradient_color_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
             <GrxSingleSelection android:title="Gradiant Orientation" android:key="gear_bg_gradient_orientation_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
-        </GrxPreferenceCategory>
-    </PreferenceScreen>
-    <PreferenceScreen android:title="Navigation Bar Bg Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory android:title="NavBar Bg Color" />
-        <GrxSwitchPreference android:title="Main Switch" android:key="enable_nav_custom_bg_notification" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
-        <GrxPreferenceCategory android:title="General Background Preferences" android:dependency="enable_nav_custom_bg_notification">
-            <GrxSingleSelection android:title="Background Type" android:key="nav_custom_bg_type_notification" android:defaultValue="0" grx:optionsArray="@array/color_custom_bg_type_entries" grx:valuesArray="@array/color_custom_bg_type_values" />
-            <GrxSeekBar android:title="Background Opacity" android:key="nav_bg_opacity" android:defaultValue="255" grx:interval="1" grx:maxValue="255" grx:minValue="0" grx:showPopup="true" />
-        </GrxPreferenceCategory>
-        <GrxPreferenceCategory android:title="Custom Image Preferences" android:dependency="enable_nav_custom_bg_notification">
-            <GrxPickImage android:title="Select Background Image" android:key="nav_bg_image_uri_notification" />
-            <GrxSingleSelection android:title="Set Image Scaling" android:key="nav_bg_crop_type_notification" android:defaultValue="0" grx:optionsArray="@array/crop_entries" grx:valuesArray="@array/crop_values" />
-        </GrxPreferenceCategory>
-        <GrxPreferenceCategory android:title="Color and Gradient Preferences" android:dependency="enable_nav_custom_bg_notification">
-            <GrxColorPicker android:title="Select Primary Color" android:key="nav_bg_primary_color_notification" android:summary="Change color" android:dependency="nav_custom_bg_type_notification" android:defaultValue="0x99000000" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-            <GrxColorPicker android:title="Select Secondary Color" android:key="nav_second_gradient_color_notification" android:summary="Change color" android:dependency="nav_custom_bg_type_notification" android:defaultValue="0x99000000" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-            <GrxSingleSelection android:title="Gradient Orientation" android:key="nav_bg_gradient_orientation_notification" android:dependency="nav_custom_bg_type_notification" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
         </GrxPreferenceCategory>
     </PreferenceScreen>
     <PreferenceScreen android:title="Power Menu Bg Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
@@ -75,5 +91,153 @@
             <GrxColorPicker android:title="Select Secondary Color" android:key="power_menu_second_gradient_color" android:summary="Change color" android:dependency="power_menu_custom_bg_type" android:defaultValue="0x99000000" grx:showAlphaSlider="true" grx:showAutoButton="true" />
             <GrxSingleSelection android:title="Gradient Orientation" android:key="power_menu_bg_gradient_orientation" android:dependency="power_menu_custom_bg_type" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
         </GrxPreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Navigation Bar Colors" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Navigation Bar Buttons Colors">
+            <GrxSwitchPreference android:title="Main Switch" android:key="gnbenabled" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <GrxPerItemColor android:title="Colors Selection" android:key="gnbutcolors" android:dependency="gnbenabled" android:defaultValue="bd/-1|bl/-13421773|rd/-1|rl/-13421773|hd/-1|hl/-13421773|id/-1|il/-13421773|od/-1|ol/-13421773|" grx:arrowColor="?complementary_color3" grx:optionsArray="@array/navbar_colors_entries" grx:valuesArray="@array/navbar_colors_values" />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Navigation Bar Background Color" />
+        <GrxSwitchPreference android:title="Main Switch" android:key="enable_nav_custom_bg_notification" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <GrxPreferenceCategory android:title="General Background Preferences" android:dependency="enable_nav_custom_bg_notification">
+            <GrxSingleSelection android:title="Background Type" android:key="nav_custom_bg_type_notification" android:defaultValue="0" grx:optionsArray="@array/color_custom_bg_type_entries" grx:valuesArray="@array/color_custom_bg_type_values" />
+            <GrxSeekBar android:title="Background Opacity" android:key="nav_bg_opacity" android:defaultValue="255" grx:interval="1" grx:maxValue="255" grx:minValue="0" grx:showPopup="true" />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Custom Image Preferences" android:dependency="enable_nav_custom_bg_notification">
+            <GrxPickImage android:title="Select Background Image" android:key="nav_bg_image_uri_notification" />
+            <GrxSingleSelection android:title="Set Image Scaling" android:key="nav_bg_crop_type_notification" android:defaultValue="0" grx:optionsArray="@array/crop_entries" grx:valuesArray="@array/crop_values" />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Color and Gradient Preferences" android:dependency="enable_nav_custom_bg_notification">
+            <GrxColorPicker android:title="Select Primary Color" android:key="nav_bg_primary_color_notification" android:summary="Change color" android:dependency="nav_custom_bg_type_notification" android:defaultValue="0x99000000" grx:showAlphaSlider="true" grx:showAutoButton="true" />
+            <GrxColorPicker android:title="Select Secondary Color" android:key="nav_second_gradient_color_notification" android:summary="Change color" android:dependency="nav_custom_bg_type_notification" android:defaultValue="0x99000000" grx:showAlphaSlider="true" grx:showAutoButton="true" />
+            <GrxSingleSelection android:title="Gradient Orientation" android:key="nav_bg_gradient_orientation_notification" android:dependency="nav_custom_bg_type_notification" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
+        </GrxPreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Quick Panel Colors" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Quick Panel Toggles Text Font and Size">
+            <GrxFontPreference android:title="Text Font" android:key="toggles_font_tile_label" grx:optionsArray="@array/pref_font_options" grx:valuesArray="@array/pref_font_values" android:defaultValue="" grx:arrowColor="?complementary_color2" />
+        </GrxPreferenceCategory>
+            <GrxPreferenceCategory android:title="Quick Panel Toggles Colors">
+                <GrxSwitchPreference android:title="Main Switch" android:key="toggles_custom_colors_enabled" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:groupKey="grx_toggles_ct_colors" grx:saveValueOnFly="true" grx:systemType="system" />
+                <GrxColorPicker android:title="Toggles Text In Light Bgs" android:key="toggles_text_color_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-16777216" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Bg ON In Light Bgs" android:key="toggles_bg_color_on_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-12412929" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Bg OFF In Light Bgs" android:key="toggles_bg_color_off_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-1710619" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Bg Dim Color In Light Bgs" android:key="toggles_bg_color_dim_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-2143119361" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Icon ON In Light Bgs" android:key="toggles_icon_color_on_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-1" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Icon OFF In Light Bgs" android:key="toggles_icon_color_off_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-174746224" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Icon Dim In Light Bgs" android:key="toggles_icon_color_dim_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-6381922" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Text In Dark Bgs" android:key="toggles_text_color" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-1" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Bg ON In In Dark Bgs" android:key="toggles_bg_color_on" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-12412929" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Bg OFF In Dark Bgs" android:key="toggles_bg_color_off" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-1710619" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Bg Dim Color In Dark Bgs" android:key="toggles_bg_color_dim" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-2143119361" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Icon ON In Dark Bgs" android:key="toggles_icon_color_on" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-855310" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Icon OFF In Dark Bgs" android:key="toggles_icon_color_off" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-174746224" grx:groupKey="grx_toggles_ct_colors" />
+                <GrxColorPicker android:title="Toggles Icon Dim In Dark Bgs" android:key="toggles_icon_color_dim" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-6381922" grx:groupKey="grx_toggles_ct_colors" />
+            </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Quick Panel Buttons Colors">
+            <GrxSwitchPreference android:title="Main Switch" android:defaultValue="false" android:key="enahebutco" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="enbc" grx:groupedValueSystemType="system" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <GrxColorPicker android:title="Settings Button In Light Bgs" android:key="setlbbutnm" android:dependency="enahebutco" android:defaultValue="0xFF000000" grx:showAlphaSlider="true" grx:showAutoButton="false" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="stlb"    />
+            <GrxColorPicker android:title="Search Button In Light Bgs" android:key="sealbbutnm" android:dependency="enahebutco" android:defaultValue="0xFF000000" grx:showAlphaSlider="true" grx:showAutoButton="false" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="selb"    />
+            <GrxColorPicker android:title="Power Button In Light Bgs" android:key="powdblbutnm" android:dependency="enahebutco" android:defaultValue="0xFF000000" grx:showAlphaSlider="true" grx:showAutoButton="false" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="pblb"    />
+            <GrxColorPicker android:title="More Button In Light Bgs" android:key="mordblbbut" android:dependency="enahebutco" android:defaultValue="0xFF000000" grx:showAlphaSlider="true" grx:showAutoButton="false" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="molb"    />
+            <GrxColorPicker android:title="Settings Button In Dark Bgs" android:key="setbutnm" android:dependency="enahebutco" android:defaultValue="0xffeef0ef" grx:showAlphaSlider="true" grx:showAutoButton="false" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="stdb"    />
+            <GrxColorPicker android:title="Search Button In Dark Bgs" android:key="seabutnm" android:dependency="enahebutco" android:defaultValue="0xffeef0ef" grx:showAlphaSlider="true" grx:showAutoButton="false" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="sedb"    />
+            <GrxColorPicker android:title="Power Button In Dark Bgs" android:key="powdbutnm" android:dependency="enahebutco" android:defaultValue="0xffeef0ef" grx:showAlphaSlider="true" grx:showAutoButton="false" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="pbdb"    />
+            <GrxColorPicker android:title="More Button In Dark Bgs" android:key="mordbbut" android:dependency="enahebutco" android:defaultValue="0xffeef0ef" grx:showAlphaSlider="true" grx:showAutoButton="false" grx:groupedValueKey="grxmultioptions" grx:groupedValueMyAlias="modb"    />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Quick Panel Clock and Date Colors">
+            <GrxSwitchPreference android:title="Main Switch" android:key="ed_notpanel_custom_colors" android:defaultValue="true" grx:groupKey="ed_QSheaderColor" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <GrxColorPicker android:title="Header Date Color In Light Bgs" android:key="ed_qsclock_header_date_color_light"  android:dependency="ed_notpanel_custom_colors" android:defaultValue="-14342875"  grx:groupKey="ed_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Header Clock Color In Light Bgs" android:key="ed_qsclock_header_clock_color_light"  android:dependency="ed_notpanel_custom_colors" android:defaultValue="-14342875"  grx:groupKey="ed_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Panel Date Color In Light Bgs" android:key="ed_qsclock_date_color_light"  android:dependency="ed_notpanel_custom_colors" android:defaultValue="-14342875"  grx:groupKey="ed_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Panel Clock Color In Light Bgs" android:key="ed_qsclock_color_light"  android:dependency="ed_notpanel_custom_colors" android:defaultValue="-14342875"  grx:groupKey="ed_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Header Date Color In Dark Bgs" android:key="ed_qsclock_header_date_color"  android:dependency="ed_notpanel_custom_colors" android:defaultValue="-328966"  grx:groupKey="ed_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Header Clock Color In Dark Bgs" android:key="ed_qsclock_header_clock_color"  android:dependency="ed_notpanel_custom_colors" android:defaultValue="-328966"  grx:groupKey="ed_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Panel Date Color In Dark Bgs" android:key="ed_qsclock_date_color"  android:dependency="ed_notpanel_custom_colors" android:defaultValue="-328966"  grx:groupKey="ed_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Panel Clock Color In Dark Bgs" android:key="ed_qsclock_color"  android:dependency="ed_notpanel_custom_colors" android:defaultValue="-328966"  grx:groupKey="ed_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Media and Device Font and Size">
+            <GrxFontPreference android:title="Devices Font" android:key="font_devices_title" grx:optionsArray="@array/pref_font_options" grx:valuesArray="@array/pref_font_values" android:defaultValue="" grx:arrowColor="?complementary_color2" />
+            <GrxSeekBar android:title="Devices Text Size (default 12)"  android:key="size_devices_title" android:defaultValue="12" grx:minValue="6" grx:maxValue="25" grx:units=" dip" grx:showPopup="true" grx:interval="1"/>
+            <GrxFontPreference android:title="Media Font" android:key="font_media_title" grx:optionsArray="@array/pref_font_options" grx:valuesArray="@array/pref_font_values" android:defaultValue="" grx:arrowColor="?complementary_color2" />
+            <GrxSeekBar android:title="Media Text Size (default 12)"  android:key="size_media_title" android:defaultValue="12" grx:minValue="6" grx:maxValue="25" grx:units=" dip" grx:showPopup="true" grx:interval="1"/>
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Media and Device Text Colors">
+            <GrxSwitchPreference android:title="Main Switch" android:key="media_use_custom_colors" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:groupKey="custom_QSheaderColor" />
+            <GrxColorPicker android:title="Device Text Color In Light Bgs" android:key="device_title_text_color_dark" android:dependency="media_use_custom_colors" android:defaultValue="0xFF000000" grx:groupKey="custom_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Media Text Color In Light Bgs" android:key="media_title_text_color_dark" android:dependency="media_use_custom_colors" android:defaultValue="0xFF000000" grx:groupKey="custom_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Device Text Color In Dark Bgs" android:key="device_title_text_color" android:dependency="media_use_custom_colors" android:defaultValue="0xffeef0ef" grx:groupKey="custom_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Media Text Color In Dark Bgs" android:key="media_title_text_color" android:dependency="media_use_custom_colors" android:defaultValue="0xffeef0ef" grx:groupKey="custom_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Brightness Slider Colors">
+            <GrxSwitchPreference android:title="Main Switch" android:key="toggle_slider_custom_colors" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:groupKey="grx_QSheaderColor" />
+            <GrxColorPicker android:title="Brightness Slider Track In Light Bgs" android:key="toggle_slider_normal_color_light" android:dependency="toggle_slider_custom_colors" android:defaultValue="-5127700" grx:groupKey="grx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Brightness Slider Thumb In Light Bgs" android:key="toggle_slider_activated_color_light" android:dependency="toggle_slider_custom_colors" android:defaultValue="-13801729" grx:groupKey="grx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Brightness Slider Warning In Light Bgs" android:key="toggle_slider_warning_color_light" android:dependency="toggle_slider_custom_colors" android:defaultValue="-13801729" grx:groupKey="grx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Brightness Icon In Light Bgs" android:key="toggle_brightness_icon_color_light" android:dependency="toggle_slider_custom_colors" android:defaultValue="0xFF000000" grx:groupKey="grx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Brightness Slider Track In Dark Bgs" android:key="toggle_slider_normal_color" android:dependency="toggle_slider_custom_colors" android:defaultValue="-5127700" grx:groupKey="grx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Brightness Slider Thumb In Dark Bgs" android:key="toggle_slider_activated_color" android:dependency="toggle_slider_custom_colors" android:defaultValue="-13801729" grx:groupKey="grx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Brightness Slider Warning In Dark Bgs" android:key="toggle_slider_warning_color" android:dependency="toggle_slider_custom_colors" android:defaultValue="-13801729" grx:groupKey="grx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Brightness Icon In Dark Bgs" android:key="toggle_brightness_icon_color" android:dependency="toggle_slider_custom_colors" android:defaultValue="0xffeef0ef" grx:groupKey="grx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to update changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Brightness Detail Color">
+            <GrxSwitchPreference android:title="Main Switch" android:key="brightness_custom_colors" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:groupKey="grxx_QSheaderColor" />
+            <GrxColorPicker android:title="Brightness Detail In Light Bgs" android:key="brightness_detail_color" android:dependency="brightness_custom_colors" android:defaultValue="0xFF000000" grx:groupKey="grxx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Brightness Detail In Dark Bgs" android:key="brightness_detail_color_dark" android:dependency="brightness_custom_colors" android:defaultValue="0xffeef0ef" grx:groupKey="grxx_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Page Indicators Colors">
+            <GrxSwitchPreference android:title="Main Switch" android:key="page_indicator_custom_colors" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:groupKey="grxxy_QSheaderColor" />
+            <GrxColorPicker android:title="Page Indicator Selected In Light Bgs" android:key="page_indicator_selected_color_light" android:dependency="page_indicator_custom_colors" android:defaultValue="0xFF000000" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Page Indicator Unselected In Light Bgs" android:key="page_indicator_unselected_color_light" android:dependency="page_indicator_custom_colors" android:defaultValue="0xFF000000" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Page Indicator Selected Dark Bgs" android:key="page_indicator_selected_color" android:dependency="page_indicator_custom_colors" android:defaultValue="0xffeef0ef" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Page Indicator Unselected Dark Bgs" android:key="page_indicator_unselected_color" android:dependency="page_indicator_custom_colors" android:defaultValue="0xffeef0ef" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to update changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
+        </GrxPreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Notification Colors" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Notification Colors Options" />
+        <GrxSwitchPreference android:title="Main Switch" android:key="notif_custom_colors" android:defaultValue="true" grx:groupKey="amb_NotiColor" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <GrxPreferenceCategory android:title="Colors In Light Bgs" />
+        <GrxColorPicker android:title="Background Color In Light Bgs" android:key="notif_bg_color_light" android:dependency="notif_custom_colors" android:defaultValue="0xFFF7F7F7" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Application Icons In Light Bgs" android:key="notif_headericon_color_light" android:dependency="notif_custom_colors" android:defaultValue="0xFF8B8B99" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Application Name In Light Bgs" android:key="notif_apptext_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFFBBBBCE" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Notification Time In Light Bgs" android:key="notif_time_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Main Text Color In Light Bgs" android:key="notif_main_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Main Header Text In Light Bgs" android:key="notif_headertext_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Content Notifications Color In Light Bgs" android:key="notif_cont_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Action Text Color In Light Bgs" android:key="notif_action_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF8B8B99" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Notification Header In Light Bgs" android:key="notif_header_label_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Button X Clear All In Light Bgs" android:key="notif_header_btn_clear_all_light"  android:dependency="notif_custom_colors" android:defaultValue="0x00FFFFFF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Settings Noti Text In Light Bgs" android:key="notif_buttons_settings_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Clear Text In Light Bgs" android:key="notif_buttons_clear_all_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Header Secondary Text color In Light Bgs" android:key="notif_headertextsecondary_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Line Text color In Light Bgs" android:key="notif_textline1_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Single Line Title Text color In Light Bgs" android:key="notif_singlelinetitle_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Single Line Text Color In Light Bgs" android:key="notif_singlelinetext_color_light"  android:dependency="notif_custom_colors" android:defaultValue="0xFF252525" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxPreferenceCategory android:title="Colors In Dark Bgs" />
+        <GrxColorPicker android:title="Background Color In Dark Bgs" android:key="notif_bg_color" android:dependency="notif_custom_colors" android:defaultValue="0xFF303535" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Application Icons In Dark Bgs" android:key="notif_headericon_color" android:dependency="notif_custom_colors" android:defaultValue="0xFF8B8B99" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Application Name In Dark Bgs" android:key="notif_apptext_color" android:dependency="notif_custom_colors" android:defaultValue="0xFFBBBBCE" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Notification Time In Dark Bgs" android:key="notif_time_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Main Text Color In Dark Bgs" android:key="notif_main_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Main Header Text In Dark Bgs" android:key="notif_headertext_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Content Notifications Color In Dark Bgs" android:key="notif_cont_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Action Text Color In Dark Bgs" android:key="notif_action_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFF8B8B99" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Notification Header In Dark Bgs" android:key="notif_header_label"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Button X Clear All In Dark Bgs" android:key="notif_header_btn_clear_all"  android:dependency="notif_custom_colors" android:defaultValue="0x00000000" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Settings Noti Text In Dark Bgs" android:key="notif_buttons_settings"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Clear Text In Dark Bgs" android:key="notif_buttons_clear_all"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Header Secondary Text color In Dark Bgs" android:key="notif_headertextsecondary_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Line Text color In Dark Bgs" android:key="notif_textline1_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Single Line Title Text color In Dark Bgs" android:key="notif_singlelinetitle_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxColorPicker android:title="Single Line Text Color In Dark Bgs" android:key="notif_singlelinetext_color"  android:dependency="notif_custom_colors" android:defaultValue="0xFFEEF0EF" grx:groupKey="amb_NotiColor" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to update all changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Fingerprint Designs" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Fingerprint Designs Options" />
+        <GrxSingleSelection android:title="Fingerprint Icon on AOD" android:key="custom_fingerprint_aod_animation" android:defaultValue="0" grx:optionsArray="@array/custom_fingerprint_effect_entries" grx:valuesArray="@array/custom_fingerprint_effect_values" />
+        <GrxSingleSelection android:title="Fingerprint Lockscreen Icon" android:key="custom_fingerprint_lockscreen_animation" android:defaultValue="0" grx:optionsArray="@array/custom_fingerprint_effect_entries" grx:valuesArray="@array/custom_fingerprint_effect_values" />
+        <GrxColorPicker android:title="Fingerprint Unlock Anim Colors" android:key="custom_fingerprint_animation_color" android:defaultValue="0" />
     </PreferenceScreen>
 </PreferenceScreen>

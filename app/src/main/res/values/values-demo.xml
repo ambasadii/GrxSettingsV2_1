@@ -22,7 +22,8 @@
     <string-array name="sb_hide_views_options">
         <item>@string/clock</item>
         <item>@string/clockmod</item>
-        <item>@string/analogclock</item>
+        <item>Analog Clock (Statusbar)</item>
+        <item>Analog Clock (Notif. panel)</item>
         <item>@string/battery_and_text</item>
         <item>@string/battery_icon</item>
         <item>@string/circularbt_h</item>
@@ -36,6 +37,12 @@
         <item>@string/trafficsb</item>
         <item>@string/traffickg</item>
         <item>@string/trafficqs</item>
+        <item>@string/weather_temp</item>
+        <item>@string/weather_icon</item>
+        <item>@string/weather_loc</item>
+        <item>@string/weather_temp_np</item>
+        <item>@string/weather_icon_np</item>
+        <item>@string/weather_loc_np</item>
         <item>@string/mobile</item>
         <item>@string/wifi</item>
         <item>@string/airplane</item>
@@ -65,6 +72,7 @@
         <item>clock</item>
         <item>clock_mod</item>
         <item>analogclock</item>
+        <item>analogclock_qs</item>
         <item>battery</item>
         <item>batdrawable</item>
         <item>grxcirbathome</item>
@@ -78,6 +86,12 @@
         <item>traffic_sb</item>
         <item>traffic_kg</item>
         <item>traffic_qs</item>
+        <item>weather_temp</item>
+        <item>weather_icon</item>
+        <item>weather_loc</item>
+        <item>weather_temp_np</item>
+        <item>weather_icon_np</item>
+        <item>weather_loc_np</item>
         <item>mobile</item>
         <item>wifi</item>
         <item>airplane</item>
@@ -489,6 +503,40 @@
         <item>4</item>
         <item>5</item>
     </string-array>
+    <string-array name="refresh_options">
+        <item>60Hz</item>
+        <item>96Hz</item>
+        <item>120Hz</item>
+    </string-array>
+    <string-array name="refresh_values">
+        <item>60.0</item>
+        <item>96.0</item>
+        <item>120.0</item>
+    </string-array>
+    <string-array name="custom_fingerprint_effect_entries">
+        <item>Default</item>
+        <item>Blue</item>
+        <item>Multicolor 1</item>
+        <item>Multicolor 2</item>
+        <item>Violet</item>
+        <item>Red</item>
+        <item>Sound wave</item>
+        <item>Cartoon</item>
+        <item>Scanner</item>
+        <item>Pass</item>
+    </string-array>
+    <string-array name="custom_fingerprint_effect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
     <string-array name="color_custom_bg_type_entries">
         <item>Image</item>
         <item>Primary color</item>
@@ -571,6 +619,8 @@
         <item>Design 9</item>
         <item>Design 10</item>
         <item>Design 11</item>
+        <item>Design 12</item>
+        <item>Design 13</item>
     </string-array>
     <string-array name="weather_icon_style_select_values">
         <item>1</item>
@@ -584,6 +634,8 @@
         <item>9</item>
         <item>10</item>
         <item>11</item>
+        <item>12</item>
+        <item>13</item>
     </string-array>
     <string-array name="tw_effect_entries">
         <item>Default</item>
@@ -696,8 +748,8 @@
         <item>kgsb_carrier</item>
         <item>networkspeedview</item>
         <item>traffic_kg</item>
-        <item>weather</item>
-        <item>weather_icon</item>
+        <item>weather_kg</item>
+        <item>weather_icon_kg</item>
         <item>statusicons</item>
         <item>grxcirbatls</item>
         <item>minit</item>
@@ -710,6 +762,7 @@
         <item>Date</item>
         <item>Weather Temperature</item>
         <item>Weather Icon</item>
+        <item>Weather Location</item>
         <item>Network Speed</item>
         <item>Network Traffic</item>
         <item>Status Icons</item>
@@ -725,6 +778,7 @@
         <item>sb_date</item>
         <item>weather</item>
         <item>weather_icon</item>
+        <item>weatherloc</item>
         <item>networkspeedview</item>
         <item>traffic_sb</item>
         <item>statusicons</item>
@@ -1744,6 +1798,15 @@
         <item>@drawable/stat_sys_ringer_silent_2</item>
         <item>@drawable/stat_sys_ringer_silent_3</item>
     </array>
+
+    <string-array name="time_format_options">
+        <item>12 hrs</item>
+        <item>24 hrs</item>
+    </string-array>
+    <string-array name="time_format_values">
+        <item>12</item>
+        <item>24</item>
+    </string-array>
 
     <string name="gs_bp_property">grx.demo.prop</string>
     <string-array name="demo_build_prop_options">

@@ -2,7 +2,7 @@
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
     <GrxPreferenceCategory android:title="Lockscreen Icons Position">
-            <GrxPerItemSingleSelection android:title="Lockscreen Statusbar Icons Position" android:key="lsviews" android:summary="@string/sb_positions_help" android:defaultValue="kgsb_carrier;0|networkspeedview;2|traffic_kg;2|weather;2|weather_icon;2|statusicons;2|grxcirbatls;2|minit;2|batterycontainer;2|" grx:allowSortOut="true" grx:optionsArray="@array/kgsb_views_positions_options" grx:spinnerOptionsArray="@array/sb_postions_options" grx:spinnerValuesArray="@array/sb_positions_values" grx:valuesArray="@array/kgsb_views_positions_values" />
+            <GrxPerItemSingleSelection android:title="Lockscreen Statusbar Icons Position" android:key="lsviews" android:summary="@string/sb_positions_help" android:defaultValue="kgsb_carrier;0|networkspeedview;2|traffic_kg;2|weather_kg;2|weather_icon_kg;2|statusicons;2|grxcirbatls;2|minit;2|batterycontainer;2|" grx:allowSortOut="true" grx:optionsArray="@array/kgsb_views_positions_options" grx:spinnerOptionsArray="@array/sb_postions_options" grx:spinnerValuesArray="@array/sb_positions_values" grx:valuesArray="@array/kgsb_views_positions_values" />
     </GrxPreferenceCategory>
     <GrxPreferenceCategory android:title="Other Options">
         <GrxSwitchPreference android:title="Allow quick reply on lockscreen" android:key="allow_remote_input" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />

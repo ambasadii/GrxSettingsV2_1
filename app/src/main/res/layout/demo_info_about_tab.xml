@@ -31,11 +31,6 @@
                     <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Ambasadii Dev Site" android:layout_marginStart="15.0dip" />
                 </com.grx.settings.views.LinearLayoutWithLink>
 
-                <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="https://forum.xda-developers.com/f/samsung-galaxy-s10-s10-s10-5g-e-cross-device-deve.9161">
-                    <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/demo_xda" />
-                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="S10/S10+ Cross Device Development" android:layout_marginStart="15.0dip" />
-                </com.grx.settings.views.LinearLayoutWithLink>
-
                 <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="https://github.com/ambasadii/GrxSettingsV2_1">
                     <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/github" />
                     <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Grx Rom Control Source" android:layout_marginStart="15.0dip" />
@@ -50,7 +45,12 @@
 
                 <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="https://t.me/ambasadiidev">
                     <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/demo_telegram" />
-                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Join Ambasadii Rom Group" android:layout_marginStart="15.0dip" />
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Join Ambasadii Rom Group for S10 series" android:layout_marginStart="15.0dip" />
+                </com.grx.settings.views.LinearLayoutWithLink>
+
+                <com.grx.settings.views.LinearLayoutWithLink android:orientation="horizontal" android:background="?selectableItemBackground" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" grxURL="https://t.me/ambasadiiroms20series">
+                    <ImageView android:layout_gravity="center_vertical" android:layout_width="36.0dip" android:layout_height="36.0dip" android:src="@drawable/demo_telegram" />
+                    <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Join Ambasadii Rom Group for S20 series" android:layout_marginStart="15.0dip" />
                 </com.grx.settings.views.LinearLayoutWithLink>
 
                 <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?colorAccent" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="Donation" />
