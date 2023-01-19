@@ -203,6 +203,7 @@
     <string name="private_mode">Private Mode</string>
     <string name="secure_mode">Secure Mode</string>
     <string name="smart_network">Smart Network</string>
+    <string name="vpn">Vpn</string>
     <string name="headset">Head Set</string>
     <string name="rotation">Rotation</string>
     <string name="sb_positions">Views Positions</string>
@@ -212,10 +213,11 @@
     <string name="info_skip_tracks">Play/Stop works when the phone is not in deep sleep and a music app has got the audio focus (is playing o was playing not too long ago. When in deep sleep volume keys are not enabled by the system</string>
     <string name="vibrate_skip_tracks_summary">The mod uses system feedback vibration intensity, however it is not needed to enable main system switch for vibration feedback</string>
     <string name="netspeed">Network Speed</string>
+    <string name="enhanced_processing">Enhanced Processing</string>
     <string name="circularbt_h">Circular Battery (Statusbar)</string>
     <string name="circularbt_l">Circular Battery (Lockscreen)</string>
     <string name="circularbt_q">Circular Battery (Notif. panel)</string>
-    <string name="carrier">Carrier Label (Lockscreen)</string>
+    <string name="carrierls">Carrier Label (Lockscreen)</string>
     <string name="trafficsb">Network Traffic (Statusbar)</string>
     <string name="traffickg">Network Traffic (Lockscreen)</string>
     <string name="trafficqs">Network Traffic (Notif. panel)</string>
@@ -234,9 +236,9 @@
     <string name="systemicons">System Icons</string>
     <string name="date">Date</string>
     <string name="clockmod">Custom Clock</string>
-    <string name="weather_icon">Weather Icon (Statusbar)</string>
-    <string name="weather_loc">Weather Location (Statusbar)</string>
-    <string name="weather_temp">Weather Temp (Statusbar)</string>
+    <string name="weather_icon">Weather Icon</string>
+    <string name="weather_loc">Weather Location</string>
+    <string name="weather_temp">Weather Temp</string>
     <string name="weather_icon_np">Weather Icon (Notif. panel)</string>
     <string name="weather_loc_np">Weather Location (Notif. panel)</string>
     <string name="weather_temp_np">Weather Temp (Notif. panel)</string>
@@ -351,7 +353,7 @@
     <string name="disable">Disabled</string>
     <string name="notifimageselect">Select an Image</string>
     <string name="notifimageopacity">Image Opacity</string>
-    <string name="analogclock">Analog Clock</string>
+    <string name="analogclock">Analog Clock (Notif. panel)</string>
     <string name="bluetooth_connected">Bluetooth Connected</string>
     <string name="panelblur">Panel Blur</string>
     <string name="panelopacity">Panel Opacity</string>
@@ -380,6 +382,14 @@
     <string name="exp_date_font">Font for Date in expanded panel</string>
     <string name="exp_date_style">Font Style for Date in expanded panel</string>
     <string name="exp_date_size">Date size ( default 22 )</string>
+
+    <!-- TILES -->
+
+    <string name="tile_smoothness">"Refresh Rate"</string>
+    <string name="tile_grx">"Rom Control"</string>
+    <string name="tile_outdoormode">Outdoor Mode</string>
+    <string name="tile_recovery">"Reboot Recovery"</string>
+    <string name="tile_screenontime">"Screen Off Time"</string>
 
     <string-array name="grxa_threedots_tools">
         <item>@string/grxs_recovery</item>

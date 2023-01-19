@@ -1,49 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
-    <PreferenceScreen android:title="Notification Panel Icons" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory android:title="Notification Panel Icons Position">
-            <GrxPerItemSingleSelection android:title="Change Notification Panel Icons Position" android:key="panviews" android:summary="@string/sb_positions_help" android:defaultValue="carrierlabel_np;1|networkspeedview;2|traffic_qs;2|statusicons;2|grxcirbatpanel;2|qs_minit;2|batterycontainer;2|" grx:allowSortOut="true" grx:optionsArray="@array/qs_sb_views_positions_options" grx:spinnerOptionsArray="@array/sb_postions_options" grx:spinnerValuesArray="@array/sb_positions_values" grx:valuesArray="@array/qs_sb_views_positions_values" />
+
+    <PreferenceScreen android:title="Quick Panel SB Icons Position" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Quick Panel SB Icons Position">
+            <GrxPerItemSingleSelection android:title="Change Quick Panel SB Icons Position" android:key="panviews" android:summary="@string/sb_positions_help" android:defaultValue="carrierlabel_np;1|networkspeedview;2|traffic_qs;2|statusicons;2|grxcirbatpanel;2|qs_minit;2|batterycontainer;2|" grx:allowSortOut="true" grx:optionsArray="@array/qs_sb_views_positions_options" grx:spinnerOptionsArray="@array/sb_postions_options" grx:spinnerValuesArray="@array/sb_positions_values" grx:valuesArray="@array/qs_sb_views_positions_values" />
         </GrxPreferenceCategory>
     </PreferenceScreen>
+
     <PreferenceScreen android:title="Analog Clock" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory grx:depRule="DISABLE#icon_blacklist#STRING#(analogclock_qs)" grx:hiddenCategory="true">
+        <GrxPreferenceCategory android:title="Analog Clock Options" />
+        <GrxSwitchPreference android:title="Use image as background" android:key="dlx_qs_analog_image" android:defaultValue="false" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="image" grx:groupedValueSystemType="system" />
+        <GrxSingleSelection android:title="Select image" android:key="dlx_qs_analog_bg" android:dependency="dlx_qs_analog_image" android:defaultValue="dlx_qs_analog_black" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="bg" grx:iconsArray="@array/dlx_analog_drawables" grx:optionsArray="@array/dlx_analog_entries" grx:valuesArray="@array/dlx_analog_values" grx:iconsValueTint="?complementary_color3" />
+        <GrxPreferenceCategory android:title="Colors In Light Bgs" />
+        <GrxColorPicker android:title="Hour Color" android:key="dlx_qs_analog_hour_color_tint" android:defaultValue="0xff343434" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="hcolorlight" />
+        <GrxColorPicker android:title="Minute Color" android:key="dlx_qs_analog_min_color_tint" android:defaultValue="0xff343434" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="mcolorlight" />
+        <GrxColorPicker android:title="Second Color" android:key="dlx_qs_analog_sec_color_tint" android:defaultValue="0xff343434" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="scolorlight" />
+        <GrxColorPicker android:title="Dials Color" android:key="dlx_qs_analog_dial_color_tint" android:defaultValue="0xff343434" grx:depRule="DISABLE#dlx_qs_analog_image#BOOLEAN#true" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="dcolorlight" />
+        <GrxColorPicker android:title="Background Color" android:key="dlx_qs_analog_bg_color_tint" android:dependency="dlx_qs_analog_image" android:defaultValue="0xff343434" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="gcolorlight" />
+        <GrxPreferenceCategory android:title="Colors In Dark Bgs" />
+        <GrxColorPicker android:title="Hour Color" android:key="dlx_qs_analog_hour_color" android:defaultValue="0xfffafafa" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="hcolor" />
+        <GrxColorPicker android:title="Minute Color" android:key="dlx_qs_analog_min_color" android:defaultValue="0xfffafafa" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="mcolor" />
+        <GrxColorPicker android:title="Second Color" android:key="dlx_qs_analog_sec_color" android:defaultValue="0xfffafafa" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="scolor" />
+        <GrxColorPicker android:title="Dials Color" android:key="dlx_qs_analog_dial_color" android:defaultValue="0xfffafafa" grx:depRule="DISABLE#dlx_qs_analog_image#BOOLEAN#true" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="dcolor" />
+        <GrxColorPicker android:title="Background Color" android:key="dlx_qs_analog_bg_color" android:dependency="dlx_qs_analog_image" android:defaultValue="0xfffafafa" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="gcolor" />
+        <PreferenceScreen android:title="Margins">
+            <GrxPreferenceCategory android:title="Analog Clock Options" />
+            <GrxSeekBar android:title="Top margin" android:key="dlx_qs_analog_top_margin" android:defaultValue="0" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="tp" grx:interval="1" grx:maxValue="70" grx:minValue="0" />
+            <GrxSeekBar android:title="Bottom margin" android:key="dlx_qs_analog_bottom_margin" android:defaultValue="40" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="bp" grx:interval="1" grx:maxValue="70" grx:minValue="0" />
+            <GrxSeekBar android:title="Left margin" android:key="dlx_qs_analog_left_margin" android:defaultValue="0" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="lp" grx:interval="1" grx:maxValue="70" grx:minValue="0" />
+            <GrxSeekBar android:title="Right margin" android:key="dlx_qs_analog_right_margin" android:defaultValue="0" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="rp" grx:interval="1" grx:maxValue="70" grx:minValue="0" />
             <GrxButtonPreference android:title="Apply changes" android:key="button_1" grx:button_Style="big" grx:groupedValueKey="dlx_qs_analog_clock" />
-            <GrxSwitchPreference android:title="Show seconds" android:key="dlx_qs_analog_seconds" android:defaultValue="true" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="seconds" grx:groupedValueSystemType="system" />
-            <GrxColorPicker android:title="Hour color" android:key="dlx_qs_analog_hour_color" android:defaultValue="-1107296257" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="hcolor" />
-            <GrxColorPicker android:title="Minute color" android:key="dlx_qs_analog_min_color" android:defaultValue="-1107296257" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="mcolor" />
-            <GrxColorPicker android:title="Second color" android:key="dlx_qs_analog_sec_color" android:defaultValue="-1107296257" grx:depRule="DISABLE#dlx_qs_analog_seconds#BOOLEAN#false" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="scolor" />
-            <GrxColorPicker android:title="Dials color" android:key="dlx_qs_analog_dial_color" android:defaultValue="-1107296257" grx:depRule="DISABLE#dlx_qs_analog_image#BOOLEAN#true" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="dcolor" />
-            <GrxColorPicker android:title="Tint" android:key="dlx_qs_analog_tint" android:defaultValue="0x99000000" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="tint" />
-            <GrxSwitchPreference android:title="Use image as background" android:key="dlx_qs_analog_image" android:defaultValue="false" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="image" />
-            <GrxColorPicker android:title="Background color" android:key="dlx_qs_analog_bg_color" android:dependency="dlx_qs_analog_image" android:defaultValue="-1107296257" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="gcolor" />
-            <GrxSingleSelection android:title="Select image" android:key="dlx_qs_analog_bg" android:dependency="dlx_qs_analog_image" android:defaultValue="dlx_qs_analog_black" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="bg" grx:iconsArray="@array/dlx_analog_drawables" grx:optionsArray="@array/dlx_analog_entries" grx:valuesArray="@array/dlx_analog_values" grx:iconsValueTint="?complementary_color3" />
-            <PreferenceScreen android:title="Margins">
-                <GrxButtonPreference android:title="Apply changes" android:key="button_1" grx:button_Style="big" grx:groupedValueKey="dlx_qs_analog_clock" />
-                <GrxSeekBar android:title="Top margin" android:key="dlx_qs_analog_top_margin" android:defaultValue="0" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="tp" grx:interval="1" grx:maxValue="70" grx:minValue="0" />
-                <GrxSeekBar android:title="Bottom margin" android:key="dlx_qs_analog_bottom_margin" android:defaultValue="40" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="bp" grx:interval="1" grx:maxValue="70" grx:minValue="0" />
-                <GrxSeekBar android:title="Left margin" android:key="dlx_qs_analog_left_margin" android:defaultValue="0" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="lp" grx:interval="1" grx:maxValue="70" grx:minValue="0" />
-                <GrxSeekBar android:title="Right margin" android:key="dlx_qs_analog_right_margin" android:defaultValue="0" grx:groupedValueKey="dlx_qs_analog_clock" grx:groupedValueMyAlias="rp" grx:interval="1" grx:maxValue="70" grx:minValue="0" />
-            </PreferenceScreen>
-        </GrxPreferenceCategory>
-    </PreferenceScreen>
+        </PreferenceScreen>
+        <GrxButtonPreference android:title="Apply changes" android:key="button_1" grx:button_Style="big" grx:groupedValueKey="dlx_qs_analog_clock" />
+</PreferenceScreen>
+    
     <PreferenceScreen android:title="Device Info" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory android:title="Device Info Options">
-            <GrxSwitchPreference android:title="Device info visibility" android:key="device_info_visibility" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
-            <GrxColorPicker android:title="Info names text color" android:key="gear_info_names_color" android:summary="Change color" android:defaultValue="0x22000000" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-            <GrxColorPicker android:title="Info values text color" android:key="gear_info_values_color" android:summary="Change color" android:defaultValue="0x22000000" grx:showAlphaSlider="true" grx:showAutoButton="true" />
+        <GrxPreferenceCategory android:title="Device Info Options" />
+        <GrxSwitchPreference android:title="Device info visibility" android:key="device_info_visibility" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" grx:switchColor="?complementary_color2" />
+        <GrxSwitchPreference android:title="Uppercase" android:key="gear_info_to_uppercase" android:dependency="device_info_visibility" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <PreferenceCategory android:title="Info names text" />
+        <GrxPreferenceCategory android:dependency="device_info_visibility" grx:hiddenCategory="true">
+            <GrxFontPreference android:title="Font Style" android:key="device_info_font_titles" grx:optionsArray="@array/pref_font_options" grx:valuesArray="@array/pref_font_values" android:defaultValue="" grx:arrowColor="?complementary_color2" />
+            <GrxColorPicker android:title="Text Color in Light Bgs" android:key="gear_info_names_tint" android:defaultValue="0xff343434" />
+            <GrxColorPicker android:title="Text Color in Dark Bgs" android:key="gear_info_names_color" android:defaultValue="0xfffafafa" />
+            <GrxSeekBar android:title="Text Size" android:key="gear_info_views_size" android:defaultValue="13" grx:interval="1" grx:maxValue="20" grx:minValue="7" grx:showPopup="true" grx:units="dp" />
         </GrxPreferenceCategory>
-        <GrxPreferenceCategory android:title="Device Info Items">
-            <GrxCheckBoxPreference android:title="Device model" android:key="device_model" android:defaultValue="true" android:summaryOn="Shown" android:summaryOff="Hidden" />
-            <GrxCheckBoxPreference android:title="Android version" android:key="device_android_version" android:defaultValue="true" android:summaryOn="Shown" android:summaryOff="Hidden" />
-            <GrxCheckBoxPreference android:title="Build version" android:key="device_build_version" android:defaultValue="true" android:summaryOn="Shown" android:summaryOff="Hidden" />
-            <GrxCheckBoxPreference android:title="Battery level" android:key="device_battery_level" android:defaultValue="true" android:summaryOn="Shown" android:summaryOff="Hidden" />
-            <GrxCheckBoxPreference android:title="Network name" android:key="device_network_name" android:defaultValue="false" android:summaryOn="Shown" android:summaryOff="Hidden" />
-            <GrxCheckBoxPreference android:title="WIFI info" android:key="device_wifi_info" android:defaultValue="false" android:summaryOn="Shown" android:summaryOff="Hidden" />
-            <GrxCheckBoxPreference android:title="Next alarm" android:key="device_next_alarm" android:defaultValue="false" android:summaryOn="Shown" android:summaryOff="Hidden" />
-            <GrxCheckBoxPreference android:title="Device up time" android:key="device_up_time" android:defaultValue="false" android:summaryOn="Shown" android:summaryOff="Hidden" />
+        <PreferenceCategory android:title="Info values text" />
+        <GrxPreferenceCategory android:dependency="device_info_visibility" grx:hiddenCategory="true">
+            <GrxFontPreference android:title="Font Style" android:key="device_info_font_values" grx:optionsArray="@array/pref_font_options" grx:valuesArray="@array/pref_font_values" android:defaultValue="" grx:arrowColor="?complementary_color2" />
+            <GrxColorPicker android:title="Text Color in Light Bgs" android:key="gear_info_values_tint" android:defaultValue="0xff343434" />
+            <GrxColorPicker android:title="Text Color in Dark Bgs" android:key="gear_info_values_color" android:defaultValue="0xfffafafa" />
+            <GrxSeekBar android:title="Text Size" android:key="gear_info_values_size" android:defaultValue="13" grx:interval="1" grx:maxValue="20" grx:minValue="7" grx:showPopup="true" grx:units="dp" />
         </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Device Info Items" />
+        <GrxCheckBoxPreference android:title="Device model" android:key="device_model" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Android version" android:key="device_android_version" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Build version" android:key="device_build_version" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Battery level" android:key="device_battery_level" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Network name" android:key="device_network_name" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="WIFI info" android:key="device_wifi_info" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Next alarm" android:key="device_next_alarm" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Device up time" android:key="device_up_time" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Processor" android:key="device_cpu_info" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Bootloader" android:key="device_bootloader" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="IMEI" android:key="device_imei" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="RAM" android:key="device_ram" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Modem" android:key="device_modem" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Hardware components" android:key="device_hardware" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="CPU ABI" android:key="device_cpu_abi" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="Internal memory" android:key="device_storage_info" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxCheckBoxPreference android:title="External memory" android:key="device_ext_storage_info" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
     </PreferenceScreen>
+
     <PreferenceScreen android:title="Quicklaunch Panel" xmlns:grx="http://schemas.android.com/apk/res-auto">
         <GrxPreferenceCategory android:title="Quicklaunch Panel Options">
             <GrxSwitchPreference android:title="Quicklaunch visibility" android:key="quick_launch_visible" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
@@ -51,10 +80,12 @@
             <GrxSwitchPreference android:title="Show text" android:key="quick_launch_text_visible" android:dependency="quick_launch_visible" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
             <GrxSwitchPreference android:title="Show divider" android:key="quick_launch_show_devider" android:dependency="quick_launch_visible" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
             <GrxSwitchPreference android:title="Show add button" android:key="quick_launch_show_add" android:dependency="quick_launch_visible" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
-            <GrxColorPicker android:title="Text color" android:key="quick_launch_text_color" android:summary="Change text color" android:dependency="quick_launch_visible" android:defaultValue="0x22000000" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-            <GrxColorPicker android:title="Background color" android:key="quick_launch_background_color" android:summary="Change background color" android:dependency="quick_launch_visible" android:defaultValue="0x00777777" grx:showAlphaSlider="true" grx:showAutoButton="true" />
+            <GrxColorPicker android:title="Text color in light bgs" android:key="quick_launch_text_tint" android:dependency="quick_launch_visible" android:defaultValue="0xff343434" />
+            <GrxColorPicker android:title="Text color in dark bgs" android:key="quick_launch_text_color" android:dependency="quick_launch_visible" android:defaultValue="0xfffafafa" />
+            <GrxColorPicker android:title="Background color" android:key="quick_launch_background_color" android:dependency="quick_launch_visible" android:defaultValue="0x00777777" />
         </GrxPreferenceCategory>
     </PreferenceScreen>
+
     <PreferenceScreen android:title="Ram Swap Info" xmlns:grx="http://schemas.android.com/apk/res-auto">
         <GrxPreferenceCategory android:title="Ram Swap Info Options">
             <GrxSwitchPreference android:title="Ram swap visibility" android:key="noti_recents_memory" android:defaultValue="0" android:summaryOn="Show" android:summaryOff="Hide" />
@@ -71,87 +102,45 @@
             <GrxColorPicker android:title="Stroke color" android:key="noti_recents_memory_stroke_color" android:summary="Change color" android:dependency="noti_recents_memory" android:defaultValue="0xFFFAFAFA" />
         </GrxPreferenceCategory>
     </PreferenceScreen>
-    <PreferenceScreen android:title="Quick Panel" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory android:title="Quick Panel Options">
+
+    <PreferenceScreen android:title="Quick Panel Tiles" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="QS Tiles Number" />
+            <GrxSeekBar android:title="QS Tiles Rows Number" android:key="dlx_panel_max_columns" android:defaultValue="6" grx:interval="1" grx:maxValue="8" grx:minValue="5" />
+            <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to apply changes" grx:confirmKillpackage="true" grx:killpackage="com.android.systemui" />
+        <GrxPreferenceCategory android:title="QS Tiles Custom Grid" />
             <GrxSwitchPreference android:title="Enable Custom Grid Menu" android:key="quickstar_qs_tile_layout_custom_matrix" android:defaultValue="false" grx:systemType="global" android:summaryOn="Enabled" android:summaryOff="Disabled" />
-        </GrxPreferenceCategory>
-        <GrxPreferenceCategory android:title="QS Tile Number">
-            <GrxSeekBar android:title="QS Tile Number Portrait mode" android:key="dlx_rows_portrait" android:defaultValue="7" grx:commonBcExtra="arg" grx:interval="1" grx:maxValue="8" grx:minValue="5" grx:systemType="system" grx:units=" Toggles" />
-            <GrxSeekBar android:title="QS Tile Number Landscape mode" android:key="dlx_rows_landscape" android:defaultValue="16" grx:commonBcExtra="arg" grx:interval="1" grx:maxValue="16" grx:minValue="5" grx:systemType="system" grx:units=" Toggles" />
-        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="QS Tiles Animation" />
+            <GrxSingleSelection android:title="QS Tiles Animation" android:key="swipe_anim_tile_style" android:defaultValue="0" grx:optionsArray="@array/qstile_animation_style_entries" grx:valuesArray="@array/qstile_animation_style_values" />
+            <GrxSingleSelection android:title="QS Tiles Duration" android:key="swipe_anim_tile_duration" android:defaultValue="2000" grx:optionsArray="@array/qstile_animation_duration_entries" grx:valuesArray="@array/qstile_animation_duration_values" />
+            <GrxSingleSelection android:title="QS Tiles Interpolator" android:key="swipe_anim_tile_interpolator" android:defaultValue="0" grx:optionsArray="@array/qstile_animation_interpolator_entries" grx:valuesArray="@array/qstile_animation_interpolator_values" />
     </PreferenceScreen>
+
     <PreferenceScreen android:title="Panel Carrier Text" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory android:title="Carrier Text Mods"  />
+        <GrxPreferenceCategory android:title="Carrier Text"  />
         <GrxSwitchPreference android:title= "Enable Carrier Text" android:defaultValue="true" android:key="carr_switch" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="msca" grx:groupedValueSystemType="system"  />
-        <GrxColorPicker android:title="Carrier Text Color" android:key="carr_color" android:dependency="carr_switch" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colca"    />
+        <GrxColorPicker android:title="Carrier Text Color Dark Mode" android:key="carr_color" android:dependency="carr_switch" android:defaultValue="0xfffafafa" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colca"    />
+        <GrxColorPicker android:title="Carrier Text Color Light Mode" android:key="carr_color_l" android:dependency="carr_switch" android:defaultValue="0xff333333" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colca_l"    />
         <GrxSeekBar android:title="Relative Size" android:key="carr_size" android:dependency="carr_switch" android:defaultValue="100" grx:interval="5" grx:maxValue="250" grx:minValue="5" grx:showPopup="true" grx:units=" %" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="sizca" />
         <GrxFontPreference android:title="Font for stock carrier text" android:key="carr_font" android:dependency="carr_switch" android:defaultValue="" grx:optionsArray="@array/pref_font_options"  grx:valuesArray="@array/pref_font_values" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="foca" grx:groupedValueSystemType="system" grx:arrowColor="?complementary_color2" />
         <GrxSingleSelection android:title="Font Style for stock carrier text" android:key="carr_sty" android:dependency="carr_switch" android:defaultValue="0" grx:optionsArray="@array/font_style_options"  grx:valuesArray="@array/font_style_values" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="stca" />
-        <GrxButtonPreference android:title="Press To Apply"  android:key="bt1" android:summary="Press any button to apply the new options" grx:button_Style="small" grx:button_Text="Update Mod"  grx:groupedValueKey="ctxtmods"/>
-        <GrxPreferenceCategory android:title="Custom Text Mods"/>
+        <GrxPreferenceCategory android:title="Custom Text" />
         <GrxSwitchPreference android:title= "Enable Custom Text" android:defaultValue="false" android:key="cust_switch" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="mscu" />
         <GrxEditText android:title="Custom Text" android:dependency="cust_switch" android:key="cust_txt" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="txcu"  />
-        <GrxColorPicker android:title="Custom Text Color" android:key="cust_color" android:dependency="cust_switch" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colcu"    />
+        <GrxColorPicker android:title="Custom Text Color Dark Mode" android:key="cust_color" android:dependency="cust_switch" android:defaultValue="0xfffafafa" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colcu"    />
+        <GrxColorPicker android:title="Custom Text Color Light Mode" android:key="cust_color_l" android:dependency="cust_switch" android:defaultValue="0xff333333" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colcu_l"    />
         <GrxSeekBar android:title="Relative Size" android:key="cust_size" android:dependency="cust_switch" android:defaultValue="100" grx:interval="5" grx:maxValue="250" grx:minValue="5" grx:showPopup="true" grx:units=" %" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="sizcu" />
         <GrxFontPreference android:title="Font for stock custom text" android:key="cust_font" android:dependency="cust_switch" android:defaultValue="" grx:optionsArray="@array/pref_font_options"  grx:valuesArray="@array/pref_font_values" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="focu" grx:groupedValueSystemType="system" grx:arrowColor="?complementary_color2" />
         <GrxSingleSelection android:title="Font Style for stock custom text" android:key="cust_sty" android:dependency="cust_switch" android:defaultValue="0" grx:optionsArray="@array/font_style_options"  grx:valuesArray="@array/font_style_values" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="stcu" />
-        <GrxButtonPreference android:title="Press To Apply"  android:key="bt2" android:summary="Press any button to apply the new options" grx:button_Style="small" grx:button_Text="Update Mod"  grx:groupedValueKey="ctxtmods"/>
-        <GrxPreferenceCategory android:title="Next Alarm Mods"  />
+        <GrxPreferenceCategory android:title="Next Alarm"  />
         <GrxSwitchPreference android:title= "Enable Next Alarm Text" android:defaultValue="false" android:key="na_switch" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="msna"  />
-        <GrxColorPicker android:title="Next Alarm Text Color" android:key="na_color" android:dependency="na_switch" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colna"    />
+        <GrxColorPicker android:title="Next Alarm Text Color Dark Mode" android:key="na_color" android:dependency="na_switch" android:defaultValue="0xfffafafa" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colna"    />
+        <GrxColorPicker android:title="Next Alarm Text Color Light Mode" android:key="na_color_l" android:dependency="na_switch" android:defaultValue="0xff333333" grx:showAlphaSlider="true" grx:showAutoButton="true" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="colna_l"    />
         <GrxSeekBar android:title="Relative Size" android:key="na_size" android:dependency="na_switch" android:defaultValue="100" grx:interval="5" grx:maxValue="250" grx:minValue="5" grx:showPopup="true" grx:units=" %" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="sizna" />
         <GrxFontPreference android:title="Font for Next Alarm text" android:key="na_font" android:dependency="na_switch" android:defaultValue="" grx:optionsArray="@array/pref_font_options"  grx:valuesArray="@array/pref_font_values" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="fona" grx:groupedValueSystemType="system" grx:arrowColor="?complementary_color2" />
         <GrxSingleSelection android:title="Font Style for Next Alarm text" android:key="na_sty" android:dependency="na_switch" android:defaultValue="0" grx:optionsArray="@array/font_style_options"  grx:valuesArray="@array/font_style_values" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="stna" />
-        <GrxButtonPreference android:title="Press To Apply"  android:key="bt3" android:summary="Press any button to apply the new options" grx:button_Style="small" grx:button_Text="Update Mod"  grx:groupedValueKey="ctxtmods"/>
         <GrxPreferenceCategory android:title="Other Common Options"  />
         <GrxSeekBar android:title="Blanks Separators " android:key="ctxmods_sep" android:defaultValue="2" grx:interval="1" grx:maxValue="200" grx:minValue="1" grx:showPopup="true" grx:units=" " grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="nbla" />
         <GrxSortList android:title="Set items order in carrier view"  android:key="ctxmods_ord" android:defaultValue="nextalarm-/#carrier-/#custom-/#" grx:optionsArray="@array/carrier_items_options" grx:valuesArray="@array/carrier_items_values" grx:arrowColor="?complementary_color5" grx:separator="-/#" grx:groupedValueKey="ctxtmods" grx:groupedValueMyAlias="ord" />
-        <GrxButtonPreference android:title="Press To Apply"  android:key="bt4" android:summary="Press any button to apply the new options" grx:button_Style="small" grx:button_Text="Update Mod"  grx:groupedValueKey="ctxtmods"/>
     </PreferenceScreen>
-    <PreferenceScreen android:title="Weather Temperature" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <PreferenceScreen android:title="Weather Temperature Options" xmlns:grx="http://schemas.android.com/apk/res-auto">
-            <GrxPreferenceCategory android:title="Weather Temperature Options">
-                <GrxSwitchPreference android:title="@string/temperaturevisibility" android:key="np_sb_weather_temperature_visibility" android:defaultValue="false" android:summaryOn="Enable" android:summaryOff="Disable" />
-                <GrxSwitchPreference android:title="@string/itemmesurevisibility" android:key="np_sb_weather_temperature_scale_visibility" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="true" android:summaryOn="Enable" android:summaryOff="Disable" />
-                <GrxSeekBar android:title="@string/tempsize" android:key="np_sb_weather_temperature_size" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="15" grx:interval="1" grx:maxValue="25" grx:minValue="5" />
-                <GrxSingleSelection android:title="@string/tempstyle" android:key="np_sb_weather_temperature_font_style" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="0" grx:optionsArray="@array/data_usage_text_style_entries" grx:valuesArray="@array/data_usage_text_style_values" />
-                <GrxSingleSelection android:title="@string/fontstyle" android:key="np_sb_weather_temperature_font" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="DEFAULT" grx:optionsArray="@array/weather_fonts_entries" grx:valuesArray="@array/weather_fonts_values" />
-                <GrxColorPicker android:title="@string/coloringlightbg" android:key="np_sb_weather_temperature_color_tint" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-                <GrxColorPicker android:title="@string/coloringdarkbg" android:key="np_sb_weather_temperature_color" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-                <GrxSeekBar android:title="@string/tempverticalshift" android:key="np_sb_weather_temperature_padding_top" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="60" grx:minValue="-60" />
-                <GrxSeekBar android:title="@string/tempbottomoffset" android:key="np_sb_weather_temperature_padding_bottom" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="50" grx:minValue="-50" />
-                <GrxSeekBar android:title="@string/templeftoffset" android:key="np_sb_weather_temperature_padding_start" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="100" grx:minValue="-100" />
-                <GrxSeekBar android:title="@string/temprightoffset" android:key="np_sb_weather_temperature_padding_end" android:dependency="np_sb_weather_temperature_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="200" grx:minValue="-200" />
-            </GrxPreferenceCategory>
-        </PreferenceScreen>
-        <PreferenceScreen android:title="Weather Icon Options">
-            <GrxPreferenceCategory android:title="Weather Icon Options">
-                <GrxSwitchPreference android:title="@string/weathericonvisibility" android:key="np_sb_weather_icon_visibility" android:defaultValue="false" android:summaryOn="Enable" android:summaryOff="Disable" />
-                <GrxSingleSelection android:title="@string/iconstyle" android:key="np_kg_weather_icon_path" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="1" grx:optionsArray="@array/weather_icon_style_select_entries" grx:valuesArray="@array/weather_icon_style_select_values" />
-                <GrxSeekBar android:title="@string/iconsize" android:key="np_sb_weather_icon_size" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="30" grx:interval="1" grx:maxValue="100" grx:minValue="10" />
-                <GrxSwitchPreference android:title="@string/allowcolorchange" android:key="np_sb_weather_icon_global_color" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="false" android:summaryOn="Enable" android:summaryOff="Disable" />
-                <GrxColorPicker android:title="@string/coloringlightbg" android:key="np_sb_weather_icon_color_light" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-                <GrxColorPicker android:title="@string/coloringdarkbg" android:key="np_sb_weather_icon_color_dark" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-                <GrxSeekBar android:title="@string/tempverticalshift" android:key="np_sb_weather_icon_padding_top" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="-4" grx:interval="1" grx:maxValue="30" grx:minValue="-30" />
-                <GrxSeekBar android:title="@string/tempbottomoffset" android:key="np_sb_weather_icon_padding_bottom" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="100" grx:minValue="-100" />
-                <GrxSeekBar android:title="@string/templeftoffset" android:key="np_sb_weather_icon_padding_start" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="1" grx:interval="1" grx:maxValue="100" grx:minValue="-100" />
-                <GrxSeekBar android:title="@string/temprightoffset" android:key="np_sb_weather_icon_padding_end" android:dependency="np_sb_weather_icon_visibility" android:defaultValue="5" grx:interval="1" grx:maxValue="100" grx:minValue="-100" />
-            </GrxPreferenceCategory>
-        </PreferenceScreen>
-        <PreferenceScreen android:title="Weather Location Options" xmlns:grx="http://schemas.android.com/apk/res-auto">
-            <GrxPreferenceCategory android:title="Weather Location Options">
-                <GrxSwitchPreference android:title="@string/locationvisibility" android:key="np_sb_weather_location_visibility" android:defaultValue="false" android:summaryOn="Enable" android:summaryOff="Disable" />
-                <GrxColorPicker android:title="@string/coloringlightbg" android:key="np_sb_weather_location_color_tint" android:dependency="np_sb_weather_location_visibility" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-                <GrxColorPicker android:title="@string/coloringdarkbg" android:key="np_sb_weather_location_color" android:dependency="np_sb_weather_location_visibility" android:defaultValue="0xFF252525" grx:showAlphaSlider="true" grx:showAutoButton="true" />
-                <GrxSeekBar android:title="@string/locationsize" android:key="np_sb_weather_location_size" android:dependency="np_sb_weather_location_visibility" android:defaultValue="15" grx:interval="1" grx:maxValue="25" grx:minValue="5" />
-                <GrxSingleSelection android:title="@string/locationstyle" android:key="np_sb_weather_location_font" android:dependency="np_sb_weather_location_visibility" android:defaultValue="DEFAULT" grx:optionsArray="@array/weather_fonts_entries" grx:valuesArray="@array/weather_fonts_values" />
-                <GrxSingleSelection android:title="@string/fontstyle" android:key="np_sb_weather_location_font_style" android:dependency="np_sb_weather_location_visibility" android:defaultValue="0" grx:optionsArray="@array/data_usage_text_style_entries" grx:valuesArray="@array/data_usage_text_style_values" />
-                <GrxSeekBar android:title="@string/tempverticalshift" android:key="np_sb_weather_location_padding_top" android:dependency="np_sb_weather_location_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="30" grx:minValue="-30" />
-                <GrxSeekBar android:title="@string/tempbottomoffset" android:key="np_sb_weather_location_padding_bottom" android:dependency="np_sb_weather_location_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="50" grx:minValue="-50" />
-                <GrxSeekBar android:title="@string/templeftoffset" android:key="np_sb_weather_location_padding_start" android:dependency="np_sb_weather_location_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="100" grx:minValue="-100" />
-                <GrxSeekBar android:title="@string/temprightoffset" android:key="np_sb_weather_location_padding_end" android:dependency="np_sb_weather_location_visibility" android:defaultValue="0" grx:interval="1" grx:maxValue="200" grx:minValue="-200" />
-            </GrxPreferenceCategory>
-        </PreferenceScreen>
-        <GrxOpenActivity android:title="Weather Settings" grx:activity="mickles.app.mweatherdaemonV2_0/mickles.app.mweatherdaemonV2_0.settings.mSettingsMain" />
-    </PreferenceScreen>
+
 </PreferenceScreen>

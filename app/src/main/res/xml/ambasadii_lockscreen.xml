@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android" xmlns:grx="http://schemas.android.com/apk/res-auto">
-    <GrxPreferenceCategory android:title="Lockscreen Icons Position">
-            <GrxPerItemSingleSelection android:title="Lockscreen Statusbar Icons Position" android:key="lsviews" android:summary="@string/sb_positions_help" android:defaultValue="kgsb_carrier;0|networkspeedview;2|traffic_kg;2|weather_kg;2|weather_icon_kg;2|statusicons;2|grxcirbatls;2|minit;2|batterycontainer;2|" grx:allowSortOut="true" grx:optionsArray="@array/kgsb_views_positions_options" grx:spinnerOptionsArray="@array/sb_postions_options" grx:spinnerValuesArray="@array/sb_positions_values" grx:valuesArray="@array/kgsb_views_positions_values" />
+    <GrxPreferenceCategory android:title="Lockscreen SB Icons Position">
+            <GrxPerItemSingleSelection android:title="Lockscreen SB Icons Position" android:key="lsviews" android:summary="@string/sb_positions_help" android:defaultValue="kgsb_carrier;0|carrier_ls;0|networkspeedview;2|traffic_kg;2|statusicons;2|grxcirbatls;2|minit;2|batterycontainer;2|" grx:allowSortOut="true" grx:optionsArray="@array/kgsb_views_positions_options" grx:spinnerOptionsArray="@array/sb_postions_options" grx:spinnerValuesArray="@array/sb_positions_values" grx:valuesArray="@array/kgsb_views_positions_values" />
     </GrxPreferenceCategory>
-    <GrxPreferenceCategory android:title="Other Options">
+    <GrxPreferenceCategory android:title="Carrier Text on Lockscreen">
+        <GrxSwitchPreference android:title="Carrier Text Visibility" android:key="ed_keyguard_carrier_switch" android:defaultValue="true" android:summaryOn="Show" android:summaryOff="Hide" />
+    </GrxPreferenceCategory>
+    <GrxPreferenceCategory android:title="Next Alarm on Lockscreen">
+        <GrxSwitchPreference android:title="Next Alarm Visibility" android:key="next_alarm_switch" android:defaultValue="false" android:summaryOn="Show" android:summaryOff="Hide" />
+        <GrxColorPicker android:title="Next Alarm Text Color" android:key="next_alarm_text_color" android:dependency="next_alarm_switch" android:defaultValue="0xfffafafa" grx:showAlphaSlider="true" />
+        <GrxColorPicker android:title="Next Alarm Icon Color" android:key="next_alarm_icon_color" android:dependency="next_alarm_switch" android:defaultValue="0xfffafafa" grx:showAlphaSlider="true" />
+        <GrxFontPreference android:title="Next Alarm Text Font" android:key="next_alarm_text_font" android:dependency="next_alarm_switch" grx:optionsArray="@array/pref_font_options" grx:valuesArray="@array/pref_font_values" android:defaultValue="" grx:arrowColor="?complementary_color2" />
+        <GrxSeekBar android:title="Next Alarm Text Size" android:key="next_alarm_text_size" android:dependency="next_alarm_switch" android:defaultValue="15" grx:maxValue="50" grx:minValue="0" grx:units=" dip" grx:showPopup="true" grx:interval="1"/>
+    </GrxPreferenceCategory>
+    <GrxPreferenceCategory android:title="Quick Reply on Lockscreen">
         <GrxSwitchPreference android:title="Allow quick reply on lockscreen" android:key="allow_remote_input" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
         <GrxInfoText android:summary="This will bypass quick reply on lockscreen without pin/pattern, you need apply changes after switch this value" />
-        <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to apply changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
+        <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to apply changes" grx:confirmKillpackage="true" grx:killpackage="com.android.systemui" />
     </GrxPreferenceCategory>
 </PreferenceScreen>

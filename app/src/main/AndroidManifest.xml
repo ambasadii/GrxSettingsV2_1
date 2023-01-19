@@ -36,7 +36,6 @@
             android:theme="@style/Grx.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -47,6 +46,56 @@
             android:excludeFromRecents="true">
         </activity>
 
+        <service
+            android:name=".tiles.GrxRefreshRateTile"
+            android:icon="@drawable/grx60hz"
+            android:label="@string/tile_smoothness"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".tiles.GrxOutdoorModeTile"
+            android:icon="@drawable/grx_tile_brightness"
+            android:label="@string/tile_outdoormode"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".tiles.GrxRecoveryTile"
+            android:icon="@drawable/grx_tile_recovery"
+            android:label="@string/tile_recovery"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".tiles.GrxScreenOnTimeTile"
+            android:icon="@drawable/grx30s"
+            android:label="@string/tile_screenontime"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+		<service
+            android:name=".tiles.GrxSettingsTile"
+            android:icon="@drawable/grx_tile_romcontrol"
+            android:label="@string/tile_grx"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+		
     </application>
 
 </manifest>

@@ -22,27 +22,23 @@
     <string-array name="sb_hide_views_options">
         <item>@string/clock</item>
         <item>@string/clockmod</item>
-        <item>Analog Clock (Statusbar)</item>
-        <item>Analog Clock (Notif. panel)</item>
+        <item>@string/analogclock</item>
         <item>@string/battery_and_text</item>
-        <item>@string/battery_icon</item>
         <item>@string/circularbt_h</item>
         <item>@string/circularbt_l</item>
         <item>@string/circularbt_q</item>
         <item>@string/minit</item>
         <item>@string/date</item>
         <item>@string/carrierlabel</item>
-        <item>@string/carrier</item>
+        <item>@string/carrierls</item>
         <item>@string/carrierlabelnp</item>
+        <item>@string/netspeed</item>
         <item>@string/trafficsb</item>
         <item>@string/traffickg</item>
         <item>@string/trafficqs</item>
         <item>@string/weather_temp</item>
         <item>@string/weather_icon</item>
         <item>@string/weather_loc</item>
-        <item>@string/weather_temp_np</item>
-        <item>@string/weather_icon_np</item>
-        <item>@string/weather_loc_np</item>
         <item>@string/mobile</item>
         <item>@string/wifi</item>
         <item>@string/airplane</item>
@@ -65,33 +61,31 @@
         <item>@string/private_mode</item>
         <item>@string/secure_mode</item>
         <item>@string/smart_network</item>
+        <item>@string/enhanced_processing</item>
+        <item>@string/vpn</item>
         <item>@string/headset</item>
         <item>@string/rotation</item>
     </string-array>
     <string-array name="sb_hide_views_values">
         <item>clock</item>
         <item>clock_mod</item>
-        <item>analogclock</item>
         <item>analogclock_qs</item>
         <item>battery</item>
-        <item>batdrawable</item>
         <item>grxcirbathome</item>
         <item>grxcirbatls</item>
         <item>grxcirbatpanel</item>
         <item>minit</item>
         <item>sb_date</item>
         <item>carrier_label</item>
-        <item>kgsb_carrier</item>
+        <item>carrier_ls</item>
         <item>np_carrier</item>
+        <item>networkspeedview</item>
         <item>traffic_sb</item>
         <item>traffic_kg</item>
         <item>traffic_qs</item>
         <item>weather_temp</item>
         <item>weather_icon</item>
         <item>weather_loc</item>
-        <item>weather_temp_np</item>
-        <item>weather_icon_np</item>
-        <item>weather_loc_np</item>
         <item>mobile</item>
         <item>wifi</item>
         <item>airplane</item>
@@ -114,6 +108,8 @@
         <item>private_mode</item>
         <item>secure</item>
         <item>smart_network</item>
+        <item>enhanced_processing</item>
+        <item>vpn</item>
         <item>headset</item>
         <item>rotate</item>
     </string-array>
@@ -524,6 +520,18 @@
         <item>Cartoon</item>
         <item>Scanner</item>
         <item>Pass</item>
+        <item>Owl</item>
+        <item>Thinking</item>
+        <item>Triangles</item>
+        <item>Walk</item>
+        <item>Yoga</item>
+        <item>Failure</item>
+        <item>Angry</item>
+        <item>Coffie</item>
+        <item>Happy</item>
+        <item>Kiss</item>
+        <item>Kitty</item>
+        <item>Yelly</item>
     </string-array>
     <string-array name="custom_fingerprint_effect_values">
         <item>0</item>
@@ -536,7 +544,20 @@
         <item>8</item>
         <item>9</item>
         <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
     </string-array>
+
     <string-array name="color_custom_bg_type_entries">
         <item>Image</item>
         <item>Primary color</item>
@@ -734,11 +755,10 @@
         <item>batterycontainer</item>
     </string-array>
     <string-array name="kgsb_views_positions_options">
+        <item>Carrier Text</item>
         <item>Carrier Label</item>
         <item>Network Speed</item>
         <item>Network Traffic</item>
-        <item>Weather Temperature</item>
-        <item>Weather Icon</item>
         <item>Status Icons</item>
         <item>Circular Battery</item>
         <item>3Minit Battery</item>
@@ -746,10 +766,9 @@
     </string-array>
     <string-array name="kgsb_views_positions_values">
         <item>kgsb_carrier</item>
+        <item>carrier_ls</item>
         <item>networkspeedview</item>
         <item>traffic_kg</item>
-        <item>weather_kg</item>
-        <item>weather_icon_kg</item>
         <item>statusicons</item>
         <item>grxcirbatls</item>
         <item>minit</item>
@@ -759,33 +778,31 @@
         <item>Clock</item>
         <item>Custom Clock</item>
         <item>Carrier Label</item>
-        <item>Date</item>
-        <item>Weather Temperature</item>
-        <item>Weather Icon</item>
-        <item>Weather Location</item>
+        <item>Date</item>>
         <item>Network Speed</item>
         <item>Network Traffic</item>
+        <item>Weather Temperature</item>>
+        <item>Weather Icon</item>>
+        <item>Weather Locaction</item>>
         <item>Status Icons</item>
         <item>Circular Battery</item>
         <item>3Minit Battery</item>
         <item>Stock Battery</item>
-        <item>Analog Clock</item>
     </string-array>
     <string-array name="dual_sb_views_positions_values">
         <item>phone_status_bar_clock</item>
         <item>clock_mod</item>
         <item>carrier_label</item>
         <item>sb_date</item>
-        <item>weather</item>
-        <item>weather_icon</item>
-        <item>weatherloc</item>
         <item>networkspeedview</item>
         <item>traffic_sb</item>
+        <item>weather_temp</item>
+        <item>weather_icon</item>
+        <item>weather_loc</item>
         <item>statusicons</item>
         <item>grxcirbathome</item>
         <item>minit</item>
         <item>batterycontainer</item>
-        <item>analogclock</item>
     </string-array>
     <string-array name="dual_sb_postions_options">
         <item>Left Top</item>
@@ -1193,11 +1210,12 @@
         <item>custom</item>
     </string-array>
     <string-array name="ls_colors_entries">
-        <item>Default color</item>
+        <item>Default Color</item>
+        <item>Carrier Text</item>
         <item>Network Speed</item>
         <item>Battery Color</item>
         <item>Battery Bolt Color</item>
-        <item>Battery percent Color</item>
+        <item>Battery Percent Color</item>
         <item>WiFi</item>
         <item>WiFi Arrows</item>
         <item>Mobile</item>
@@ -1225,9 +1243,11 @@
         <item>HeadSet</item>
         <item>Screen Cast</item>
         <item>Vpn</item>
+        <item>Enhanced Processing</item>
     </string-array>
     <string-array name="ls_colors_values">
         <item>def</item>
+        <item>carr</item>
         <item>netsp</item>
         <item>bat</item>
         <item>batbg</item>
@@ -1259,16 +1279,12 @@
         <item>headset</item>
         <item>cast</item>
         <item>vpn</item>
+        <item>enhanced_processing</item>
     </string-array>
     <string-array name="hs_colors_entries">
         <item>Default color</item>
         <item>Notifications</item>
-        <item>Heads Up SB Text</item>
-        <item>Clock</item>
         <item>Network Speed</item>
-        <item>Battery Color</item>
-        <item>Battery Bolt Color</item>
-        <item>Battery percent Color</item>
         <item>WiFi</item>
         <item>WiFi Arrows</item>
         <item>Mobile</item>
@@ -1296,16 +1312,12 @@
         <item>HeadSet</item>
         <item>Screen Cast</item>
         <item>Vpn</item>
+        <item>Enhanced Processing</item>
     </string-array>
     <string-array name="hs_colors_values">
         <item>def</item>
         <item>notif</item>
-        <item>heup</item>
-        <item>clk</item>
         <item>netsp</item>
-        <item>bat</item>
-        <item>batbg</item>
-        <item>battxt</item>
         <item>wifi</item>
         <item>wifiarr</item>
         <item>mobile</item>
@@ -1333,6 +1345,7 @@
         <item>headset</item>
         <item>cast</item>
         <item>vpn</item>
+        <item>enhanced_processing</item>
     </string-array>
     <string-array name="mickles_font_entries">
         <item>Default</item>
@@ -1465,6 +1478,10 @@
         <item>@drawable/wifistyle15</item>
         <item>@drawable/wifistyle16</item>
         <item>@drawable/wifistyle17</item>
+        <item>@drawable/wifistyle18</item>
+        <item>@drawable/wifistyle19</item>
+        <item>@drawable/wifistyle20</item>
+        <item>@drawable/wifistyle21</item>
     </array>
     <string-array name="wifi_entries">
         <item>WiFi Icon (stock)</item>
@@ -1484,6 +1501,10 @@
         <item>WiFi Icon 14</item>
         <item>WiFi Icon 15</item>
         <item>WiFi Icon 16</item>
+        <item>WiFi Icon 17</item>
+        <item>WiFi Icon 18</item>
+        <item>WiFi Icon 19</item>
+        <item>WiFi Icon 20</item>
     </string-array>
     <string-array name="wifi_values">
         <item>0</item>
@@ -1503,6 +1524,10 @@
         <item>14</item>
         <item>15</item>
         <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
     </string-array>
     <array name="wifiarrow_drawables">
         <item>@drawable/arrow1</item>
@@ -1532,6 +1557,12 @@
         <item>@drawable/signalstyle12</item>
         <item>@drawable/signalstyle13</item>
         <item>@drawable/signalstyle14</item>
+        <item>@drawable/signalstyle15</item>
+        <item>@drawable/signalstyle16</item>
+        <item>@drawable/signalstyle17</item>
+        <item>@drawable/signalstyle18</item>
+        <item>@drawable/signalstyle19</item>
+        <item>@drawable/signalstyle20</item>
     </array>
     <string-array name="signal_entries">
         <item>Signal Icon (stock)</item>
@@ -1549,6 +1580,12 @@
         <item>Signal Icon 12</item>
         <item>Signal Icon 13</item>
         <item>Signal Icon 14</item>
+        <item>Signal Icon 15</item>
+        <item>Signal Icon 16</item>
+        <item>Signal Icon 17</item>
+        <item>Signal Icon 18</item>
+        <item>Signal Icon 19</item>
+        <item>Signal Icon 20</item>
     </string-array>
     <string-array name="signal_values">
         <item>0</item>
@@ -1566,6 +1603,12 @@
         <item>12</item>
         <item>13</item>
         <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
     </string-array>
     <string-array name="alarm_entries">
         <item>Alarm Icon (stock)</item>
@@ -1576,6 +1619,10 @@
         <item>Alarm Icon 5</item>
         <item>Alarm Icon 6</item>
         <item>Alarm Icon 7</item>
+        <item>Alarm Icon 8</item>
+        <item>Alarm Icon 9</item>
+        <item>Alarm Icon 10</item>
+        <item>Alarm Icon 11</item>
     </string-array>
     <string-array name="alarm_values">
         <item>0</item>
@@ -1586,6 +1633,10 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
     </string-array>
     <array name="alarm_drawables">
         <item>@drawable/alarmstyle</item>
@@ -1596,6 +1647,10 @@
         <item>@drawable/alarmstyle5</item>
         <item>@drawable/alarmstyle6</item>
         <item>@drawable/alarmstyle7</item>
+        <item>@drawable/alarmstyle8</item>
+        <item>@drawable/alarmstyle9</item>
+        <item>@drawable/alarmstyle10</item>
+        <item>@drawable/alarmstyle11</item>
     </array>
     <string-array name="location_entries">
         <item>Location Icon (stock)</item>
@@ -1636,7 +1691,7 @@
         <item>@drawable/location9</item>
         <item>@drawable/location10</item>
     </array>
-    <array name="bluetooth_drawables_off">
+    <array name="bluetooth_drawables">
         <item>@drawable/bluetooth_off</item>
         <item>@drawable/bluetooth_1_off</item>
         <item>@drawable/bluetooth_2_off</item>
@@ -1644,8 +1699,13 @@
         <item>@drawable/bluetooth_4_off</item>
         <item>@drawable/bluetooth_5_off</item>
         <item>@drawable/bluetooth_6_off</item>
+        <item>@drawable/bluetooth_7_off</item>
+        <item>@drawable/bluetooth_8_off</item>
+        <item>@drawable/bluetooth_9_off</item>
+        <item>@drawable/bluetooth_10_off</item>
+        <item>@drawable/bluetooth_11_off</item>
     </array>
-    <array name="bluetooth_drawables_on">
+    <array name="bluetooth_drawables_connected">
         <item>@drawable/bluetooth_on</item>
         <item>@drawable/bluetooth_1_on</item>
         <item>@drawable/bluetooth_2_on</item>
@@ -1653,6 +1713,11 @@
         <item>@drawable/bluetooth_4_on</item>
         <item>@drawable/bluetooth_5_on</item>
         <item>@drawable/bluetooth_6_on</item>
+        <item>@drawable/bluetooth_7_on</item>
+        <item>@drawable/bluetooth_8_on</item>
+        <item>@drawable/bluetooth_9_on</item>
+        <item>@drawable/bluetooth_10_on</item>
+        <item>@drawable/bluetooth_11_on</item>
     </array>
     <string-array name="bluetooth_entries">
         <item>Bluetooth Icon (stock)</item>
@@ -1662,6 +1727,11 @@
         <item>Bluetooth Icon 4</item>
         <item>Bluetooth Icon 5</item>
         <item>Bluetooth Icon 6</item>
+        <item>Bluetooth Icon 7</item>
+        <item>Bluetooth Icon 8</item>
+        <item>Bluetooth Icon 9</item>
+        <item>Bluetooth Icon 10</item>
+        <item>Bluetooth Icon 11</item>
     </string-array>
     <string-array name="bluetooth_values">
         <item>0</item>
@@ -1671,6 +1741,11 @@
         <item>4</item>
         <item>5</item>
         <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
     </string-array>
     <string-array name="powersave_entries">
         <item>Power Save Icon (stock)</item>
@@ -1769,16 +1844,19 @@
         <item>Ringer Vibrate Icon (stock)</item>
         <item>Ringer Vibrate Icon 1</item>
         <item>Ringer Vibrate Icon 2</item>
+        <item>Ringer Vibrate Icon 3</item>
     </string-array>
     <string-array name="ringer_vibrate_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
     </string-array>
     <array name="ringer_vibrate_drawables">
         <item>@drawable/stat_sys_ringer_vibrate</item>
         <item>@drawable/stat_sys_ringer_vibrate_1</item>
         <item>@drawable/stat_sys_ringer_vibrate_2</item>
+        <item>@drawable/stat_sys_ringer_vibrate_3</item>
     </array>
     <string-array name="ringer_mute_entries">
         <item>Ringer Mute Icon (stock)</item>
@@ -1798,6 +1876,257 @@
         <item>@drawable/stat_sys_ringer_silent_2</item>
         <item>@drawable/stat_sys_ringer_silent_3</item>
     </array>
+
+    <array name="brightness_progress_drawables">
+        <item>#fffdfdfd</item>
+        <item>#ff2d66ff</item>
+        <item>#ffbeff00</item>
+        <item>#ff08ff00</item>
+        <item>#ff00ffc6</item>
+        <item>#ffffce00</item>
+        <item>#ff9100ff</item>
+        <item>#ffff5db7</item>
+        <item>#ffff2e00</item>
+    </array>
+    <string-array name="brightness_progress_entries">
+        <item>Default</item>
+        <item>Color 1</item>
+        <item>Color 2</item>
+        <item>Color 3</item>
+        <item>Color 4</item>
+        <item>Color 5</item>
+        <item>Color 6</item>
+        <item>Color 7</item>
+        <item>Color 8</item>
+    </string-array>
+    <string-array name="brightness_progress_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <array name="toggles_icon_style_i">
+        <item>@drawable/qs_circle_0</item>
+        <item>@drawable/qs_circle_1</item>
+        <item>@drawable/qs_circle_2</item>
+        <item>@drawable/qs_circle_3</item>
+        <item>@drawable/qs_circle_4</item>
+        <item>@drawable/qs_circle_5</item>
+        <item>@drawable/qs_circle_6</item>
+        <item>@drawable/qs_circle_7</item>
+        <item>@drawable/qs_circle_8</item>
+        <item>@drawable/qs_circle_9</item>
+        <item>@drawable/qs_circle_10</item>
+        <item>@drawable/qs_circle_11</item>
+        <item>@drawable/qs_circle_12</item>
+        <item>@drawable/qs_circle_13</item>
+        <item>@drawable/qs_circle_14</item>
+        <item>@drawable/qs_circle_15</item>
+        <item>@drawable/qs_circle_16</item>
+        <item>@drawable/qs_circle_17</item>
+        <item>@drawable/qs_circle_18</item>
+        <item>@drawable/qs_circle_19</item>
+        <item>@drawable/qs_circle_20</item>
+        <item>@drawable/qs_circle_21</item>
+        <item>@drawable/qs_circle_22</item>
+        <item>@drawable/qs_circle_23</item>
+        <item>@drawable/qs_circle_24</item>
+        <item>@drawable/qs_circle_25</item>
+        <item>@drawable/qs_circle_26</item>
+        <item>@drawable/qs_circle_27</item>
+        <item>@drawable/qs_circle_28</item>
+        <item>@drawable/qs_circle_29</item>
+        <item>@drawable/qs_circle_30</item>
+        <item>@drawable/qs_circle_31</item>
+        <item>@drawable/qs_circle_32</item>
+        <item>@drawable/qs_circle_33</item>
+        <item>@drawable/qs_circle_34</item>
+        <item>@drawable/qs_circle_35</item>
+        <item>@drawable/qs_circle_36</item>
+        <item>@drawable/qs_circle_37</item>
+        <item>@drawable/qs_circle_38</item>
+        <item>@drawable/qs_circle_39</item>
+        <item>@drawable/qs_circle_40</item>
+        <item>@drawable/qs_circle_41</item>
+        <item>@drawable/qs_circle_42</item>
+        <item>@drawable/qs_circle_43</item>
+        <item>@drawable/qs_circle_44</item>
+        <item>@drawable/qs_circle_45</item>
+        <item>@drawable/qs_circle_46</item>
+        <item>@drawable/qs_circle_47</item>
+        <item>@drawable/qs_circle_48</item>
+    </array>
+
+    <string-array name="toggles_icon_style_e">
+        <item>Stock</item>
+        <item>Style 1</item>
+        <item>Style 2</item>
+        <item>Style 3</item>
+        <item>Style 4</item>
+        <item>Style 5</item>
+        <item>Style 6</item>
+        <item>Style 7</item>
+        <item>Style 8</item>
+        <item>Style 9</item>
+        <item>Style 10</item>
+        <item>Style 11</item>
+        <item>Style 12</item>
+        <item>Style 13</item>
+        <item>Style 14</item>
+        <item>Style 15</item>
+        <item>Style 16</item>
+        <item>Style 17</item>
+        <item>Style 18</item>
+        <item>Style 19</item>
+        <item>Style 20</item>
+        <item>Style 21</item>
+        <item>Style 22</item>
+        <item>Style 23</item>
+        <item>Style 24</item>
+        <item>Style 25</item>
+        <item>Style 26</item>
+        <item>Style 27</item>
+        <item>Style 28</item>
+        <item>Style 29</item>
+        <item>Style 30</item>
+        <item>Style 31</item>
+        <item>Style 32</item>
+        <item>Style 33</item>
+        <item>Style 34</item>
+        <item>Style 35</item>
+        <item>Style 36</item>
+        <item>Style 37</item>
+        <item>Style 38</item>
+        <item>Style 39</item>
+        <item>Style 40</item>
+        <item>Style 41</item>
+        <item>Style 42</item>
+        <item>Style 43</item>
+        <item>Style 44</item>
+        <item>Style 45</item>
+        <item>Style 46</item>
+        <item>Style 47</item>
+        <item>Style 48</item>
+    </string-array>
+
+    <string-array name="toggles_icon_style_v">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+    </string-array>
+
+    <string-array name="noti_bg_crop_options">
+        <item>Center crop</item>
+        <item>Center inside</item>
+        <item>Fit XY</item>
+        <item>Fit start</item>
+        <item>Fit center</item>
+        <item>Fit end</item>
+        <item>Matrix</item>
+    </string-array>
+    <string-array name="noti_bg_crop_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <array name="noti_bg_icons">
+        <item>@drawable/no_icon</item>
+        <item>@drawable/grd_img</item>
+        <item>@drawable/custom_noti_bg_1</item>
+        <item>@drawable/custom_noti_bg_2</item>
+        <item>@drawable/custom_noti_bg_3</item>
+        <item>@drawable/custom_noti_bg_4</item>
+        <item>@drawable/custom_noti_bg_5</item>
+        <item>@drawable/custom_noti_bg_6</item>
+        <item>@drawable/custom_noti_bg_7</item>
+        <item>@drawable/custom_noti_bg_8</item>
+        <item>@drawable/custom_noti_bg_9</item>
+        <item>@drawable/custom_noti_bg_10</item>
+    </array>
+    <string-array name="noti_bg_options">
+        <item>Stock</item>
+        <item>Image from gallery</item>
+        <item>Style 1</item>
+        <item>Style 2</item>
+        <item>Style 3</item>
+        <item>Style 4</item>
+        <item>Style 5</item>
+        <item>Style 6</item>
+        <item>Style 7</item>
+        <item>Style 8</item>
+        <item>Style 9</item>
+        <item>Style 10</item>
+    </string-array>
+    <string-array name="noti_bg_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
 
     <string-array name="time_format_options">
         <item>12 hrs</item>
