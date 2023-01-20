@@ -2,16 +2,23 @@
 
 This is an application for Mods Configuration and Rom Control, for Ambasadii Rom.
 
-# Main Site
-https://sites.google.com/view/ambasadiidev
+#License
 
-# Xda Site
-https://forum.xda-developers.com/t/rom-r-11-0-ambasadii-rom-for-s10e-s10-s10-stable-odex-xxu9eua4-v3-1.4221707/
+All the software developed by me in GrxSettings is free software, licensed uder Mozilla Pulbic License V 2.0. see https://www.mozilla.org/en-US/MPL/2.0//
+
+Related to the libraries used in this application, you will respect their license. Inside the source code you will find the corresponding license to be observed.
+
+# Main Site
+
+https://sites.google.com/view/ambasadiidev
 
 # Telegram
 
-Ambasadii ROM Support Group
+Ambasadii ROM S10 series
 https://t.me/ambasadiidev
+
+Ambasadii ROM S20 series
+https://t.me/ambasadiiroms20series
 
 Ambasadii News Channel
 https://t.me/ambasadiirom 
