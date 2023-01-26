@@ -112,25 +112,29 @@
             <GrxFontPreference android:title="Text Font" android:key="toggle_text_font" grx:optionsArray="@array/pref_font_options" grx:valuesArray="@array/pref_font_values" android:defaultValue="" grx:arrowColor="?complementary_color2" />
             <GrxSeekBar android:title="Text Size (default 12)" android:key="toggle_text_size" android:defaultValue="12" grx:maxValue="25" grx:minValue="6" grx:units=" dip" grx:showPopup="true" grx:interval="1" />
         <GrxPreferenceCategory android:title="Quick Panel Toggles Background" />
-            <GrxSingleSelection android:title="Choose Background" android:key="toggles_bg_custom" android:defaultValue="0" grx:iconsArray="@array/toggles_icon_style_i"  grx:optionsArray="@array/toggles_icon_style_e" grx:valuesArray="@array/toggles_icon_style_v" />
+        <GrxSwitchPreference android:title="Custom Background" android:key="toggles_bg_custom_switch" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:saveValueOnFly="true" grx:systemType="system" />
+        <GrxInfoText android:summary="This mod need to be disabled if you are using hex theme!" />
+        <GrxSingleSelection android:title="Choose Background" android:key="toggles_bg_custom" android:dependency="toggles_bg_custom_switch" android:defaultValue="0" grx:iconsArray="@array/toggles_icon_style_i"  grx:optionsArray="@array/toggles_icon_style_e" grx:valuesArray="@array/toggles_icon_style_v" />
         <GrxPreferenceCategory android:title="Quick Panel Toggles Colors" />
             <GrxSwitchPreference android:title="Main Switch" android:key="toggles_custom_colors_enabled" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:groupKey="grx_toggles_ct_colors" grx:saveValueOnFly="true" grx:systemType="system" />
-            <GrxPreferenceCategory android:title="Colors In Light Bgs" />
+        <GrxPreferenceCategory android:title="Colors In Light Bgs" />
             <GrxColorPicker android:title="Toggles Text In Light Bgs" android:key="toggles_text_color_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-16777216" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Bg ON In Light Bgs" android:key="toggles_bg_color_on_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xFF2E6BFF" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Bg OFF In Light Bgs" android:key="toggles_bg_color_off_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xAF717171" grx:groupKey="grx_toggles_ct_colors" />
-            <GrxColorPicker android:title="Toggles Bg Dim Color In Light Bgs" android:key="toggles_bg_color_dim_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-2143119361" grx:groupKey="grx_toggles_ct_colors" />
+            <GrxColorPicker android:title="Toggles Bg Dim In Light Bgs" android:key="toggles_bg_color_dim_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-2143119361" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Icon ON In Light Bgs" android:key="toggles_icon_color_on_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xFFF2F2F2" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Icon OFF In Light Bgs" android:key="toggles_icon_color_off_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xFFF2F2F2" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Icon Dim In Light Bgs" android:key="toggles_icon_color_dim_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-6381922" grx:groupKey="grx_toggles_ct_colors" />
-            <GrxPreferenceCategory android:title="Colors In Dark Bgs" />
+            <GrxColorPicker android:title="Toggles Ripple In Light Bgs" android:key="toggles_ripple_color_light" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-6381922" grx:groupKey="grx_toggles_ct_colors" />
+        <GrxPreferenceCategory android:title="Colors In Dark Bgs" />
             <GrxColorPicker android:title="Toggles Text In Dark Bgs" android:key="toggles_text_color" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xFFC3C3C3" grx:groupKey="grx_toggles_ct_colors" />
-            <GrxColorPicker android:title="Toggles Bg ON In In Dark Bgs" android:key="toggles_bg_color_on" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xFF2E6BFF" grx:groupKey="grx_toggles_ct_colors" />
+            <GrxColorPicker android:title="Toggles Bg ON In Dark Bgs" android:key="toggles_bg_color_on" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xFF2E6BFF" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Bg OFF In Dark Bgs" android:key="toggles_bg_color_off" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0x75717171" grx:groupKey="grx_toggles_ct_colors" />
-            <GrxColorPicker android:title="Toggles Bg Dim Color In Dark Bgs" android:key="toggles_bg_color_dim" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-2143119361" grx:groupKey="grx_toggles_ct_colors" />
+            <GrxColorPicker android:title="Toggles Bg Dim In Dark Bgs" android:key="toggles_bg_color_dim" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-2143119361" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Icon ON In Dark Bgs" android:key="toggles_icon_color_on" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xFFF2F2F2" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Icon OFF In Dark Bgs" android:key="toggles_icon_color_off" android:dependency="toggles_custom_colors_enabled" android:defaultValue="0xFF989898" grx:groupKey="grx_toggles_ct_colors" />
             <GrxColorPicker android:title="Toggles Icon Dim In Dark Bgs" android:key="toggles_icon_color_dim" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-6381922" grx:groupKey="grx_toggles_ct_colors" />
+            <GrxColorPicker android:title="Toggles Ripple In Dark Bgs" android:key="toggles_ripple_color" android:dependency="toggles_custom_colors_enabled" android:defaultValue="-6381922" grx:groupKey="grx_toggles_ct_colors" />
         <GrxPreferenceCategory android:title="Quick Panel Clock and Date Colors" />
             <GrxSwitchPreference android:title="Main Switch" android:key="ed_qsclock_custom_colors" android:defaultValue="true" grx:groupKey="ed_QSheaderColor" android:summaryOn="Enabled" android:summaryOff="Disabled" />
             <GrxPreferenceCategory android:title="Colors In Light Bgs" />
@@ -171,10 +175,10 @@
             <GrxSwitchPreference android:title="Main Switch" android:key="pageindicator_custom_colors" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:groupKey="grxxy_QSheaderColor" />
             <GrxPreferenceCategory android:title="Colors In Light Bgs" />
             <GrxColorPicker android:title="Page Indicator Selected In Light Bgs" android:key="pageindicator_selected_color" android:dependency="pageindicator_custom_colors" android:defaultValue="0xFF000000" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
-            <GrxColorPicker android:title="Page Indicator Unselected In Light Bgs" android:key="pageindicator_unselected_color" android:dependency="pageindicator_custom_colors" android:defaultValue="0xFF000000" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Page Indicator Unselected In Light Bgs" android:key="pageindicator_unselected_color" android:dependency="pageindicator_custom_colors" android:defaultValue="0xFF909090" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
             <GrxPreferenceCategory android:title="Colors In Dark Bgs" />
             <GrxColorPicker android:title="Page Indicator Selected Dark Bgs" android:key="pageindicator_selected_color_dark" android:dependency="pageindicator_custom_colors" android:defaultValue="0xffeef0ef" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
-            <GrxColorPicker android:title="Page Indicator Unselected Dark Bgs" android:key="pageindicator_unselected_color_dark" android:dependency="pageindicator_custom_colors" android:defaultValue="0xffeef0ef" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
+            <GrxColorPicker android:title="Page Indicator Unselected Dark Bgs" android:key="pageindicator_unselected_color_dark" android:dependency="pageindicator_custom_colors" android:defaultValue="0xFF909090" grx:groupKey="grxxy_QSheaderColor" grx:saveValueOnFly="true" grx:systemType="system" />
     </PreferenceScreen>
 
     <PreferenceScreen android:title="Notification Colors" xmlns:grx="http://schemas.android.com/apk/res-auto">
@@ -185,6 +189,7 @@
             <GrxColorPicker android:title="Select Color" android:key="noti_bg_color" android:defaultValue="0xFFFFFFFF" grx:showAlphaSlider="true" />
         <PreferenceCategory android:title="Notifications Colors Options" />
             <GrxSwitchPreference android:title="Main Switch" android:key="amba_Notification_custom_colors" android:defaultValue="false" grx:groupKey="amb_NotiColor" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+            <GrxInfoText android:summary="Press update all changes button when you change this switch or change colors for light and dark mode" />
         <GrxPreferenceCategory android:title="Colors In Light Bgs" />
             <GrxColorPicker android:title="Notif. Background In Light Bgs" android:key="amba_NotificationBgColor_color_light" android:dependency="amba_Notification_custom_colors" android:defaultValue="0xFFF7F7F7" />
             <GrxColorPicker android:title="Application Icons In Light Bgs" android:key="amba_notif_headericon_color_light" android:dependency="amba_Notification_custom_colors" android:defaultValue="0xFF8B8B99" />

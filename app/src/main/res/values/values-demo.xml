@@ -1214,7 +1214,6 @@
         <item>Carrier Text</item>
         <item>Network Speed</item>
         <item>Battery Color</item>
-        <item>Battery Bolt Color</item>
         <item>Battery Percent Color</item>
         <item>WiFi</item>
         <item>WiFi Arrows</item>
@@ -1250,7 +1249,6 @@
         <item>carr</item>
         <item>netsp</item>
         <item>bat</item>
-        <item>batbg</item>
         <item>battxt</item>
         <item>wifi</item>
         <item>wifiarr</item>
@@ -1285,6 +1283,9 @@
         <item>Default color</item>
         <item>Notifications</item>
         <item>Network Speed</item>
+        <item>Clock</item>
+        <item>Battery Color</item>
+        <item>Battery Percent Color</item>
         <item>WiFi</item>
         <item>WiFi Arrows</item>
         <item>Mobile</item>
@@ -1318,6 +1319,9 @@
         <item>def</item>
         <item>notif</item>
         <item>netsp</item>
+        <item>clk</item>
+        <item>bat</item>
+        <item>battxt</item>
         <item>wifi</item>
         <item>wifiarr</item>
         <item>mobile</item>
