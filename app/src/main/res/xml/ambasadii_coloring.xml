@@ -39,17 +39,18 @@
     </PreferenceScreen>
 
     <PreferenceScreen android:title="Quick Panel BG Color" xmlns:grx="http://schemas.android.com/apk/res-auto">
-        <GrxPreferenceCategory android:title="Quick Panel Background Color">
-            <GrxSwitchPreference android:title="Main Switch" android:key="enable_gear_custom_bg_notification_pd" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
-            <GrxSingleSelection android:title="Bg Type" android:key="gear_custom_bg_type_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0" grx:optionsArray="@array/color_custom_bg_type_entries" grx:valuesArray="@array/color_custom_bg_type_values" />
-            <GrxSeekBar android:title="Image Opacity" android:key="gear_bg_opacity_pd" android:dependency="enable_gear_custom_bg_notification_pd" grx:minValue="0" grx:maxValue="255" android:defaultValue="255" />
-            <GrxPickImage android:title="Select an Image" android:dependency="enable_gear_custom_bg_notification_pd" android:key="gear_bg_image_uri_notification_pd" />
-            <GrxColorPicker android:title="Primary color in Light Bgs" android:key="gear_bg_primary_tint_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
-            <GrxColorPicker android:title="Primary color in Dark Bgs" android:key="gear_bg_primary_color_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
-            <GrxColorPicker android:title="Secondary color in Light Bgs" android:key="gear_bg_second_gradient_tint_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
-            <GrxColorPicker android:title="Secondary color in Dark Bgs" android:key="gear_second_gradient_color_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
-            <GrxSingleSelection android:title="Gradiant Orientation" android:key="gear_bg_gradient_orientation_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
-        </GrxPreferenceCategory>
+        <GrxPreferenceCategory android:title="Quick Panel BG Options" />
+        <GrxSwitchPreference android:title="Main Switch" android:key="enable_gear_custom_bg_notification_pd" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <GrxSingleSelection android:title="Bg Type" android:key="gear_custom_bg_type_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0" grx:optionsArray="@array/color_custom_bg_type_entries" grx:valuesArray="@array/color_custom_bg_type_values" />
+        <GrxSeekBar android:title="Image Opacity" android:key="gear_bg_opacity_pd" android:dependency="enable_gear_custom_bg_notification_pd" grx:minValue="0" grx:maxValue="255" android:defaultValue="255" />
+        <GrxPickImage android:title="Select an Image" android:dependency="enable_gear_custom_bg_notification_pd" android:key="gear_bg_image_uri_notification_pd" />
+        <GrxSingleSelection android:title="Gradiant Orientation" android:key="gear_bg_gradient_orientation_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0" grx:optionsArray="@array/gradient_entries" grx:valuesArray="@array/gradient_values" />
+        <GrxPreferenceCategory android:title="Colors In Light Bgs" />
+        <GrxColorPicker android:title="Primary color in Light Bgs" android:key="gear_bg_primary_tint_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
+        <GrxColorPicker android:title="Primary color in Dark Bgs" android:key="gear_bg_primary_color_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
+        <GrxPreferenceCategory android:title="Colors In Dark Bgs" />
+        <GrxColorPicker android:title="Secondary color in Light Bgs" android:key="gear_bg_second_gradient_tint_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
+        <GrxColorPicker android:title="Secondary color in Dark Bgs" android:key="gear_second_gradient_color_notification_pd" android:dependency="enable_gear_custom_bg_notification_pd" android:defaultValue="0x84000000" />
     </PreferenceScreen>
 
     <PreferenceScreen android:title="Power Menu Colors" xmlns:grx="http://schemas.android.com/apk/res-auto">
