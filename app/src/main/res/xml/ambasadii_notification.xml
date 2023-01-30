@@ -106,7 +106,7 @@
     <PreferenceScreen android:title="Quick Panel Tiles" xmlns:grx="http://schemas.android.com/apk/res-auto">
         <GrxPreferenceCategory android:title="QS Tiles Number" />
             <GrxSeekBar android:title="QS Tiles Rows Number" android:key="dlx_panel_max_columns" android:defaultValue="6" grx:interval="1" grx:maxValue="8" grx:minValue="5" />
-            <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to apply changes" grx:confirmKillpackage="true" grx:killpackage="com.android.systemui" />
+            <GrxInfoText android:summary="Rotate screen to update rows numbers!" />
         <GrxPreferenceCategory android:title="QS Tiles Custom Grid" />
             <GrxSwitchPreference android:title="Enable Custom Grid Menu" android:key="quickstar_qs_tile_layout_custom_matrix" android:defaultValue="false" grx:systemType="global" android:summaryOn="Enabled" android:summaryOff="Disabled" />
         <GrxPreferenceCategory android:title="QS Tiles Animation" />

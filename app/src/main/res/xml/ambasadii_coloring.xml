@@ -206,6 +206,7 @@
         <GrxColorPicker android:title="Action Text In Light Bgs" android:key="ambasadii_notif_action_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF8B8B99" />
         <GrxColorPicker android:title="Toast Main Text In Light Bgs" android:key="ambasadii_toast_title_text_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
         <GrxColorPicker android:title="Toast Summary Text In Light Bgs" android:key="ambasadii_toast_sub_text_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
+        <GrxColorPicker android:title="Shelf Buttons BG In Light Bgs" android:key="ambasadii_notif_shelfmamager_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFF7F7F7" />
         <GrxPreferenceCategory android:title="Colors In Dark Bgs" />
         <GrxColorPicker android:title="Notif. Background In Dark Bgs" android:key="ambasadii_notibgcolor_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF303535" />
         <GrxColorPicker android:title="Application Icons In Dark Bgs" android:key="ambasadii_notif_headericon_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF8B8B99" />
@@ -220,6 +221,7 @@
         <GrxColorPicker android:title="Action Text In Dark Bgs" android:key="ambasadii_notif_action_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
         <GrxColorPicker android:title="Toast Main Text In Dark Bgs" android:key="ambasadii_toast_title_text" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
         <GrxColorPicker android:title="Toast summary Text In Dark Bgs" android:key="ambasadii_toast_sub_text" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
+        <GrxColorPicker android:title="Shelf Buttons BG In Dark Bgs" android:key="ambasadii_notif_shelfmamager_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF303535" />
         <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to update all changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
         <GrxPreferenceCategory android:title="Other Colors" />
         <GrxSwitchPreference android:title="Main Switch" android:key="amba_notif_custom_colors" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
