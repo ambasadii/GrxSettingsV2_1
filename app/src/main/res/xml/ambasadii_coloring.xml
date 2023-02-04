@@ -155,7 +155,7 @@
             <GrxColorPicker android:title="Application Name In Light Bgs" android:key="ambasadii_notif_apptext_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF4C4C4C" />
             <GrxColorPicker android:title="Notif. Time In Light Bgs" android:key="ambasadii_notif_time_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Main Text In Light Bgs" android:key="ambasadii_noti_main_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
-            <GrxColorPicker android:title="Summary Main Text In Light Bgs" android:key="ambasadii_notif_cont_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
+            <GrxColorPicker android:title="Summary Main Text In Light Bgs" android:key="ambasadii_notif_cont_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF4C4C4C" />
             <GrxColorPicker android:title="Header Text In Light Bgs" android:key="ambasadii_notif_headertext_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Summary Header Text In Light Bgs" android:key="ambasadii_notif_headertextsecondary_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF4C4C4C" />
             <GrxColorPicker android:title="Expand Button In Light Bgs" android:key="ambasadii_notif_expandbutton_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
