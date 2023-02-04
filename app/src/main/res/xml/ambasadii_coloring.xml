@@ -151,26 +151,26 @@
             <GrxInfoText android:summary="Press update all changes button when you change this switch or change colors for light and dark mode" />
         <GrxPreferenceCategory android:title="Colors In Light Bgs" />
             <GrxColorPicker android:title="Notif. Background In Light Bgs" android:key="ambasadii_notibgcolor_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFF7F7F7" />
-            <GrxColorPicker android:title="Application Icons In Light Bgs" android:key="ambasadii_notif_headericon_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF8B8B99" />
-            <GrxColorPicker android:title="Application Name In Light Bgs" android:key="ambasadii_notif_apptext_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFBBBBCE" />
+            <GrxColorPicker android:title="Application Icons In Light Bgs" android:key="ambasadii_notif_headericon_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFF7F7F7" />
+            <GrxColorPicker android:title="Application Name In Light Bgs" android:key="ambasadii_notif_apptext_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF4C4C4C" />
             <GrxColorPicker android:title="Notif. Time In Light Bgs" android:key="ambasadii_notif_time_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Main Text In Light Bgs" android:key="ambasadii_noti_main_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Summary Main Text In Light Bgs" android:key="ambasadii_notif_cont_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Header Text In Light Bgs" android:key="ambasadii_notif_headertext_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
-            <GrxColorPicker android:title="Summary Header Text In Light Bgs" android:key="ambasadii_notif_headertextsecondary_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
+            <GrxColorPicker android:title="Summary Header Text In Light Bgs" android:key="ambasadii_notif_headertextsecondary_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF4C4C4C" />
             <GrxColorPicker android:title="Expand Button In Light Bgs" android:key="ambasadii_notif_expandbutton_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Bubble Button In Light Bgs" android:key="ambasadii_notifbubblebutton_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
-            <GrxColorPicker android:title="Action Text In Light Bgs" android:key="ambasadii_notif_action_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF8B8B99" />
+            <GrxColorPicker android:title="Action Text In Light Bgs" android:key="ambasadii_notif_action_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Toast Main Text In Light Bgs" android:key="ambasadii_toast_title_text_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Toast Summary Text In Light Bgs" android:key="ambasadii_toast_sub_text_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF252525" />
             <GrxColorPicker android:title="Shelf Buttons BG In Light Bgs" android:key="ambasadii_notif_shelfmamager_color_light" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFF7F7F7" />
         <GrxPreferenceCategory android:title="Colors In Dark Bgs" />
             <GrxColorPicker android:title="Notif. Background In Dark Bgs" android:key="ambasadii_notibgcolor_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF303535" />
-            <GrxColorPicker android:title="Application Icons In Dark Bgs" android:key="ambasadii_notif_headericon_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF8B8B99" />
-            <GrxColorPicker android:title="Application Name In Dark Bgs" android:key="ambasadii_notif_apptext_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFBBBBCE" />
+            <GrxColorPicker android:title="Application Icons In Dark Bgs" android:key="ambasadii_notif_headericon_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFF0F0F0" />
+            <GrxColorPicker android:title="Application Name In Dark Bgs" android:key="ambasadii_notif_apptext_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFC2C2C2" />
             <GrxColorPicker android:title="Notif. Time In Dark Bgs" android:key="ambasadii_notif_time_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
             <GrxColorPicker android:title="Main Text In Dark Bgs" android:key="ambasadii_noti_main_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
-            <GrxColorPicker android:title="Summary Main Text In Dark Bgs" android:key="ambasadii_notif_cont_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
+            <GrxColorPicker android:title="Summary Main Text In Dark Bgs" android:key="ambasadii_notif_cont_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFC2C2C2" />
             <GrxColorPicker android:title="Header Text In Dark Bgs" android:key="ambasadii_notif_headertext_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
             <GrxColorPicker android:title="Summary Header Text In Dark Bgs" android:key="ambasadii_notif_headertextsecondary_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
             <GrxColorPicker android:title="Expand Button In Dark Bgs" android:key="ambasadii_notif_expandbutton_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
@@ -178,7 +178,7 @@
             <GrxColorPicker android:title="Action Text In Dark Bgs" android:key="ambasadii_notif_action_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
             <GrxColorPicker android:title="Toast Main Text In Dark Bgs" android:key="ambasadii_toast_title_text" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
             <GrxColorPicker android:title="Toast summary Text In Dark Bgs" android:key="ambasadii_toast_sub_text" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFEEF0EF" />
-            <GrxColorPicker android:title="Shelf Buttons BG In Dark Bgs" android:key="ambasadii_notif_shelfmamager_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFF303535" />
+            <GrxColorPicker android:title="Shelf Buttons BG In Dark Bgs" android:key="ambasadii_notif_shelfmamager_color" android:dependency="ambasadii_notification_custom_colors" android:defaultValue="0xFFBFD2D2" />
             <GrxButtonPreference grx:button_Style="big" grx:button_Text="Press here to update all changes" grx:confirmKillpackage="false" grx:killpackage="com.android.systemui" />
         <GrxPreferenceCategory android:title="Other Colors" />
             <GrxSwitchPreference android:title="Main Switch" android:key="amb_notif_custom_colors" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" />
