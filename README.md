@@ -10,9 +10,11 @@ Related to the libraries used in this application, you will respect their licens
 Go to my website for more info https://sites.google.com/view/ambasadiidev
 
 # Telegram
-S10 Support Group https://t.me/ambasadiidev
+S21 Support Group https://t.me/ambasadiiroms21series
 
 S20 Support Group https://t.me/ambasadiiroms20series
+
+S10 Support Group https://t.me/ambasadiidev
 
 Ambasadii News Channel https://t.me/ambasadiirom
 
