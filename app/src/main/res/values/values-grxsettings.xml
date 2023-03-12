@@ -354,6 +354,7 @@
     <string name="notifimageselect">Select an Image</string>
     <string name="notifimageopacity">Image Opacity</string>
     <string name="analogclock">Analog Clock (Notif. panel)</string>
+    <string name="callchip">Call Button</string>
     <string name="bluetooth_connected">Bluetooth Connected</string>
     <string name="panelblur">Panel Blur</string>
     <string name="panelopacity">Panel Opacity</string>

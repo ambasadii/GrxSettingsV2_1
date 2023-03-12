@@ -43,7 +43,7 @@
         <GrxSwitchPreference android:title="Long Press Back To Kill App" android:key="back_to_kill" android:defaultValue="0" android:summaryOn="Enabled" android:summaryOff="Disabled" />
         <GrxSwitchPreference android:title="Long Press Recent Enable Multiwindows" android:key="b_enable_lprecents" android:defaultValue="0" android:summaryOn="Enabled" android:summaryOff="Disabled" />
         <GrxSwitchPreference android:title="Expanded Notifications" android:key="is_expand_noti" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
-        <GrxSwitchPreference android:title="Ongoing Notifications Removable" android:key="is_ongoing_notif_can_be_removable" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <GrxSwitchPreference android:title="Ongoing Notifications Removable" android:key="is_ongoing_notif_can_be_removable" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:confirmKillpackage="true" grx:killpackage="com.android.systemui" />
         <GrxSwitchPreference android:title="Outdoor Mode" android:key="display_outdoor_mode" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
         <GrxSwitchPreference android:title="Charging Sounds" android:key="charging_sounds_enabled" android:defaultValue="true" android:summaryOn="Enabled" android:summaryOff="Disabled" grx:systemType="global" />
         <GrxSingleSelection android:title="Immersive Mode" android:key="policy_control" android:summary="" android:defaultValue="immersive.full" grx:optionsArray="@array/immersive_entries" grx:systemType="global" grx:valuesArray="@array/immersive_values" />
