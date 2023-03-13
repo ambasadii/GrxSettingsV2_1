@@ -12,8 +12,11 @@
 
 package com.grx.settings.utils;
 
+import static android.content.Context.CONTEXT_IGNORE_SECURITY;
+
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.view.ContextThemeWrapper;
 import android.widget.LinearLayout;
@@ -258,6 +261,15 @@ public class Common {
      */
 
     public static void buildContextWrapper(Context context){
+        if(Common.sp == null) {
+            try {
+                Common.sp = context.createPackageContext(context.getPackageName(),CONTEXT_IGNORE_SECURITY).getSharedPreferences(context.getPackageName()+"_preferences",Context.MODE_PRIVATE);
+
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+                return;
+            }
+        }
         Common.mContextWrapper = null;
         String themename = Common.sp.getString(Common.S_APPOPT_USER_SELECTED_THEME_NAME, context.getString(R.string.grxs_default_theme));
         if(themename==null || themename.isEmpty()) return;
