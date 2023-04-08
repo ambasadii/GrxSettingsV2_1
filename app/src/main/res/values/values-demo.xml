@@ -157,6 +157,36 @@
         <item>2</item>
         <item>3</item>
     </string-array>
+    <string-array name="icon_sets_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="icon_sets_entries">
+        <item>Samsung S7</item>
+        <item>Samsung S6</item>
+        <item>Sense</item>
+        <item>Chrom</item>
+        <item>Flat</item>
+        <item>Google+</item>
+        <item>LG</item>
+        <item>MIUI</item>
+        <item>Weezle</item>
+        <item>Now</item>
+        <item>Oreo</item>
+        <item>Black Pearl</item>
+        <item>Neon Dance</item>
+    </string-array>
     <string-array name="qclock_date_display_entries">
         <item>Hide date</item>
         <item>Small font</item>
@@ -788,7 +818,6 @@
         <item>Circular Battery</item>
         <item>3Minit Battery</item>
         <item>Stock Battery</item>
-        <item>Call Button</item>
     </string-array>
     <string-array name="dual_sb_views_positions_values">
         <item>phone_status_bar_clock</item>
@@ -804,7 +833,6 @@
         <item>grxcirbathome</item>
         <item>minit</item>
         <item>batterycontainer</item>
-        <item>callchip</item>
     </string-array>
     <string-array name="dual_sb_postions_options">
         <item>Left Top</item>

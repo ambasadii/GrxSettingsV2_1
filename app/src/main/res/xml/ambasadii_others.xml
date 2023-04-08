@@ -29,6 +29,7 @@
     </PreferenceScreen>
 
     <PreferenceScreen android:title="Skip Tracks Volume Buttons" xmlns:grx="http://schemas.android.com/apk/res-auto">
+        <GrxPreferenceCategory android:title="Skip Tracks Options" />
         <GrxSwitchPreference android:title="@string/enable_skip_tracks" android:key="b_skip_tracks" android:defaultValue="false" grx:groupedValueKey="grxskt" grx:groupedValueMyAlias="eskt" grx:groupedValueSystemType="system"/>
         <GrxSeekBar android:title="@string/time_skip_tracks" android:dependency="b_skip_tracks"  android:key="b_timeout_skip_tracks" grx:groupedValueKey="grxskt" grx:groupedValueMyAlias="toskt" android:defaultValue="500" grx:minValue="350" grx:maxValue="2000" grx:units=" mS" grx:showPopup="true" grx:interval="50"/>
         <GrxInfoText android:summary="@string/info_skip_tracks" />
